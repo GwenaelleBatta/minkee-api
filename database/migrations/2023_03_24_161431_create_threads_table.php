@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('threads', function (Blueprint $table) {
             $table->id();
-            $table->string('category');
+            $table->string('category')->default('test');
             $table->string('name');
             $table->string('slug');
             $table->string('number');

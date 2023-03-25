@@ -14,7 +14,7 @@ class ThreadSeeder extends Seeder
      */
     public function run(): void
     {
-        $json = File::get("database/save/levels.json");
+        $json = File::get("database/save/threads.json");
         $threads = json_decode($json);
 
         foreach ($threads as $key => $value) {

@@ -11,6 +11,6 @@ class Thread extends Model
     use HasFactory, SoftDeletes;
 
     protected $fillable = [
-        'id', 'name', 'number', 'category', 'tint'
+        'id', 'name', 'category', 'tint','number'
     ];
 }

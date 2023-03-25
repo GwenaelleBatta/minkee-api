@@ -21,5 +21,8 @@ class DatabaseSeeder extends Seeder
         $this->call(LevelSeeder::class);
         $this->call(GlossarySeeder::class);
         $this->call(ThreadSeeder::class);
+        $this->call(UserSeeder::class);
+        $this->call(MesureSeeder::class);
+        $this->call(FabricSeeder::class);
     }
 }

@@ -6,9 +6,9 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Thread>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Mesure>
  */
-class ThreadFactory extends Factory
+class MesureFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -17,14 +17,13 @@ class ThreadFactory extends Factory
      */
     public function definition(): array
     {
-        $content = 'Fil Gütermann';
-        $number = '000';
+        $content = 'Prénom';
         return [
             "name" => $content,
-            "category"=>'noir',
-            "slug" => Str::slug($content.$number),
-            "number"=> $number,
-            "tint"=>'#000000'
+            "slug" => Str::slug($content),
+            "outline"=> [],
+            "lenght"=>[],
+            "user_id"=>1
         ];
     }
 }

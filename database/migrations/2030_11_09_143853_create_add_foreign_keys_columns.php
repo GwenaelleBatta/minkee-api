@@ -16,6 +16,12 @@ return new class extends Migration
         Schema::table('plans', function (Blueprint $table) {
             $table->foreignId('level_id')->constrained()->onUpdate('cascade');
         });
+        Schema::table('mesures', function (Blueprint $table) {
+            $table->foreignId('user_id')->constrained()->onUpdate('cascade');
+        });
+        Schema::table('plans', function (Blueprint $table) {
+            $table->foreignId('user_id')->constrained()->onUpdate('cascade');
+        });
     }
 
     /**
@@ -29,6 +35,12 @@ return new class extends Migration
 
         Schema::table('plans', function (Blueprint $table) {
             $table->dropConstrainedForeignId('level_id');
+        });
+        Schema::table('mesures', function (Blueprint $table) {
+            $table->dropConstrainedForeignId('user_id');
+        });
+        Schema::table('plans', function (Blueprint $table) {
+            $table->dropConstrainedForeignId('user_id');
         });
 
     }
