@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Fabric;
 use App\Models\Mesure;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -19,14 +20,12 @@ class FabricSeeder extends Seeder
         $fabrics = json_decode($json);
 
         foreach ($fabrics as $key => $value) {
-            Mesure::factory()->create([
+            Fabric::factory()->create([
                 "name" => $value->name,
                 "description" => $value->description,
                 "image" => $value->image,
                 "slug" => Str::slug($value->name),
                 "use" => json_encode($value->use),
-                "outline" => json_encode($value->outline),
-                "user_id"=>$value->user_id
             ]);
         }
     }
