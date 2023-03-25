@@ -25,6 +25,9 @@ return new class extends Migration
         Schema::table('supplies', function (Blueprint $table) {
             $table->foreignId('user_id')->constrained()->onUpdate('cascade');
         });
+        Schema::table('supplies', function (Blueprint $table) {
+            $table->foreignId('typesupply_id')->constrained()->onUpdate('cascade');
+        });
     }
 
     /**
@@ -47,6 +50,9 @@ return new class extends Migration
         });
         Schema::table('supplies', function (Blueprint $table) {
             $table->dropConstrainedForeignId('user_id');
+        });
+        Schema::table('supplies', function (Blueprint $table) {
+            $table->dropConstrainedForeignId('typesupply_id');
         });
 
     }

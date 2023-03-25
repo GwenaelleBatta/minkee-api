@@ -22,7 +22,7 @@ class TypeSupplySeeder extends Seeder
         foreach ($types as $key => $value) {
             TypeSupply::factory()->create([
                 "name" => $value->name,
-                "slug" => Str::slug($value->name.$value->number),
+                "slug" => Str::slug($value->name),
             ]);
         }
     }
