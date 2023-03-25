@@ -24,5 +24,6 @@ class DatabaseSeeder extends Seeder
         $this->call(UserSeeder::class);
         $this->call(MesureSeeder::class);
         $this->call(FabricSeeder::class);
+        $this->call(TypeSupplySeeder::class);
     }
 }
