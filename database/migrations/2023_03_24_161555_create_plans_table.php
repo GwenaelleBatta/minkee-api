@@ -13,18 +13,17 @@ return new class extends Migration
     {
         Schema::create('plans', function (Blueprint $table) {
             $table->id();
-            $table->integer('base');
-            $table->string('cut');
-            $table->string('gender');
-            $table->string('image');
             $table->string('name');
             $table->string('slug');
-            $table->string('level');
+            $table->integer('base');
+            $table->string('cut')->nullable();
+            $table->string('gender');
+            $table->json('image')->nullable();
             $table->string('price');
             $table->string('type');
-            $table->json('keywords');
-            $table->json('steps');
-            $table->json('supplies');
+            $table->json('keywords')->nullable();
+            $table->json('steps')->nullable();
+            $table->json('supplies')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

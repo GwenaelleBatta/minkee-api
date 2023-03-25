@@ -13,6 +13,15 @@ return new class extends Migration
     {
         Schema::create('supplies', function (Blueprint $table) {
             $table->id();
+            $table->string('color')->nullable();
+            $table->string('type');
+            $table->string('quantity')->nullable();
+            $table->string('number')->nullable();
+            $table->string('name')->nullable();
+            $table->string('tint')->nullable();
+            $table->string('category')->nullable();
+            $table->string('width')->nullable();
+            $table->string('pictures')->nullable();
             $table->timestamps();
         });
     }
