@@ -1,0 +1,432 @@
+[
+  {
+    "id": 1,
+    "category": "gris",
+    "name": "Fil Gütermann",
+    "number": "093",
+    "tint": "#444853",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 2,
+    "category": "vert",
+    "name": "Fil Gütermann",
+    "number": "297",
+    "tint": "#98B6AA",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 3,
+    "category": "gris",
+    "name": "Fil Gütermann",
+    "number": "261",
+    "tint": "#9BA493",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 4,
+    "category": "vert",
+    "name": "Fil Gütermann",
+    "number": "283",
+    "tint": "#6A7A3F",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 5,
+    "category": "gris",
+    "name": "Fil Gütermann",
+    "number": "701",
+    "tint": "#7E8484",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 6,
+    "category": "bleu",
+    "name": "Fil Gütermann",
+    "number": "078",
+    "tint": "#114B8C",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 7,
+    "category": "rose",
+    "name": "Fil Gütermann",
+    "number": "985",
+    "tint": "#EE959F",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 8,
+    "category": "bleu",
+    "name": "Fil Gütermann",
+    "number": "827",
+    "tint": "#5D7C8D",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 9,
+    "category": "brun",
+    "name": "Fil Gütermann",
+    "number": "308",
+    "tint": "#4524948",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 11,
+    "category": "vert",
+    "name": "Fil Gütermann",
+    "number": "304",
+    "tint": "#2D3124",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 12,
+    "category": "bleu",
+    "name": "Fil Gütermann",
+    "number": "714",
+    "tint": "#31A3B1",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 13,
+    "category": "beige",
+    "name": "Fil Gütermann",
+    "number": "868",
+    "tint": "#937D64",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 14,
+    "category": "bleu",
+    "name": "Fil Gütermann",
+    "number": "924",
+    "tint": "#77B3B5",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 15,
+    "category": "vert",
+    "name": "Fil Gütermann",
+    "number": "148",
+    "tint": "#687B4E",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 16,
+    "category": "jaune",
+    "name": "Fil Gütermann",
+    "number": "852",
+    "tint": "#F6E46E",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 17,
+    "category": "beige",
+    "name": "Fil Gütermann",
+    "number": "170",
+    "tint": "#E1C3A1",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 18,
+    "category": "brun",
+    "name": "Fil Gütermann",
+    "number": "280",
+    "tint": "#4B3323",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 19,
+    "category": "mauve",
+    "name": "Fil Gütermann",
+    "number": "875",
+    "tint": "#65657F",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 20,
+    "category": "bleu",
+    "name": "Fil Gütermann",
+    "number": "966",
+    "tint": "#357396",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 21,
+    "category": "gris",
+    "name": "Fil Gütermann",
+    "number": "799",
+    "tint": "#353A40",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 22,
+    "category": "jaune",
+    "name": "Fil Gütermann",
+    "number": "325",
+    "tint": "#FAE5AC",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 23,
+    "category": "brun",
+    "name": "Fil Gütermann",
+    "number": "672",
+    "tint": "#755D4E",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 24,
+    "category": "vert",
+    "name": "Fil Gütermann",
+    "number": "296",
+    "tint": "#617D59",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 25,
+    "category": "orange",
+    "name": "Fil Gütermann",
+    "number": "007",
+    "tint": "#F9E792",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 26,
+    "category": "vert",
+    "name": "Fil Gütermann",
+    "number": "582",
+    "tint": "#7E8145",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 1,
+    "category": "gris",
+    "name": "Fil Gütermann",
+    "number": "093",
+    "tint": "#444853",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 1,
+    "category": "gris",
+    "name": "Fil Gütermann",
+    "number": "093",
+    "tint": "#444853",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 1,
+    "category": "gris",
+    "name": "Fil Gütermann",
+    "number": "093",
+    "tint": "#444853",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 1,
+    "category": "gris",
+    "name": "Fil Gütermann",
+    "number": "093",
+    "tint": "#444853",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 1,
+    "category": "gris",
+    "name": "Fil Gütermann",
+    "number": "093",
+    "tint": "#444853",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 1,
+    "category": "gris",
+    "name": "Fil Gütermann",
+    "number": "093",
+    "tint": "#444853",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 1,
+    "category": "gris",
+    "name": "Fil Gütermann",
+    "number": "093",
+    "tint": "#444853",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 1,
+    "category": "gris",
+    "name": "Fil Gütermann",
+    "number": "093",
+    "tint": "#444853",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 1,
+    "category": "gris",
+    "name": "Fil Gütermann",
+    "number": "093",
+    "tint": "#444853",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 1,
+    "category": "gris",
+    "name": "Fil Gütermann",
+    "number": "093",
+    "tint": "#444853",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 1,
+    "category": "gris",
+    "name": "Fil Gütermann",
+    "number": "093",
+    "tint": "#444853",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 1,
+    "category": "gris",
+    "name": "Fil Gütermann",
+    "number": "093",
+    "tint": "#444853",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 1,
+    "category": "gris",
+    "name": "Fil Gütermann",
+    "number": "093",
+    "tint": "#444853",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 1,
+    "category": "gris",
+    "name": "Fil Gütermann",
+    "number": "093",
+    "tint": "#444853",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 1,
+    "category": "gris",
+    "name": "Fil Gütermann",
+    "number": "093",
+    "tint": "#444853",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 1,
+    "category": "gris",
+    "name": "Fil Gütermann",
+    "number": "093",
+    "tint": "#444853",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 1,
+    "category": "gris",
+    "name": "Fil Gütermann",
+    "number": "093",
+    "tint": "#444853",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 1,
+    "category": "gris",
+    "name": "Fil Gütermann",
+    "number": "093",
+    "tint": "#444853",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  }
+]

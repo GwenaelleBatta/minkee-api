@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Facile",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+  {
+    "id": 2,
+    "name": "Moyen",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+  {
+    "id": 3,
+    "name": "Difficile",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  }
+]
