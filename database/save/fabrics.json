@@ -1,0 +1,371 @@
+[
+  {
+    "id": 1,
+    "use": ["Linge de bain", "Couches lavables", "Lingettes", "Essuis-tout"],
+    "name": "Bambou",
+    "description": "Issu de la pulpe de la plante, les fibres sont tissées sous forme de velours (velouté et doux) ou d’éponge (extrêmement absorbant) ; facile à coudre et d’entretien, on utilise beaucoup l’éponge de bambou pour la fabrication des inserts (parties absorbantes) des couches lavables par exemple.",
+    "image": "https://www.pexels.com/fr-fr/photo/textile-rouge-1475036/",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 2,
+    "use": ["Jupons", "Robes", "Voiles"],
+    "name": "Tulle",
+    "description": "Tissu mince, léger et transparent, en coton, soie ou matière synthétique, qui s'emploie pour réaliser des rideaux, des voilages, des toilettes de femme.",
+    "image": "https://pixabay.com/fr/photos/mat%c3%a9riel-tulle-color%c3%a9-coudre-505184/",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 3,
+    "use": ["Pantalons", "Vestes", "Manteaux", "Accessoires"],
+    "name": "Tartan",
+    "description": "Le tartan est une étoffe de laine à carreaux de couleurs, typique des peuples celtes. Il s'agit d'un motif de lignes horizontales et verticales entrecroisées, de multiples couleurs. Les tartans étaient à l'origine réservés aux tissus, mais sont maintenant utilisés sur de nombreux autres matériaux.",
+    "image": "https://pixabay.com/fr/photos/tissu-texture-tartan-couleur-1648127/",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 4,
+    "use": ["Pantalon", "Robes", "Vêtements de travail"],
+    "name": "Sergé",
+    "description": "L’armure sergé est une manière de tisser plus robuste que l’armure toile et qui confère au tissu un aspect plus rigide et plus solide. Le sergé est reconnaissable à son motif en diagonale. Le sergé de coton possède un tombé fluide mais épais.",
+    "image": "https://www.pexels.com/fr-fr/photo/textile-rouge-1475036/",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 5,
+    "use": ["Chemises", "Robes", "Vêtements de nuit"],
+    "name": "Soie",
+    "description": "Obtenue grâce aux vers à soie, elle est douce, fine et fluide, avec cet aspect satiné qui lui est propre. Sa finesse ne la rend pas toujours aisée à coudre et c’est une fibre délicate à laquelle il faut faire attention pour son entretien",
+    "image": "https://pixabay.com/fr/photos/soie-textile-texture-coton-4916174/",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 6,
+    "use": ["Blouse", "Jupe", "Jupons de robe"],
+    "name": "Broderie anglaise",
+    "description": "Broderies effectuées par une machine sur un tissu, et comportant des petits trous décoratifs à intervalles réguliers. A utiliser pour des petits hauts ( à doubler!) ou des jupons de robe par exemple.  ",
+    "image": "https://images.pexels.com/photos/6045282/pexels-photo-6045282.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 7,
+    "use": ["Pulls", "Vêtements d'hiver"],
+    "name": "Polaire",
+    "description": "Le polaire est une technologie textile. Il s'agit d'une composition de fibres de P.E.T (Polyéthylène Téréphtalate) et d'autres fibres synthétiques. Il peut également être fabriqué à partir de bouteilles plastiques recyclées.",
+    "image": "https://www.pexels.com/fr-fr/photo/textile-rouge-1475036/",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 8,
+    "use": ["Jupes", "Tutus", "Rideaux", "Robes", "Étoles"],
+    "name": "Organza",
+    "description": "Il faut savoir que l'organza est un tissu, une mousseline de coton. Traditionnellement élaboré à partir de fils de soie, l'organza est une matière très délicate et légère. On utilise généralement l'organza pour confectionner des robes du soir.",
+    "image": "https://pixabay.com/fr/photos/textile-cloth-fabric-tissue-3535090/",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 9,
+    "use": ["Chapeaux", "Tapis", "Rideaux"],
+    "name": "Feutre",
+    "description": "Le feutre est un textile non tissé fabriqué par pression et ébouillantage de poils, avec parfois un traitement chimique, par exemple les sels de cuivre et de mercure pour le feutre de poils de Castor fiber puis C. canadensis dans le passé.",
+    "image": "https://www.shutterstock.com/fr/image-photo/soft-grey-felt-material-surface-felted-1215067471",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 10,
+    "use": ["Manteaux", "Tapis"],
+    "name": "Fourrure",
+    "description": "La fourrure est la peau des animaux, garnie de ses poils ou, plus rarement, de duvet ou de plumes. Ce mot désigne aussi le matériau obtenu par transformation par l'Homme, à usage de vêtement, garniture ou accessoire de décoration.",
+    "image": "https://www.pexels.com/fr-fr/photo/fourrure-beige-317333/",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 11,
+    "use": ["Pulls", "Robes", "Manteaux"],
+    "name": "Laine",
+    "description": "Elle peut être bouille, feutrée, tricotée ou tissée. Cette matière naturelle qui tient chaud l’hiver, est parfaite pour confectionner des vêtements chauds. Attention, le tissu en laine est très fragile et il faut adapter son cycle de lavage.",
+    "image": "https://www.pexels.com/fr-fr/photo/photographie-en-gros-plan-du-textile-gris-1487701/",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 12,
+    "use": ["Couvertures", "Bavoirs", "Jouets en peluche"],
+    "name": "Minky",
+    "description": "Le tissu Minky 100% polyester est un tissu \"peluche\" avec des poils extra-courts d'une extrême douceur. Idéal pour les couvertures de bébés, les doudous, pull, pyjamas etc... Ce tissu constitué de microfibres donne l'effet d'une fourrure très courte et incroyablement douce. Le velours Minkee simple face est doux seulement d'un côté, le double face des deux côtés et comme il est 100% polyester, vous pourrez le laver sans problème.",
+    "image": "https://www.pexels.com/fr-fr/photo/textile-rouge-1475036/",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 13,
+    "use": ["Vestes", "Jupes", "Sacs à main", "Manteaux"],
+    "name": "Cuir",
+    "description": "Le cuir est un matériau préparé à partir de la peau d'un animal, principalement utilisé dans l'habillement et la décoration sous un grand nombre de formes. Il s'agit généralement de la peau de grands mammifères tels le bœuf et le porc, traitée industriellement par les tanneries et les mégisseries, principalement pour assurer sa conservation même en présence d'une humidité élevée.",
+    "image": "https://pixabay.com/fr/photos/contexte-cuir-brown-fermer-1838494/",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 14,
+    "use": ["Jupes", "Sacs", "Chapeaux", "Vestes", "Manteaux"],
+    "name": "Daim",
+    "description": "En fait, utiliser le mot « daim » est une approximation de langage et il serait plus juste de parler de « cuir retourné » ou de « cuir velours » puisque cette matière que l'on appelle daim est en fait un cuir classique ayant subi un traitement sur la partie de l'envers (côté chair) pour lui donner cet aspect velours.",
+    "image": "https://pixabay.com/fr/photos/cuir-machine-%c3%a0-coudre-v%c3%aatements-768245/",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 15,
+    "use": ["Pulls", "Robes"],
+    "name": "Cachemire",
+    "description": "Issu de la laine de la chèvre du Cachemire (province montagneuse d’Asie). C’est une fibre très douce et très chaude, qui a les mêmes propriétés et conseils d’entretien que la laine.",
+    "image": "https://pixabay.com/fr/photos/couverture-de-laine-rose-cachemire-7088726/",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 16,
+    "use": ["Coussins décoratifs", "Draps", "Nappes"],
+    "name": "Satin",
+    "description": "Le satin provient d'un tissage, créé en entrelassant les fils de trames longitudinalement et les fils de transversalement. La réduction d'espace entre les fils mène à la surface lisse et lustrée que nous connaissons et aimons tous.",
+    "image": "https://pixabay.com/fr/photos/mat%c3%a9riel-soie-or-brillant-chiffon-540136/",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 17,
+    "use": ["Coussins", "Rideaux"],
+    "name": "Taffetas",
+    "description": "Étoffe de soie serrée, sans envers, d'aspect sec et craquant quand on la froisse, utilisée dans l'ameublement et dans la confection des vêtements.",
+    "image": "https://www.pexels.com/fr-fr/photo/textile-rouge-1475036/",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 18,
+    "use": ["Robes", "Chemises", "Vêtements pour enfants", "Essuis-tout"],
+    "name": "Coton",
+    "description": "Tissu de coton léger sans être transparent, c’est le tissu de coton « basique ». Il est peu extensible et facile à coudre. ",
+    "image": "https://pixabay.com/fr/photos/bleu-tissu-contexte-arri%c3%a8re-plans-3185127/",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 19,
+    "use": ["Rideaux", "Vêtements légers"],
+    "name": "Voile",
+    "description": "Le voile de coton est un tissu de coton, utilisant une armure toile au tissage peu serré avec des fils tordus.",
+    "image": "https://www.pexels.com/fr-fr/photo/femme-sombre-sans-visage-transparent-6238886/",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 20,
+    "use": ["Vestes", "Pantalons", "Robes"],
+    "name": "Denim",
+    "description": "C’est la toile de jean par excellence. Un peu épais, et assez rigide, on le trouve le plus souvent bleu ou un peu chambray c’est-à-dire avec un fil de chaine bleu et d'un fil de  trame écru ou blanc. A laver et sécher sur l’envers pour éviter une usure prématurée…",
+    "image": "https://pixabay.com/fr/photos/jeans-contexte-v%c3%aatements-magasin-1805710/",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 21,
+    "use": ["Sacs", "Accessoires"],
+    "name": "Toile de jute",
+    "description": "La toile de jute est un textile tissé fait de fibres de jute ou de sisal. Il peut servir à fabriquer de la corde, des filets, des sacs et des produits similaires. Il sert également comme revêtement de sol (linoléum). La toile maillée de filasse de jute est utilisée pour armer le staff.",
+    "image": "https://pixabay.com/fr/photos/toile-de-jute-manteau-texture-fond-2126209/",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 22,
+    "use": ["Artilces de bain", "Articles de puériculture", "Linge de maison"],
+    "name": "Tissu éponge",
+    "description": "Le tissu éponge est très absorbant, c'est son tissage de fils qui se croisent pour former de petites bouclettes qui en font sa spécificité. Il est parfait pour la confection de bavoirs, articles de puériculture, draps de bain, serviettes de toilette, peignoirs, linge de maison etc. ",
+    "image": "https://pixabay.com/fr/photos/les-serviettes-bleu-turquoise-gris-2822910/",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 23,
+    "use": ["Pantalons", "Vestes", "Robes", "Vêtements pour enfants"],
+    "name": "Velours",
+    "description": "Le velours est un tissu doux et moelleux, qui convient à la confection de vêtements et d’accessoires de mode ajoutant de la texture et de la dimension. C’est un tissu rigide mais fluide qui tient chaud. Le tissu velours côtelé est parfait pour la couture des vêtements d’hiver avec tenue.",
+    "image": "https://www.pexels.com/fr-fr/photo/rouge-texture-tissu-textile-6843276/",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 24,
+    "use": ["Pantalons", "Vestes", "Robes", "Vêtements pour enfants"],
+    "name": "Velours côtelés",
+    "description": "Tissu de coton à l’aspect velouté du velours mais comportant de fines rainures. La plupart du temps il est 100 % coton. Plutôt rigide mais fluide, facile à coudre pour des vêtements d’hiver comme pantalons, vestes, jupes ou robes. Il existe aussi du velours grosses côtes, aux rainures plus larges.",
+    "image": "https://pixabay.com/fr/photos/velours-c%c3%b4tel%c3%a9-en-tissu-932242/",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 25,
+    "use": ["Robes", "Jupes", "Pantalons", "Bandeaux"],
+    "name": "Wax",
+    "description": "Le wax (« cire » en anglais), également appelé imprimé africain, wax hollandais ou parfois ankaraN 1, est un textile de coton aux couleurs vives et aux motifs complexes imprimées selon une technique à la cire. Le wax est mondialement reconnu comme typiquement « africain » car massivement utilisé en Afrique de l'Ouest pour se vêtir au quotidien par les populations.  Le tissu a reçu sur les deux faces un cirage lui conférant des propriétés hydrophobes, technique inspirée de celle utilisée pour produire le batik javanais.  Le wax est souvent vendu sous forme de pagnes qui vont permettre à l'acheteur de confectionner de nombreux habits.",
+    "image": "https://www.pexels.com/fr-fr/photo/textile-rouge-1475036/",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 26,
+    "use": ["Robes", "Jupes", "Lingeries", "Vêtements de nuit"],
+    "name": "Dentelle",
+    "description": "La dentelle de coton est de meilleure qualité que la dentelle synthétique et donc plus chère. (Exemple : Dentelle de Calais)",
+    "image": "https://pixabay.com/fr/photos/dentelle-bleu-ancien-en-tissu-347489/",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 27,
+    "use": ["Pantalons", "Jupes", "Sacs", "Accessoires"],
+    "name": "Skaï",
+    "description": "Tissu enduit de matière synthétique, imitant le cuir",
+    "image": "https://www.pexels.com/fr-fr/photo/cuir-orange-207300/",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 28,
+    "use": ["Robes", "T-shirts", "Vêtements confortables", "Jupes"],
+    "name": "Jersey",
+    "description": "Le jersey est une manière de tisser les fibres, elles sont d’ailleurs « tricotées » pour donner cet aspect extensible bien connu du tissu jersey. On dit jersey de coton quand la composition est 100% coton. C’est un tissu extensible et confortable qui ne froisse pas. Il est cependant un peu compliqué à coudre vu son élasticité.",
+    "image": "https://www.pexels.com/fr-fr/photo/textile-leopard-blanc-et-noir-6331022/",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 29,
+    "use": ["Jupes", "Robes", "Vestes"],
+    "name": "Néoprène",
+    "description": "C'est un isolant thermique et électrique performant. Le Néoprène est principalement connu pour être employé dans la fabrication de combinaisons destinées aux sports aquatiques. Ce tissu est, en effet, thermorégulateur rigide, élastique et léger.",
+    "image": "https://pixabay.com/fr/photos/toile-de-jute-manteau-texture-fond-2126209/",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 30,
+    "use": ["Maillots de bain", "Justaucorps", "Vêtements de sport"],
+    "name": "Lycra",
+    "description": "L'élasthanne, élasthane (par contraction d'élastique et de polyuréthane), ou Lycra (nom commercial), est une fibre synthétique réputée pour son élasticité. ",
+    "image": "https://pixabay.com/fr/photos/les-serviettes-bleu-turquoise-gris-2822910/",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 31,
+    "use": ["Pulls", "Foulards", "Chaussettes", "Couvertures", "Gants"],
+    "name": "Mohair",
+    "description": "Le mohair est une fibre laineuse produite par la chèvre angora, chèvre dont on connaissait l'existence au Tibet 2000 ans av. J.-C. et chez les Sumériens au ive siècle av. J.-C.1. L’appellation de cette chèvre « angora » en français est due à sa présence en Anatolie et à l'ancien nom de la ville d'Ankara2. Elle est caractérisée par l’alliance d'une bonne capacité d'isolant thermique (du froid comme du chaud) et d'une très grande légèreté.",
+    "image": "https://pixabay.com/fr/photos/tricot-mohair-laine-tricot%c3%a9-498165/",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 32,
+    "use": ["Sacs à main", "Vestes", "Jupes", "Manteaux légers"],
+    "name": "Suédine",
+    "description": "Ressemble à s’y méprendre à du cuir retourné, avec son aspect velouté et doux au toucher. Non extensible, lavable à 30°c, un peu épais et assez rigide. ",
+    "image": "https://pixabay.com/fr/photos/contexte-cuir-brown-fermer-1838494/",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 33,
+    "use": ["Robes", "Jupes", "Chemises", "Blouses"],
+    "name": "Popeline",
+    "description": "La popeline est une armure toile car un fil de trame passe sous un seul fil de chaine et vice versa. Les fils de chaine sont plus fins donc deux fois plus nombreux que les fils de trame. On retrouve l'origine de la popeline ou plutôt \"papeline\" au 15ème siècle dans la région d'Avignon.",
+    "image": "https://www.pexels.com/fr-fr/photo/textile-rouge-1475036/",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 34,
+    "use": ["Robes", "Jupes", "Chemises", "Foulards"],
+    "description": "La viscose est un tissu peu coûteux, devenu populaire grâce à ses multiples qualités. On la trouve dans les produits finaux du coton, ainsi que dans les tissus de velours et taffetas luxueux.",
+    "image": "https://www.istockphoto.com/fr/photo/tissu-textile-imprim%C3%A9-de-fleurs-fond-abstrait-avec-lumi%C3%A8re-du-soleil-gm1384248028-443665007?phrase=viscose",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 35,
+    "use": ["Chemises", "Robes", "Pantalons", "Blouses"],
+    "name": "Lin",
+    "description": "Le lin est une fibre absorbante, donc elle tempère bien le corps et créer peu de statique. Le lin est aussi très lisse, ce qui le rend un peu lustré. Il ne peluche presque pas et est très peu salissant.",
+    "image": "https://www.pexels.com/fr-fr/photo/photo-en-gros-plan-textile-gris-1487713/",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 36,
+    "use": ["Chemises", "Linges de lit", "Accessoires pour bébé", "Vêtements de nuit"],
+    "name": "Flanelle",
+    "description": "Coton duveteux, doux au toucher. Il n’est pas extensible, convient bien aux linges de nuit ou accessoires pour enfants du fait de sa douceur. Attention, il s’effiloche beaucoup donc crantez ou surfilez vos marges de coutures quand vous cousez avec !",
+    "image": "https://pixabay.com/fr/photos/plaid-flanelle-tartan-mod%c3%a8le-987605/",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+    {
+    "id": 37,
+    "use": ["Pulls", "Doublures", "Couvertures"],
+    "name": "Molleton",
+    "description": "Tissu de laine ou de coton gratté, chaud, doux et moelleux, ressemblant à une flanelle épaisse et que l'on utilise notamment pour doubler les vêtements.",
+    "image": "https://pixabay.com/fr/photos/plaid-flanelle-tartan-mod%c3%a8le-987605/",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  }
+]
