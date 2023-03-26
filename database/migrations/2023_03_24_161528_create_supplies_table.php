@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('quantity')->nullable();
             $table->string('number')->nullable();
             $table->string('name')->nullable();
+            $table->string('slug')->nullable();
             $table->string('tint')->nullable();
             $table->string('category')->nullable();
             $table->string('width')->nullable();

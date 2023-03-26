@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Boutons",
+    "slug": "boutons",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+  {
+    "id": 2,
+    "name": "Fils",
+    "slug": "fils",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+  {
+    "id": 3,
+    "name": "Magazines",
+    "slug": "magazines",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+  {
+    "id": 4,
+    "name": "Mercerie",
+    "slug": "mercerie",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+  {
+    "id": 5,
+    "name": "Outils",
+    "slug": "outils",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  },
+  {
+    "id": 6,
+    "name": "Tissus",
+    "slug": "tissus",
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null
+  }
+]
