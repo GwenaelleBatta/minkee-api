@@ -28,6 +28,12 @@ return new class extends Migration
         Schema::table('supplies', function (Blueprint $table) {
             $table->foreignId('typesupply_id')->constrained()->onUpdate('cascade');
         });
+
+
+        Schema::table('plan_step', function (Blueprint $table) {
+            $table->foreignId('plan_id')->constrained()->onUpdate('cascade');
+            $table->foreignId('step_id')->constrained()->onUpdate('cascade');
+        });
     }
 
     /**
@@ -53,6 +59,12 @@ return new class extends Migration
         });
         Schema::table('supplies', function (Blueprint $table) {
             $table->dropConstrainedForeignId('typesupply_id');
+        });
+
+
+        Schema::table('plan_step', function (Blueprint $table) {
+            $table->dropConstrainedForeignId('plan_id');
+            $table->dropConstrainedForeignId('step_id');
         });
 
     }
