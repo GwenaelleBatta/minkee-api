@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\api\StepsController;
+use App\Http\Controllers\api\TypeSupplyController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Orion\Orion;
@@ -21,5 +22,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 //Route::group(['as' => 'api.'], function() {
-//    Orion::resource('steps', StepsController::class);
+//    Orion::resource('type', [TypeSupplyController::class, 'index'])->withSoftDeletes();
 //});

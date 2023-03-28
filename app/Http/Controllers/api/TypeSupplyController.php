@@ -1,17 +1,24 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\api;
 
+use App\Http\Controllers\Controller;
+use App\Models\TypeSupply;
 use Illuminate\Http\Request;
+use Orion\Concerns\DisablePagination;
 
 class TypeSupplyController extends Controller
 {
+    use DisablePagination;
+
+    protected $model = TypeSupply::class;
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
+        $types = TypeSupply::all();
+        return $types;
     }
 
     /**

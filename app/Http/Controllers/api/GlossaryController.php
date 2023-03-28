@@ -4,9 +4,11 @@ namespace App\Http\Controllers\api;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Orion\Concerns\DisablePagination;
 
 class GlossaryController extends Controller
 {
+    use DisablePagination;
     /**
      * Display a listing of the resource.
      */
