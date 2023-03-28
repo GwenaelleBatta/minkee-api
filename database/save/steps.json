@@ -1,0 +1,402 @@
+[
+    {
+        "id": 1,
+        "name": "Prendre les marques",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 2,
+        "name": "Couper tissus",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 3,
+        "name": "Épingler patrons sur tissus",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 4,
+        "name": "Cranter, retourner et repasser",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 5,
+        "name": "Repasser couture ouverte",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 6,
+        "name": "Repasser couture couchée",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 7,
+        "name": "Repassage final",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 8,
+        "name": "Surjeter couture à double",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 9,
+        "name": "Surjeter pièce",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 10,
+        "name": "Réaliser poches",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 11,
+        "name": "Faufiler avant de coudre",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 12,
+        "name": "Entoiler",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 13,
+        "name": "Réaliser les ourlets",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 14,
+        "name": "Surpiquer",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 15,
+        "name": "Ajuster piquer biais à cheval en une fois",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 16,
+        "name": "Ajuster piquer biais à cheval en un deux fois",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 17,
+        "name": "Ajuster piquer biais à plat",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 18,
+        "name": "Pose de la fermeture à glissière",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 19,
+        "name": "Coudre boutons",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 20,
+        "name": "Réaliser boutonnières",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 21,
+        "name": "Assembler vêtement et doublure",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 22,
+        "name": "Réaliser ourlet invisible",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 23,
+        "name": "Épingler endroit sur endroit",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 24,
+        "name": "Épingler envers sur envers",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 25,
+        "name": "Coudre endroit sur endroit",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 26,
+        "name": "Coudre envers sur envers",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 27,
+        "name": "Placer et fixer épaulette",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 28,
+        "name": "Réaliser le col",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 29,
+        "name": "Réaliser bas de mache (poignet)",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 30,
+        "name": "Ajuster piquer pince poitrine",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 31,
+        "name": "Ajuster piquer pince dos",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 32,
+        "name": "Ajuster piquer pince de la taille",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 33,
+        "name": "Réaliser les fronce",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 33,
+        "name": "Marque les plis (à l'aide d'un fer à repasser)",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 34,
+        "name": "Glacer le tissus",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 35,
+        "name": "Nettoyer (couper les fils qui traine)",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 36,
+        "name": "Fermer sac de poche",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 36,
+        "name": "Décatir le tissus",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 37,
+        "name": "Refouler la patte",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 38,
+        "name": "Recouper valeur couture",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    }
+]

@@ -18,11 +18,10 @@ return new class extends Migration
             $table->integer('base');
             $table->string('cut')->nullable();
             $table->string('gender');
-            $table->json('image')->nullable();
+            $table->json('images')->nullable();
             $table->string('price');
             $table->string('type');
             $table->json('keywords')->nullable();
-            $table->json('steps')->nullable();
             $table->json('supplies')->nullable();
             $table->timestamps();
             $table->softDeletes();

@@ -14,6 +14,7 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable, SoftDeletes                                                                    ;
 
+    protected $with = ['supplies', 'mesures'];
     /**
      * The attributes that are mass assignable.
      *
@@ -50,5 +51,9 @@ class User extends Authenticatable
     public function mesures(): HasMany
     {
         return $this->hasMany(Mesure::class);
+    }
+    public function supplies(): HasMany
+    {
+        return $this->hasMany(Supply::class);
     }
 }

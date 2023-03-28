@@ -23,6 +23,7 @@ return new class extends Migration
             $table->string('width')->nullable();
             $table->string('pictures')->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

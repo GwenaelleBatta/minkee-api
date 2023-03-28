@@ -9,10 +9,16 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Supply extends Model
 {
+    protected $with = ['type'];
+
     use HasFactory, SoftDeletes;
 
     public function type(): BelongsTo
     {
         return $this->belongsTo(TypeSupply::class);
+    }
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class);
     }
 }

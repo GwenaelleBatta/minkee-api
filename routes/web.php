@@ -1,9 +1,15 @@
 <?php
 
+use App\Http\Resources\FabricResource;
 use App\Http\Resources\GlossaryResource;
+use App\Http\Resources\GradationResource;
+use App\Http\Resources\ThreadResource;
 use App\Http\Resources\TypeSupplyResource;
 use App\Http\Resources\UserResource;
+use App\Models\Fabric;
 use App\Models\Glossary;
+use App\Models\Gradation;
+use App\Models\Thread;
 use App\Models\TypeSupply;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
@@ -22,12 +28,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/types', function () {
-    return TypeSupplyResource::collection(TypeSupply::all());
-});
-Route::get('/glossaries', function () {
-    return GlossaryResource::collection(Glossary::all());
-});
-Route::get('/users', function () {
-    return UserResource::collection(User::all());
-});
+
+

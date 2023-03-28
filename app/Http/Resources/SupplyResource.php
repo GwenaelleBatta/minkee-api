@@ -2,12 +2,11 @@
 
 namespace App\Http\Resources;
 
-use App\Models\Mesure;
-use App\Models\Supply;
+use App\Models\TypeSupply;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class UserResource extends JsonResource
+class SupplyResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -20,12 +19,15 @@ class UserResource extends JsonResource
             'id' => $this->id,
             'name' => $this->name,
             'slug' => $this->slug,
-            'avatar' => $this->avatar,
-            'description' => $this->description,
-            'email' => $this->email,
-            'supplies'=> Supply::where('user_id',$this->id)->get(),
-            'mesures'=> Mesure::where('user_id',$this->id)->get(),
-            'password' => $this->password,
+            'color' => $this->color,
+            'quantity' => $this->quantity,
+            'number' => $this->number,
+            'tint' => $this->tint,
+            'pictures' => $this->pictures,
+            'width' => $this->width,
+            'category' => $this->category,
+            //'typesupply_id' => $this->typesupply_id,
+            'typesupply_id' => TypeSupply::where('typesupply_id', $this->typesupply_id)->get(),
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
         ];

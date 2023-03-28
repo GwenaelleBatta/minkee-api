@@ -5,7 +5,7 @@
     "base": 40,
     "cut": null,
     "gender": "femme",
-    "image": [
+    "images": [
         "https://picsum.photos/154/172",
         "https://picsum.photos/154/172",
         "https://picsum.photos/154/172",
@@ -20,14 +20,13 @@
         "pardessus",
         "vestes"
     ],
-    "steps": null,
     "supplies": [
         "2m de tissus (coton)",
         "2m de tissus (élasthane)",
         "2m de thermocollant",
         "23m de biais tous textiles",
         "Fil de couture",
-        "Fil de surjeteuse",
+        "Fil de surjeteuse"
     ],
     "created_at": null,
     "updated_at": null,

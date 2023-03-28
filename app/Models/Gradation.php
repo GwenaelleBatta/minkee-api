@@ -9,4 +9,18 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Gradation extends Model
 {
     use HasFactory, SoftDeletes;
+
+    protected $fillable = [
+        'id',
+        'name',
+        'slug',
+        'base',
+        'min',
+        'max',
+        'number',
+        'image',
+        'variation-cm',
+        'variation'
+
+    ];
 }

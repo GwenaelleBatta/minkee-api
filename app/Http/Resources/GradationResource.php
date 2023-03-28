@@ -2,12 +2,10 @@
 
 namespace App\Http\Resources;
 
-use App\Models\Mesure;
-use App\Models\Supply;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class UserResource extends JsonResource
+class GradationResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -20,12 +18,13 @@ class UserResource extends JsonResource
             'id' => $this->id,
             'name' => $this->name,
             'slug' => $this->slug,
-            'avatar' => $this->avatar,
-            'description' => $this->description,
-            'email' => $this->email,
-            'supplies'=> Supply::where('user_id',$this->id)->get(),
-            'mesures'=> Mesure::where('user_id',$this->id)->get(),
-            'password' => $this->password,
+            'base' => $this->base,
+            'min' => $this->min,
+            'max' => $this->max,
+            'number' => $this->number,
+            'image' => $this->image,
+            'variation-cm' => $this->variationCm,
+            'variation' => $this->variation,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
         ];
