@@ -81,7 +81,7 @@
     },
     {
         "id": 9,
-        "name": "Surjeter pièce",
+        "name": "Surjeter",
         "image": null,
         "description": null,
         "check": 0,
@@ -392,6 +392,96 @@
     {
         "id": 38,
         "name": "Recouper valeur couture",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 39,
+        "name": "Ajuster piquer",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 40,
+        "name": "Coulisser",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 41,
+        "name": "Retourner",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 42,
+        "name": "Repasser",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 43,
+        "name": "Positionner",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 44,
+        "name": "Marquer",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 45,
+        "name": "Contrôler",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 46,
+        "name": "Fermer ouverture provisoirement",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 47,
+        "name": "Refouler",
         "image": null,
         "description": null,
         "check": 0,

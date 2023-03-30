@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('slug');
-            $table->integer('base');
+            $table->string('base');
             $table->string('cut')->nullable();
             $table->string('gender');
             $table->json('images')->nullable();

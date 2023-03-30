@@ -50,6 +50,9 @@ Route::get('/fabrics', function () {
 Route::get('/gradations', function () {
     return GradationResource::collection(Gradation::all());
 });
+Route::get('/supplies', function () {
+    return \App\Http\Resources\SupplyResource::collection(\App\Models\Supply::all());
+});
 
 //Route::group(['as' => 'api.'], function() {
 //    Orion::resource('type', [TypeSupplyController::class, 'index'])->withSoftDeletes();

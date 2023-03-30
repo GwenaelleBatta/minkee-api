@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('plan_step', function (Blueprint $table) {
             $table->id();
             $table->integer('order');
-            $table->string('precision');
+            $table->string('precision')->nullable();
             $table->timestamps();
         });
     }

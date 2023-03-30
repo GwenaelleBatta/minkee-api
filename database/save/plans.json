@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Imperméable",
-    "base": 40,
+    "base": "40",
     "cut": null,
     "gender": "femme",
     "images": [
@@ -27,6 +27,65 @@
         "23m de biais tous textiles",
         "Fil de couture",
         "Fil de surjeteuse"
+    ],
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null,
+    "level_id": 2,
+    "user_id": 1
+  },
+    {
+    "id": 2,
+    "name": "Poche plaquée",
+    "base": "TU",
+    "cut": null,
+    "gender": "",
+    "images": [
+        "https://picsum.photos/154/172",
+        "https://picsum.photos/154/172",
+        "https://picsum.photos/154/172",
+        "https://picsum.photos/154/172"
+    ],
+    "price": "5",
+    "type": "poche",
+    "keywords": [
+        "poche",
+        "chemise",
+        "plaquée",
+        "poche plaquée"
+    ],
+    "supplies": [
+        "Chute de tissus",
+        "Fil de couture"
+    ],
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null,
+    "level_id": 1,
+    "user_id": 1
+  },
+    {
+    "id": 3,
+    "name": "Poche plaquée",
+    "base": "TU",
+    "cut": null,
+    "gender": "",
+    "images": [
+        "https://picsum.photos/154/172",
+        "https://picsum.photos/154/172",
+        "https://picsum.photos/154/172",
+        "https://picsum.photos/154/172"
+    ],
+    "price": "5",
+    "type": "poche",
+    "keywords": [
+        "poche",
+        "incrustée",
+        "poche incrustée"
+    ],
+    "supplies": [
+        "Chute de tissus",
+        "Fil de couture"
     ],
     "created_at": null,
     "updated_at": null,
