@@ -17,9 +17,7 @@ class Gradation extends Model
         'base',
         'min',
         'max',
-        'number',
         'image',
-        'variation-cm',
         'variation'
 
     ];

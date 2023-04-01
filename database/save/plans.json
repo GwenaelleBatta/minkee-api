@@ -92,5 +92,39 @@
     "deleted_at": null,
     "level_id": 2,
     "user_id": 1
+  },
+    {
+    "id": 4,
+    "name": "Jupe Cercle",
+    "base": "40",
+    "cut": null,
+    "gender": "femme",
+    "images": [
+        "https://picsum.photos/154/172",
+        "https://picsum.photos/154/172",
+        "https://picsum.photos/154/172",
+        "https://picsum.photos/154/172"
+    ],
+    "price": "25",
+    "type": "jupe",
+    "keywords": [
+        "jupe",
+        "été",
+        "cercle",
+        "élatique",
+        "jupe élastique",
+        "jupe cercle"
+    ],
+    "supplies": [
+        "1m50 de tissus (au choix)",
+        "1m de bande élastique large",
+        "Fil de couture",
+        "Fil de surjeteuse"
+    ],
+    "created_at": null,
+    "updated_at": null,
+    "deleted_at": null,
+    "level_id": 1,
+    "user_id": 2
   }
 ]

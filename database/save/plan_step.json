@@ -311,7 +311,7 @@
     "precision": null,
     "created_at": null,
     "updated_at": null,
-    "plan_id": 1,
+    "plan_id": 3,
     "step_id": 46
   },
   {
@@ -320,7 +320,7 @@
     "precision": null,
     "created_at": null,
     "updated_at": null,
-    "plan_id": 1,
+    "plan_id": 3,
     "step_id": 4
   },{
     "id": 39,
@@ -328,7 +328,7 @@
     "precision": "sac de poche sur visage de poche",
     "created_at": null,
     "updated_at": null,
-    "plan_id": 1,
+    "plan_id": 3,
     "step_id": 41
   },
   {
@@ -337,7 +337,7 @@
     "precision": "les triangles",
     "created_at": null,
     "updated_at": null,
-    "plan_id": 1,
+    "plan_id": 3,
     "step_id": 41
   },{
     "id": 41,
@@ -345,7 +345,7 @@
     "precision": "le devant",
     "created_at": null,
     "updated_at": null,
-    "plan_id": 1,
+    "plan_id": 3,
     "step_id": 49
   },
   {
@@ -354,7 +354,7 @@
     "precision": null,
     "created_at": null,
     "updated_at": null,
-    "plan_id": 1,
+    "plan_id": 3,
     "step_id": 48
   },{
     "id": 43,
@@ -362,7 +362,7 @@
     "precision": null,
     "created_at": null,
     "updated_at": null,
-    "plan_id": 1,
+    "plan_id": 3,
     "step_id": 36
   },
   {
@@ -371,7 +371,79 @@
     "precision": null,
     "created_at": null,
     "updated_at": null,
-    "plan_id": 1,
+    "plan_id": 3,
+    "step_id": 7
+  },
+  {
+    "id": 45,
+    "order": 1,
+    "precision": null,
+    "created_at": null,
+    "updated_at": null,
+    "plan_id": 4,
+    "step_id": 3
+  },
+  {
+    "id": 46,
+    "order": 2,
+    "precision": null,
+    "created_at": null,
+    "updated_at": null,
+    "plan_id": 4,
+    "step_id": 2
+  },
+  {
+    "id": 47,
+    "order": 3,
+    "precision": "ourlet du bas",
+    "created_at": null,
+    "updated_at": null,
+    "plan_id": 4,
+    "step_id": 9
+  },
+  {
+    "id": 48,
+    "order": 4,
+    "precision": "du bas",
+    "created_at": null,
+    "updated_at": null,
+    "plan_id": 4,
+    "step_id": 13
+  },
+  {
+    "id": 49,
+    "order": 5,
+    "precision": "élastique sur vêtement",
+    "created_at": null,
+    "updated_at": null,
+    "plan_id": 4,
+    "step_id": 23
+  },
+  {
+    "id": 50,
+    "order": 6,
+    "precision": "élastique sur vêtement",
+    "created_at": null,
+    "updated_at": null,
+    "plan_id": 4,
+    "step_id": 41
+  },
+  {
+    "id": 51,
+    "order": 7,
+    "precision": "couture taille",
+    "created_at": null,
+    "updated_at": null,
+    "plan_id": 4,
+    "step_id": 8
+  },
+  {
+    "id": 51,
+    "order": 8,
+    "precision": null,
+    "created_at": null,
+    "updated_at": null,
+    "plan_id": 4,
     "step_id": 7
   }
 ]

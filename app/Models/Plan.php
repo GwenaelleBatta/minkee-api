@@ -26,4 +26,8 @@ class Plan extends Model
     {
         return $this->belongsToMany(Steps::class);
     }
+    public function favorite(): BelongsToMany
+    {
+        return $this->belongsToMany(User::class, 'favorite', 'plan_id', 'user_id');
+    }
 }

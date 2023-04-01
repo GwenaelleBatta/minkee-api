@@ -14,6 +14,7 @@ class DatabaseSeeder extends Seeder
 
         $this->call(LevelSeeder::class);
         $this->call(GlossarySeeder::class);
+        $this->call(GradationSeeder::class);
         $this->call(ThreadSeeder::class);
         $this->call(UserSeeder::class);
         $this->call(MesureSeeder::class);

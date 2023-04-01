@@ -27,7 +27,7 @@ class SupplyResource extends JsonResource
             'width' => $this->width,
             'category' => $this->category,
             'typesupply_id' => $this->typesupply_id,
-            'type' => TypeSupply::where('id', $this->typesupply_id)->get(),
+            'type' => $this->type,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
         ];

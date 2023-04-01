@@ -15,7 +15,7 @@ class Supply extends Model
 
     public function type(): BelongsTo
     {
-        return $this->belongsTo(TypeSupply::class);
+        return $this->belongsTo(TypeSupply::class, 'typesupply_id');
     }
     public function user(): BelongsTo
     {

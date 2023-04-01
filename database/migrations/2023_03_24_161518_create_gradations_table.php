@@ -13,14 +13,12 @@ return new class extends Migration
     {
         Schema::create('gradations', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('slug');
             $table->integer('base');
             $table->integer('min');
             $table->integer('max');
-            $table->string('number');
-            $table->string('name');
-            $table->string('slug');
-            $table->string('image');
-            $table->json('variation-cm');
+            $table->string('image')->nullable();
             $table->json('variation');
             $table->timestamps();
             $table->softDeletes();
