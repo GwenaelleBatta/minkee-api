@@ -1,0 +1,231 @@
+[
+    {
+        "id": 1,
+        "name": "Manche de base",
+        "base": 40,
+        "min": 36,
+        "max": 46,
+        "image": null,
+        "variation": [
+            {
+                "Bas de manche": "0.25cm"
+            },
+            {
+                "Bas emmanchure": "0.65cm"
+            },
+            {
+                "Haut de manche": "0.5cm"
+            },
+            {
+                "Crans": "0.25cm"
+            }
+        ],
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 2,
+        "name": "Jupe à plis couché",
+        "base": 42,
+        "min": 38,
+        "max": 46,
+        "image": null,
+        "variation": [
+            {
+                "Sous–bras": "1cm"
+            },
+            {
+                "Plis": "0.70cm"
+            }
+        ],
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 3,
+        "name": "Corsage sans pince",
+        "base": 40,
+        "min": 36,
+        "max": 46,
+        "image": null,
+        "variation": [
+            {
+                "Sous–bras": "1cm"
+            },
+            {
+                "Encolure dos": "0.5cm"
+            },
+            {
+                "Emmanchure haut": "0.5cm"
+            },
+            {
+                "Emmanchure bas": "0.6cm"
+            },
+            {
+                "Épaule – Emmanchure": "0.5cm et 0.5cm"
+            },
+            {
+                "Épaule – Encolure": "0.5cm et 0.2cm"
+            },
+            {
+                "Encolure devant": "0.3cm"
+            }
+        ],
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 4,
+        "name": "Corsage sans pince",
+        "base": 46,
+        "min": 46,
+        "max": 52,
+        "image": null,
+        "variation": [
+            {
+                "Sous–bras": "1,5cm"
+            },
+            {
+                "Encolure dos": "0.5cm"
+            },
+            {
+                "Emmanchure haut": "0.75cm"
+            },
+            {
+                "Emmanchure bas": "1.1cm"
+            },
+            {
+                "Épaule – Emmanchure": "0.5cm et 0.5cm"
+            },
+            {
+                "Épaule – Encolure": "0.5cm et 0.2cm"
+            },
+            {
+                "Encolure devant": "0.3cm"
+            }
+        ],
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 5,
+        "name": "Corsage sans pince avec découpe",
+        "base": 46,
+        "min": 46,
+        "max": 52,
+        "image": null,
+        "variation": [
+            {
+                "Col": "0,5cm"
+            },
+            {
+                "Encolure dos": "0.5cm"
+            },
+            {
+                "Emmanchure haut": "0.5cm"
+            },
+            {
+                "Emmanchure bas": "0.6cm"
+            },
+            {
+                "Épaule – Emmanchure": "0.5cm et 0.5cm"
+            },
+            {
+                "Épaule – Encolure": "0.5cm et 0.2cm"
+            },
+            {
+                "Sous–bras": "1cm"
+            },
+            {
+                "Découpe devant": "0.4cm"
+            },
+            {
+                "Découpe dos": "0.4cm"
+            },
+            {
+                "Empiècement – Emmanchure": "0.5cm et 0.3cm"
+            }
+        ],
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 6,
+        "name": "Jupe droite",
+        "base": 42,
+        "min": 38,
+        "max": 46,
+        "image": null,
+        "variation": [
+            {
+                "Sous–bras": "1cm"
+            },
+            {
+                "Pince devant": "0.7cm"
+            },
+            {
+                "Grande pince dos": "0.5cm"
+            },
+            {
+                "Petite pince dos": "0.75cm"
+            }
+        ],
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 7,
+        "name": "Corsage cintré",
+        "base": 40,
+        "min": 36,
+        "max": 46,
+        "image": null,
+        "variation": [
+            {
+                "Sous–bras": "0.8cm"
+            },
+            {
+                "Milieu": "0.2cm"
+            },
+            {
+                "Emmanchure Haut": "0.3cm"
+            },
+            {
+                "Emmanchure Bas": "0.4cm"
+            },
+            {
+                "Épaule – Emmanchure dos": "0.5cm et 0.3cm"
+            },
+            {
+                "Pince épaule dos": "0.5cm"
+            },
+            {
+                "Épaule – Encolure dos": "0.5cm "
+            },
+            {
+                "Encolure dos": "0.5cm et 0.2cm"
+            },
+            {
+                "Pince taille dos": "0.3cm"
+            },
+            {
+                "Épaule – Emmanchure devant": "0.7cm et 0.3"
+            },
+            {
+                "Pince épaule dos": "0.7cm"
+            },
+            {
+                "Encolure devant": "0.5cm et et 0.2cm"
+            }
+        ],
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    }
+]
