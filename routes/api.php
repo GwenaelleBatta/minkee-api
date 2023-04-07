@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\api\GlossaryController;
 use App\Http\Controllers\api\StepsController;
 use App\Http\Controllers\api\TypeSupplyController;
 use App\Http\Resources\FabricResource;
@@ -35,9 +36,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('/types', function () {
     return TypeSupplyResource::collection(TypeSupply::all());
 });
-Route::get('/glossaries', function () {
-    return GlossaryResource::collection(Glossary::all());
-});
+Route::get('/glossaries', [GlossaryController::class, 'index']);
+
 Route::get('/users', function () {
     return UserResource::collection(User::all());
 });

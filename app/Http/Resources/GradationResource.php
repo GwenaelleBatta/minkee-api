@@ -24,7 +24,7 @@ class GradationResource extends JsonResource
             'number' => $this->number,
             'image' => $this->image,
             'variation-cm' => $this->variationCm,
-            'variation' => $this->variation,
+            'variation' => json_decode($this->variation),
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
         ];

@@ -19,8 +19,8 @@ class MesureResource extends JsonResource
             'id' => $this->id,
             'name' => $this->name,
             'slug' => $this->slug,
-            'outline' => $this->outline,
-            'lenght' => $this->lenght,
+            'outline' => json_decode($this->outline),
+            'lenght' => json_decode($this->lenght),
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
         ];

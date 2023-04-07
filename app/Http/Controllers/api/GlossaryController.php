@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\GlossaryResource;
+use App\Models\Glossary;
 use Illuminate\Http\Request;
 use Orion\Concerns\DisablePagination;
 
@@ -14,7 +16,7 @@ class GlossaryController extends Controller
      */
     public function index()
     {
-        //
+        return GlossaryResource::collection(Glossary::all());
     }
 
     /**

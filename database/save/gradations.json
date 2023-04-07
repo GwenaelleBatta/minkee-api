@@ -8,16 +8,20 @@
         "image": null,
         "variation": [
             {
-                "Bas de manche": "0.25cm"
+                "endroit": "Bas de manche",
+                "mesure": "0.25cm"
             },
             {
-                "Bas emmanchure": "0.65cm"
+                "endroit": "Bas emmanchure",
+                "mesure": "0.65cm"
             },
             {
-                "Haut de manche": "0.5cm"
+                "endroit": "Haut de manche",
+                "mesure": "0.5cm"
             },
             {
-                "Crans": "0.25cm"
+                "endroit": "Crans",
+                "mesure": "0.25cm"
             }
         ],
         "created_at": null,
@@ -33,10 +37,12 @@
         "image": null,
         "variation": [
             {
-                "Sous–bras": "1cm"
+                "endroit": "Sous–bras",
+                "mesure": "1cm"
             },
             {
-                "Plis": "0.70cm"
+                "endroit": "Plis",
+                "mesure": "0.70cm"
             }
         ],
         "created_at": null,
@@ -52,25 +58,32 @@
         "image": null,
         "variation": [
             {
-                "Sous–bras": "1cm"
+                "endroit": "Sous–bras",
+                "mesure": "1cm"
             },
             {
-                "Encolure dos": "0.5cm"
+                "endroit": "Encolure dos",
+                "mesure": "0.5cm"
             },
             {
-                "Emmanchure haut": "0.5cm"
+                "endroit": "Emmanchure haut",
+                "mesure": "0.5cm"
             },
             {
-                "Emmanchure bas": "0.6cm"
+                "endroit": "Emmanchure bas",
+                "mesure": "0.6cm"
             },
             {
-                "Épaule – Emmanchure": "0.5cm et 0.5cm"
+                "endroit": "Épaule – Emmanchure",
+                "mesure": "0.5cm et 0.5cm"
             },
             {
-                "Épaule – Encolure": "0.5cm et 0.2cm"
+                "endroit": "Épaule – Encolure",
+                "mesure": "0.5cm et 0.2cm"
             },
             {
-                "Encolure devant": "0.3cm"
+                "endroit": "Encolure devant",
+                "mesure": "0.3cm"
             }
         ],
         "created_at": null,
@@ -86,25 +99,32 @@
         "image": null,
         "variation": [
             {
-                "Sous–bras": "1,5cm"
+                "endroit": "Sous–bras",
+                "mesure": "1,5cm"
             },
             {
-                "Encolure dos": "0.5cm"
+                "endroit": "Encolure dos",
+                "mesure": "0.5cm"
             },
             {
-                "Emmanchure haut": "0.75cm"
+                "endroit": "Emmanchure haut",
+                "mesure": "0.75cm"
             },
             {
-                "Emmanchure bas": "1.1cm"
+                "endroit": "Emmanchure bas",
+                "mesure": "1.1cm"
             },
             {
-                "Épaule – Emmanchure": "0.5cm et 0.5cm"
+                "endroit": "Épaule – Emmanchure",
+                "mesure": "0.5cm et 0.5cm"
             },
             {
-                "Épaule – Encolure": "0.5cm et 0.2cm"
+                "endroit": "Épaule – Encolure",
+                "mesure": "0.5cm et 0.2cm"
             },
             {
-                "Encolure devant": "0.3cm"
+                "endroit": "Encolure devant",
+                "mesure": "0.3cm"
             }
         ],
         "created_at": null,
@@ -120,34 +140,44 @@
         "image": null,
         "variation": [
             {
-                "Col": "0,5cm"
+                "endroit": "Col",
+                "mesure": "0,5cm"
             },
             {
-                "Encolure dos": "0.5cm"
+                "endroit": "Encolure dos",
+                "mesure": "0.5cm"
             },
             {
-                "Emmanchure haut": "0.5cm"
+                "endroit": "Emmanchure haut",
+                "mesure": "0.5cm"
             },
             {
-                "Emmanchure bas": "0.6cm"
+                "endroit": "Emmanchure bas",
+                "mesure": "0.6cm"
             },
             {
-                "Épaule – Emmanchure": "0.5cm et 0.5cm"
+                "endroit": "Épaule – Emmanchure",
+                "mesure": "0.5cm et 0.5cm"
             },
             {
-                "Épaule – Encolure": "0.5cm et 0.2cm"
+                "endroit": "Épaule – Encolure",
+                "mesure": "0.5cm et 0.2cm"
             },
             {
-                "Sous–bras": "1cm"
+                "endroit": "Sous–bras",
+                "mesure": "1cm"
             },
             {
-                "Découpe devant": "0.4cm"
+                "endroit": "Découpe devant",
+                "mesure": "0.4cm"
             },
             {
-                "Découpe dos": "0.4cm"
+                "endroit": "Découpe dos",
+                "mesure": "0.4cm"
             },
             {
-                "Empiècement – Emmanchure": "0.5cm et 0.3cm"
+                "endroit": "Empiècement – Emmanchure",
+                "mesure": "0.5cm et 0.3cm"
             }
         ],
         "created_at": null,
@@ -163,16 +193,20 @@
         "image": null,
         "variation": [
             {
-                "Sous–bras": "1cm"
+                "endroit": "Sous–bras",
+                "mesure": "1cm"
             },
             {
-                "Pince devant": "0.7cm"
+                "endroit": "Pince devant",
+                "mesure": "0.7cm"
             },
             {
-                "Grande pince dos": "0.5cm"
+                "endroit": "Grande pince dos",
+                "mesure": "0.5cm"
             },
             {
-                "Petite pince dos": "0.75cm"
+                "endroit": "Petite pince dos",
+                "mesure": "0.75cm"
             }
         ],
         "created_at": null,
@@ -188,40 +222,52 @@
         "image": null,
         "variation": [
             {
-                "Sous–bras": "0.8cm"
+                "endroit": "Sous–bras",
+                "mesure": "0.8cm"
             },
             {
-                "Milieu": "0.2cm"
+                "endroit": "Milieu",
+                "mesure": "0.2cm"
             },
             {
-                "Emmanchure Haut": "0.3cm"
+                "endroit": "Emmanchure Haut",
+                "mesure": "0.3cm"
             },
             {
-                "Emmanchure Bas": "0.4cm"
+                "endroit": "Emmanchure Bas",
+                "mesure": "0.4cm"
             },
             {
-                "Épaule – Emmanchure dos": "0.5cm et 0.3cm"
+                "endroit": "Épaule – Emmanchure dos",
+                "mesure": "0.5cm et 0.3cm"
             },
             {
-                "Pince épaule dos": "0.5cm"
+                "endroit": "Pince épaule dos",
+                "mesure": "0.5cm"
             },
             {
-                "Épaule – Encolure dos": "0.5cm "
+                "endroit": "Épaule – Encolure dos",
+                "mesure": "0.5cm "
             },
             {
-                "Encolure dos": "0.5cm et 0.2cm"
+                "endroit": "Encolure dos",
+                "mesure": "0.5cm et 0.2cm"
             },
             {
-                "Pince taille dos": "0.3cm"
+                "endroit": "Pince taille dos",
+                "mesure": "0.3cm"
             },
             {
-                "Épaule – Emmanchure devant": "0.7cm et 0.3"
+                "endroit": "Épaule – Emmanchure devant",
+                "mesure": "0.7cm et 0.3"
             },
             {
-                "Pince épaule dos": "0.7cm"
+                "endroit": "Pince épaule dos",
+                "mesure": "0.7cm"
             },
             {
-                "Encolure devant": "0.5cm et et 0.2cm"
+                "endroit": "Encolure devant",
+                "mesure": "0.5cm et et 0.2cm"
             }
         ],
         "created_at": null,
