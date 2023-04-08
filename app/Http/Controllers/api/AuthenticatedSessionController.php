@@ -31,7 +31,7 @@ class AuthenticatedSessionController extends Controller
         }
     }
 
-    public function logout(LoginRequest $request)
+    public function logout()
     {
         Auth::logout();
         return response()->json([

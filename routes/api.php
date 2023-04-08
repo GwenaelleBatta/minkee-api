@@ -37,9 +37,14 @@ Route::get('/types', [TypeSupplyController::class, 'index']);
 Route::get('/glossaries', [GlossaryController::class, 'index']);
 
 Route::get('/{user:slug}/mesures', [MesureController::class, 'index']);
+Route::post('/{user:slug}/mesures/create', [MesureController::class, 'store']);
+Route::post('/{user:slug}/mesures/update/{mesure:id}', [MesureController::class, 'update']);
 Route::delete('/{user:slug}/mesures/destroy/{mesure:id}', [MesureController::class, 'destroy']);
 
 Route::get('/{user:slug}/supplies', [SupplyController::class, 'index']);
+Route::post('/{user:slug}/supplies/create', [SupplyController::class, 'store']);
+Route::post('/{user:slug}/supplies/update/{supply:id}', [SupplyController::class, 'update']);
+Route::get('/{user:slug}/supplies/{typesupply:id}', [SupplyController::class, 'show']);
 Route::delete('/{user:slug}/supplies/destroy/{supply:id}', [SupplyController::class, 'destroy']);
 
 Route::get('/plans', [PlanController::class, 'indexGlobal']);
@@ -57,7 +62,7 @@ Route::get('/fabrics', [FabricController::class, 'index']);
 
 Route::get('/gradations', [GradationController::class, 'index']);
 Route::get('/supplies', function () {
-    return \App\Http\Resources\SupplyResource::collection(\App\Models\Supply::all());
+
 });
 
 //Route::group(['as' => 'api.'], function() {

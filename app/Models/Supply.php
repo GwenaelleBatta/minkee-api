@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Supply extends Model
 {
+    protected $fillable = ['id', 'name', 'color', 'slug', 'pictures', 'quantity', 'number', 'tint', 'category', 'width', 'user_id', 'typesupply_id'];
     protected $with = ['type'];
 
     use HasFactory, SoftDeletes;
