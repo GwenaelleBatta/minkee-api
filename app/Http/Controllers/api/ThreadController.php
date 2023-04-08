@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\ThreadResource;
+use App\Models\Thread;
 use Illuminate\Http\Request;
 
 class ThreadController extends Controller
@@ -12,7 +14,7 @@ class ThreadController extends Controller
      */
     public function index()
     {
-        //
+        return ThreadResource::collection(Thread::all());
     }
 
     /**

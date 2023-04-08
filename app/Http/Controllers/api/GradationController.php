@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\GradationResource;
+use App\Models\Gradation;
 use Illuminate\Http\Request;
 
 class GradationController extends Controller
@@ -12,7 +14,7 @@ class GradationController extends Controller
      */
     public function index()
     {
-        //
+        return GradationResource::collection(Gradation::all());
     }
 
     /**

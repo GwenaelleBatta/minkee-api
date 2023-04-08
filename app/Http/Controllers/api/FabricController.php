@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\FabricResource;
+use App\Models\Fabric;
 use Illuminate\Http\Request;
 
 class FabricController extends Controller
@@ -12,7 +14,7 @@ class FabricController extends Controller
      */
     public function index()
     {
-        //
+        return FabricResource::collection(Fabric::all());
     }
 
     /**

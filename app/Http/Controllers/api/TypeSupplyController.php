@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\TypeSupplyResource;
 use App\Models\TypeSupply;
 use Illuminate\Http\Request;
 use Orion\Concerns\DisablePagination;
@@ -17,8 +18,7 @@ class TypeSupplyController extends Controller
      */
     public function index()
     {
-        $types = TypeSupply::all();
-        return $types;
+        return TypeSupplyResource::collection(TypeSupply::all());
     }
 
     /**
