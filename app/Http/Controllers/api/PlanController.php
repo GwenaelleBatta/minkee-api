@@ -3,11 +3,16 @@
 namespace App\Http\Controllers\api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\FavoriteRequest;
 use App\Http\Requests\PlanRequest;
+use App\Http\Requests\TutoUserRequest;
 use App\Http\Resources\PlanResource;
+use App\Models\Mesure;
 use App\Models\Plan;
+use App\Models\TutoTranslation;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 
 class PlanController extends Controller
@@ -25,25 +30,34 @@ class PlanController extends Controller
         return PlanResource::collection(Plan::where('user_id', $user->id)->get());
     }
 
-
     /**
      * Store a newly created resource in storage.
      */
-    public function store(PlanRequest $request)
+    public function store(User $user, PlanRequest $request)
     {
+        if (!$user) {
+            return response()->json([
+                'message' => 'Utilisateur introuvable',
+            ], 404);
+        }
+
         $validatedData = $request->safe()->all();
-        $validatedData['user_id'] = auth()->id();
+        $validatedData['user_id'] = $user->id;
         $validatedData['supplies'] = json_encode($validatedData['supplies']);
-        $validatedData['keywords'] = json_encode($validatedData['keywords']);
+        if ($validatedData['keywords'] !== null) {
+            $validatedData['keywords'] = json_encode($validatedData['keywords']);
+        }
+        if ($validatedData['images'] !== null){
         $validatedData['images'] = json_encode($validatedData['images']);
-        $user = User::find($validatedData['user_id']);
+        }
         $validatedData['slug'] = Str::slug($validatedData['name'].$user->slug);
         $plan = Plan::create($validatedData);
 
         return response()->json([
-            'message' => 'Plan create successful',
-            'plan' => $plan
+            'message' => 'Plan créé avec succès',
+            'mesure' => $plan
         ]);
+
     }
 
     /**
@@ -75,8 +89,6 @@ class PlanController extends Controller
      */
     public function destroy($id)
     {
-
-
         $plan = Plan::find($id);
         if (!$plan) {
             return response()->json([
@@ -87,5 +99,24 @@ class PlanController extends Controller
         return response()->json([
             'message' => 'Plan effacé avec succès',
         ]);
+    }
+
+    public function favorite(User $user, $id,FavoriteRequest $request)
+    {
+        $validatedData = $request->safe()->all();
+        $validatedData['plan_id'] = $id;
+        $validatedData['user_id'] = $user->id;
+        if (DB::table('favorite')->where('plan_id', $id)->where('user_id', $user->id)->count() > 0) {
+            DB::table('favorite')->where('plan_id', $id)->where('user_id', $user->id)->delete();
+        } else {
+            DB::table('favorite')->insert([
+                "plan_id" => $validatedData['plan_id'],
+                "user_id" => $validatedData['user_id']
+            ]);
+        }
+        return response()->json([
+            'message' => 'Plan mis en favoris',
+        ]);
+
     }
 }

@@ -10,6 +10,7 @@ use App\Http\Controllers\api\RegisterSessionController;
 use App\Http\Controllers\api\SupplyController;
 use App\Http\Controllers\api\ThreadController;
 use App\Http\Controllers\api\TypeSupplyController;
+use App\Http\Controllers\api\UserController;
 use App\Http\Resources\UserResource;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -29,9 +30,12 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-Route::post('/login', [AuthenticatedSessionController::class, 'store'])->middleware(['guest', 'api']);
-Route::post('/register', [RegisterSessionController::class, 'store'])->middleware('guest');
-Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->middleware('auth');
+Route::post('/login', [AuthenticatedSessionController::class, 'store'])->name('login')->middleware(['guest', 'api']);
+Route::post('/register', [RegisterSessionController::class, 'store'])->name('register')->middleware('guest');
+Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout')->middleware('auth');
+Route::post('/user/{user:id}', [UserController::class, 'show']);
+Route::post('/user/update/{user:id}', [UserController::class, 'update']);
+Route::get('/user/{user:id}/favorite', [UserController::class, 'indexFavorite']);
 
 Route::get('/types', [TypeSupplyController::class, 'index']);
 Route::get('/glossaries', [GlossaryController::class, 'index']);
@@ -49,9 +53,10 @@ Route::delete('/{user:slug}/supplies/destroy/{supply:id}', [SupplyController::cl
 
 Route::get('/plans', [PlanController::class, 'indexGlobal']);
 Route::get('/{user:slug}/plans', [PlanController::class, 'index']);
-Route::post('/plans/create', [PlanController::class, 'store']);
-Route::post('/plans/update/{plan:id}', [PlanController::class, 'update']);
-Route::delete('/plans/destroy/{plan:id}', [PlanController::class, 'destroy']);
+Route::post('/{user:slug}/plans/create', [PlanController::class, 'store']);
+Route::post('/{user:slug}/plans/favorite/{plan:id}', [PlanController::class, 'favorite']);
+Route::post('/{user:slug}/plans/update/{plan:id}', [PlanController::class, 'update']);
+Route::delete('/{user:slug}/plans/destroy/{plan:id}', [PlanController::class, 'destroy']);
 
 Route::get('/users', function () {
     return UserResource::collection(User::all());

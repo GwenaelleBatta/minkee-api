@@ -6,7 +6,9 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\SupplyRequest;
 use App\Http\Requests\UpdateSupplyRequest;
 use App\Http\Resources\SupplyResource;
+use App\Http\Resources\TypeSupplyResource;
 use App\Models\Supply;
+use App\Models\TypeSupply;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
@@ -16,11 +18,15 @@ class SupplyController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(User $user)
     {
-        return SupplyResource::collection(Supply::all());
+        $supplies = SupplyResource::collection(Supply::where('user_id', $user->id)->get());
+        $ids = [];
+        foreach ($supplies as $s) {
+            $ids [] = $s->typesupply_id;
+        }
+        return TypeSupplyResource::collection(TypeSupply::whereIn('id', $ids)->get());
     }
-
 
     /**
      * Store a newly created resource in storage.

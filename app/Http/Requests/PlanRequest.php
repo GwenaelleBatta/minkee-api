@@ -33,7 +33,7 @@ class PlanRequest extends FormRequest
             'images' => 'nullable',
             'cut' => 'nullable',
             'keywords' => 'nullable',
-
+            'level_id'=>'required'
         ];
     }
 }

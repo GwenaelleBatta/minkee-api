@@ -15,7 +15,7 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable, SoftDeletes                                                                    ;
 
-    protected $with = ['supplies', 'mesures', 'plans'];
+    protected $with = ['supplies', 'mesures', 'plans', 'favorites'];
     /**
      * The attributes that are mass assignable.
      *
