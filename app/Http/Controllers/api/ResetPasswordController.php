@@ -2,20 +2,16 @@
 
 namespace App\Http\Controllers\api;
 
+use App\Http\Controllers\Controller;
 use App\Http\Requests\ForgotPasswordRequest;
 use App\Http\Requests\ResetPasswordRequest;
 use Illuminate\Auth\Events\PasswordReset;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Password;
-use Str;
+use Illuminate\Support\Str;
 
 class ResetPasswordController extends Controller
 {
-
-    public function create()
-    {
-        return view('user.forgot_password');
-    }
-
 
     public function store(string $locale = null, ForgotPasswordRequest $request)
     {
@@ -28,11 +24,6 @@ class ResetPasswordController extends Controller
         return $status === Password::RESET_LINK_SENT
             ? back()->with(['status' => __($status)])
             : back()->withErrors(['email' => __($status)]);
-    }
-
-    public function edit(string $locale, $token)
-    {
-        return view('user.reset_password', ['token' => $token]);
     }
 
     public function update(string $locale, ResetPasswordRequest $request)
@@ -48,7 +39,7 @@ class ResetPasswordController extends Controller
                 $user->save();
                 event(new PasswordReset($user));
 
-                \Auth::login($user);
+                Auth::login($user);
             }
         );
 

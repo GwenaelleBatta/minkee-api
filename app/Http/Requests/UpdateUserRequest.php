@@ -23,6 +23,7 @@ UpdateUserRequest extends FormRequest
      *
      * @return array<string, mixed>
      */
+
     public function rules()
     {
         return [
