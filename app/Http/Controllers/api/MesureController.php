@@ -3,6 +3,9 @@
 namespace App\Http\Controllers\api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\MesureResource;
+use App\Models\Mesure;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class MesureController extends Controller
@@ -10,9 +13,9 @@ class MesureController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(User $user)
     {
-        //
+        return MesureResource::collection(Mesure::where('user_id', $user->id)->get());
     }
 
     /**
@@ -60,6 +63,15 @@ class MesureController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $mesure = Mesure::find($id);
+        if (!$mesure) {
+            return response()->json([
+                'message' => 'Mesure introuvable',
+            ], 404);
+        }
+        $mesure->delete();
+        return response()->json([
+            'message' => 'Mesure effacée avec succès',
+        ]);
     }
 }

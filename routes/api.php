@@ -4,7 +4,10 @@ use App\Http\Controllers\api\AuthenticatedSessionController;
 use App\Http\Controllers\api\FabricController;
 use App\Http\Controllers\api\GlossaryController;
 use App\Http\Controllers\api\GradationController;
+use App\Http\Controllers\api\MesureController;
+use App\Http\Controllers\api\PlanController;
 use App\Http\Controllers\api\RegisterSessionController;
+use App\Http\Controllers\api\SupplyController;
 use App\Http\Controllers\api\ThreadController;
 use App\Http\Controllers\api\TypeSupplyController;
 use App\Http\Resources\UserResource;
@@ -26,15 +29,28 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+Route::post('/login', [AuthenticatedSessionController::class, 'store'])->middleware(['guest', 'api']);
+Route::post('/register', [RegisterSessionController::class, 'store'])->middleware('guest');
+Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->middleware('auth');
+
 Route::get('/types', [TypeSupplyController::class, 'index']);
 Route::get('/glossaries', [GlossaryController::class, 'index']);
+
+Route::get('/{user:slug}/mesures', [MesureController::class, 'index']);
+Route::delete('/{user:slug}/mesures/destroy/{mesure:id}', [MesureController::class, 'destroy']);
+
+Route::get('/{user:slug}/supplies', [SupplyController::class, 'index']);
+Route::delete('/{user:slug}/supplies/destroy/{supply:id}', [SupplyController::class, 'destroy']);
+
+Route::get('/plans', [PlanController::class, 'indexGlobal']);
+Route::get('/{user:slug}/plans', [PlanController::class, 'index']);
+Route::post('/plans/create', [PlanController::class, 'store']);
+Route::post('/plans/update/{plan:id}', [PlanController::class, 'update']);
+Route::delete('/plans/destroy/{plan:id}', [PlanController::class, 'destroy']);
 
 Route::get('/users', function () {
     return UserResource::collection(User::all());
 });
-Route::post('/login', [AuthenticatedSessionController::class, 'store'])->middleware(['guest', 'api']);
-Route::post('/register', [RegisterSessionController::class, 'store'])->middleware('guest');
-Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->middleware('auth');
 
 Route::get('/threads', [ThreadController::class, 'index']);
 Route::get('/fabrics', [FabricController::class, 'index']);

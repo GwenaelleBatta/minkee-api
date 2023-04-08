@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('price');
             $table->string('type');
             $table->json('keywords')->nullable();
-            $table->json('supplies')->nullable();
+            $table->json('supplies');
             $table->timestamps();
             $table->softDeletes();
         });

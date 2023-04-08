@@ -15,7 +15,7 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable, SoftDeletes                                                                    ;
 
-    protected $with = ['supplies', 'mesures'];
+    protected $with = ['supplies', 'mesures', 'plans'];
     /**
      * The attributes that are mass assignable.
      *
@@ -56,6 +56,10 @@ class User extends Authenticatable
     public function supplies(): HasMany
     {
         return $this->hasMany(Supply::class);
+    }
+    public function plans(): HasMany
+    {
+        return $this->hasMany(Plan::class);
     }
     public function favorites(): BelongsToMany
     {

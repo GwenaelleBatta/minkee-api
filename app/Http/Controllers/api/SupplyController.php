@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\api;
 
 use App\Http\Controllers\Controller;
+use App\Models\Supply;
 use Illuminate\Http\Request;
 
 class SupplyController extends Controller
@@ -60,6 +61,15 @@ class SupplyController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $supply = Supply::find($id);
+        if (!$supply) {
+            return response()->json([
+                'message' => 'Fourniture introuvable',
+            ], 404);
+        }
+        $supply->delete();
+        return response()->json([
+            'message' => 'Fourniture effacée avec succès',
+        ]);
     }
 }
