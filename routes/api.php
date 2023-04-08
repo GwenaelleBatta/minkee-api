@@ -7,6 +7,7 @@ use App\Http\Controllers\api\GradationController;
 use App\Http\Controllers\api\MesureController;
 use App\Http\Controllers\api\PlanController;
 use App\Http\Controllers\api\RegisterSessionController;
+use App\Http\Controllers\api\ResetPasswordController;
 use App\Http\Controllers\api\SupplyController;
 use App\Http\Controllers\api\ThreadController;
 use App\Http\Controllers\api\TypeSupplyController;
@@ -34,6 +35,8 @@ Route::post('/login', [AuthenticatedSessionController::class, 'store'])->name('l
 Route::post('/register', [RegisterSessionController::class, 'store'])->name('register')->middleware('guest');
 Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout')->middleware('auth');
 Route::post('/user/{user:id}', [UserController::class, 'show']);
+Route::post('/user/password', [ResetPasswordController::class, 'store'])->middleware('guest');
+Route::post('/user/reset-password', [ResetPasswordController::class, 'update'])->middleware('guest')->name('password.reset');
 Route::post('/user/update/{user:id}', [UserController::class, 'update']);
 Route::get('/user/{user:id}/favorite', [UserController::class, 'indexFavorite']);
 

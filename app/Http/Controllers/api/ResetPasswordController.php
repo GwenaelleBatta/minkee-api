@@ -13,27 +13,30 @@ use Illuminate\Support\Str;
 class ResetPasswordController extends Controller
 {
 
-    public function store(string $locale = null, ForgotPasswordRequest $request)
+    public function store(ForgotPasswordRequest $request)
     {
         $request->validated();
 
         $status = Password::sendResetLink(
             $request->only('email')
         );
-
         return $status === Password::RESET_LINK_SENT
-            ? back()->with(['status' => __($status)])
-            : back()->withErrors(['email' => __($status)]);
+            ? response()->json([
+                'message' => 'Mot de passe réinitialiser',
+            ])
+            : response()->json([
+                'message' => $status,
+            ]);
     }
 
-    public function update(string $locale, ResetPasswordRequest $request)
+    public function update(ResetPasswordRequest $request)
     {
         $request->validated();
         $status = Password::reset(
             $request->only('email', 'password', 'token'),
             function ($user, $password) {
                 $user->forceFill([
-                    'password' => password_hash($password,PASSWORD_DEFAULT)
+                    'password' => password_hash($password, PASSWORD_DEFAULT)
                 ])->setRememberToken(Str::random(60));
 
                 $user->save();
@@ -44,8 +47,11 @@ class ResetPasswordController extends Controller
         );
 
         return $status === Password::PASSWORD_RESET
-            ? redirect('/'.$locale)->with('success', __('home.success_reset'). auth()->user()->firstname .' '. auth()->user()->name)
-            : back()->withErrors(['email' => [__($status)]]);
+            ? response()->json([
+                'message' => 'Mot de passe réinitialiser',
+            ]) : response()->json([
+                'message' => $status,
+            ]);
 
     }
 }
