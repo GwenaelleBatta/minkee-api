@@ -22,7 +22,7 @@ class ResetPasswordController extends Controller
         );
         return $status === Password::RESET_LINK_SENT
             ? response()->json([
-                'message' => 'Mot de passe réinitialiser',
+                'message' => 'Un email vous a été envoyé',
             ])
             : response()->json([
                 'message' => $status,
