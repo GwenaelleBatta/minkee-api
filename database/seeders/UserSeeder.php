@@ -26,6 +26,7 @@ class UserSeeder extends Seeder
                 "description" => $value->description,
                 "avatar" => $value->avatar,
                 "email" => $value->email,
+                "connected" => $value->connected?? true,
                 "password" => $value->password,
             ]);
         }

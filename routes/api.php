@@ -6,6 +6,7 @@ use App\Http\Controllers\api\GlossaryController;
 use App\Http\Controllers\api\GradationController;
 use App\Http\Controllers\api\MesureController;
 use App\Http\Controllers\api\PlanController;
+use App\Http\Controllers\api\QuestionController;
 use App\Http\Controllers\api\RegisterSessionController;
 use App\Http\Controllers\api\ResetPasswordController;
 use App\Http\Controllers\api\SupplyController;
@@ -38,10 +39,14 @@ Route::post('/user/{user:id}', [UserController::class, 'show']);
 Route::post('/user/password', [ResetPasswordController::class, 'store'])->middleware('guest');
 Route::post('/user/reset-password', [ResetPasswordController::class, 'update'])->middleware('guest')->name('password.reset');
 Route::post('/user/update/{user:id}', [UserController::class, 'update']);
-Route::get('/user/{user:id}/favorite', [UserController::class, 'indexFavorite']);
+Route::get('/user/favorite/{user:id}/', [UserController::class, 'indexFavorite']);
 
 Route::get('/types', [TypeSupplyController::class, 'index']);
 Route::get('/glossaries', [GlossaryController::class, 'index']);
+Route::get('/questions', [QuestionController::class, 'index']);
+Route::get('/threads', [ThreadController::class, 'index']);
+Route::get('/fabrics', [FabricController::class, 'index']);
+Route::get('/gradations', [GradationController::class, 'index']);
 
 Route::get('/{user:slug}/mesures', [MesureController::class, 'index']);
 Route::post('/{user:slug}/mesures/create', [MesureController::class, 'store']);
@@ -51,11 +56,12 @@ Route::delete('/{user:slug}/mesures/destroy/{mesure:id}', [MesureController::cla
 Route::get('/{user:slug}/supplies', [SupplyController::class, 'index']);
 Route::post('/{user:slug}/supplies/create', [SupplyController::class, 'store']);
 Route::post('/{user:slug}/supplies/update/{supply:id}', [SupplyController::class, 'update']);
-Route::get('/{user:slug}/supplies/{typesupply:id}', [SupplyController::class, 'show']);
+Route::get('/{user:slug}/supplies/type/{typesupply:id}', [SupplyController::class, 'show']);
 Route::delete('/{user:slug}/supplies/destroy/{supply:id}', [SupplyController::class, 'destroy']);
 
 Route::get('/plans', [PlanController::class, 'indexGlobal']);
 Route::get('/{user:slug}/plans', [PlanController::class, 'index']);
+Route::get('/{user:slug}/plans/suggest', [PlanController::class, 'suggest']);
 Route::post('/{user:slug}/plans/create', [PlanController::class, 'store']);
 Route::post('/{user:slug}/plans/favorite/{plan:id}', [PlanController::class, 'favorite']);
 Route::post('/{user:slug}/plans/update/{plan:id}', [PlanController::class, 'update']);
@@ -65,14 +71,5 @@ Route::get('/users', function () {
     return UserResource::collection(User::all());
 });
 
-Route::get('/threads', [ThreadController::class, 'index']);
-Route::get('/fabrics', [FabricController::class, 'index']);
 
-Route::get('/gradations', [GradationController::class, 'index']);
-Route::get('/supplies', function () {
 
-});
-
-//Route::group(['as' => 'api.'], function() {
-//    Orion::resource('type', [TypeSupplyController::class, 'index'])->withSoftDeletes();
-//});

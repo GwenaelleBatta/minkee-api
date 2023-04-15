@@ -14,6 +14,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
+use function Sodium\add;
 
 class PlanController extends Controller
 {
@@ -28,6 +29,23 @@ class PlanController extends Controller
     public function index(User $user)
     {
         return PlanResource::collection(Plan::where('user_id', $user->id)->get());
+    }
+
+    public function suggest(User $user)
+    {
+        if (count($user->favorites) !== 0){
+
+            $types = [];
+            $ids = [];
+            foreach ($user->favorites as $favorite){
+                $types[] = $favorite->type ;
+                $ids[] = $favorite->id ;
+            }
+            return PlanResource::collection(Plan::whereIn('type', $types)->whereNotIn('id', $ids)->take(4)->get());
+        }
+        else{
+            return PlanResource::collection(Plan::inRandomOrder()->take(4)->get());
+        }
     }
 
     /**

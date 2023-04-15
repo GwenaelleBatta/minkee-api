@@ -32,7 +32,7 @@ class SupplyRequest extends FormRequest
             'category'=>"nullable",
             'width'=>"nullable",
             'pictures'=>"nullable",
-            //"typesupply_id" => "required",
+            "typesupply_id" => "required",
         ];
     }
 }

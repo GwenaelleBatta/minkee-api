@@ -1,6 +1,17 @@
 [
+    {
+        "name": "Invité",
+        "avatar": "https://via.placeholder.com/600x400/cccccc/4d4d4d?text=Invité",
+        "description": "Ceci est un compte invité",
+        "email": "invité@mail.com",
+        "email_verified_at": null,
+        "password": "$2y$10$v/CBkgaZGyPEcY5UlCDmJudP8oEYPu.Nl.UXaQH3NAosQiG2Tq1fK",
+        "connected": false,
+        "remember_token": null,
+        "created_at": null,
+        "updated_at": null
+    },
   {
-    "id": 1,
     "name": "SaekoKaneki",
     "avatar": "https://www.pexels.com/fr-fr/photo/mode-femme-art-jeune-fille-12909419/",
     "description": "Je suis une jeune étudiante en Mode et Création. J’adore les vêtements simples mais jolis à la fois.",
@@ -12,7 +23,6 @@
     "updated_at": null
   },
     {
-    "id": 1,
     "name": "Octopussy",
     "avatar": "https://www.pexels.com/fr-fr/photo/mode-femme-art-jeune-fille-12909419/",
     "description": "🪷🌸🐸",

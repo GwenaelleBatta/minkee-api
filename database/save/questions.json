@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "name": "Comment puis-je agrandir mes vêtements ?",
+    "redirect": "gradation",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 2,
+    "name": "Quels tissus utilisés ?",
+    "redirect": "tissus",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 3,
+    "name": "C'est quoi du biais ?",
+    "redirect": "glossary",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 4,
+    "name": "Je souhaite agrandir mon patron de manche",
+    "redirect": "gradation",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 5,
+    "name": "C'est quoi un soufflet ?",
+    "redirect": "glossary",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 7,
+    "name": "Ca ressemble à quoi de la mousseline ?",
+    "redirect": "tissus",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 8,
+    "name": "Comment grader ma jupe ?",
+    "redirect": "gradation",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 9,
+    "name": "Qu'est ce que je peux faire avec un tissus sergé ?",
+    "redirect": "tissus",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 10,
+    "name": "Que veux dire le terme parmenture ?",
+    "redirect": "glossary",
+    "created_at": null,
+    "updated_at": null
+  }
+]

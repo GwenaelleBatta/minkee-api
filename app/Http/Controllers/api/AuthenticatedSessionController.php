@@ -16,12 +16,15 @@ class AuthenticatedSessionController extends Controller
         $validated = $request->validated();
 
         if (Auth::attempt($validated)) {
-            // L'authentification a réussi, retourner une réponse JSON avec un jeton d'accès
             $user = Auth::user();
+            $followed = $user->followed;
+            $follower = $user->followers;
             $token = $user->createToken('API Token')->plainTextToken;
             return response()->json([
                 'message' => 'Authentication successful',
-                'access_token' => $token,
+                'data'=>$user,
+                'email' => $user->email,
+                'token' => $token,
             ]);
         } else {
             // L'authentification a échoué, retourner une réponse JSON avec une erreur

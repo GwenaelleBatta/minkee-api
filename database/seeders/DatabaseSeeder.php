@@ -24,5 +24,8 @@ class DatabaseSeeder extends Seeder
         $this->call(StepsSeeder::class);
         $this->call(PlanSeeder::class);
         $this->call(PlanStepSeeder::class);
+        $this->call(FollowerSeeder::class);
+        $this->call(QuestionSeeder::class);
+
     }
 }

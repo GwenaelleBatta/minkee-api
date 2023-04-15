@@ -23,6 +23,7 @@ class UserFactory extends Factory
             'slug'=> Str::slug($name),
             'avatar' => '',
             'email' => fake()->unique()->safeEmail(),
+            'connected'=> true,
             'email_verified_at' => now(),
             'password' => '$2y$10$Xp7QmfbM5rtEFxlUkpSr0usvL1TEnFM/uro2v0BcWfeaX6N8YCqIe', // password
             'remember_token' => Str::random(10),

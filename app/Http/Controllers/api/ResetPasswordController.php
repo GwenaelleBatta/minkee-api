@@ -41,17 +41,15 @@ class ResetPasswordController extends Controller
 
                 $user->save();
                 event(new PasswordReset($user));
-
-                Auth::login($user);
             }
         );
 
         return $status === Password::PASSWORD_RESET
             ? response()->json([
-                'message' => 'Mot de passe réinitialiser',
-            ]) : response()->json([
-                'message' => $status,
-            ]);
-
+                'message' => __('passwords.reset')
+            ])
+            : response()->json([
+                'message' => __('passwords.user', ['status' => $status])
+            ], 422);
     }
 }
