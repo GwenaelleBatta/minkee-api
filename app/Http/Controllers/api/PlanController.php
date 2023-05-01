@@ -5,16 +5,12 @@ namespace App\Http\Controllers\api;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\FavoriteRequest;
 use App\Http\Requests\PlanRequest;
-use App\Http\Requests\TutoUserRequest;
 use App\Http\Resources\PlanResource;
-use App\Models\Mesure;
 use App\Models\Plan;
-use App\Models\TutoTranslation;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
-use function Sodium\add;
 
 class PlanController extends Controller
 {
@@ -29,6 +25,10 @@ class PlanController extends Controller
     public function index(User $user)
     {
         return PlanResource::collection(Plan::where('user_id', $user->id)->get());
+    }
+    public function indexFavorite(User $user)
+    {
+        return PlanResource::collection($user->favorites()->get());
     }
 
     public function suggest(User $user)

@@ -24,9 +24,9 @@ class SupplyRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required',
-            'color'=>'nullable',
-            'quantity'=>"nullable",
+            'name' => "required",
+            'color'=>"nullable",
+            'quantity'=>"required",
             'number'=>"nullable",
             'tint'=>"nullable",
             'category'=>"nullable",

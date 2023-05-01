@@ -35,7 +35,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::post('/login', [AuthenticatedSessionController::class, 'store'])->name('login')->middleware(['guest', 'api']);
 Route::post('/register', [RegisterSessionController::class, 'store'])->name('register')->middleware('guest');
 Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout')->middleware('auth');
-Route::post('/user/{user:id}', [UserController::class, 'show']);
+Route::get('/user/{user:id}', [UserController::class, 'show']);
 Route::post('/user/password', [ResetPasswordController::class, 'store'])->middleware('guest');
 Route::post('/user/reset-password', [ResetPasswordController::class, 'update'])->middleware('guest')->name('password.reset');
 Route::post('/user/update/{user:id}', [UserController::class, 'update']);
@@ -61,6 +61,7 @@ Route::delete('/{user:slug}/supplies/destroy/{supply:id}', [SupplyController::cl
 
 Route::get('/plans', [PlanController::class, 'indexGlobal']);
 Route::get('/{user:slug}/plans', [PlanController::class, 'index']);
+Route::get('/{user:slug}/plans/favorite', [PlanController::class, 'indexFavorite']);
 Route::get('/{user:slug}/plans/suggest', [PlanController::class, 'suggest']);
 Route::post('/{user:slug}/plans/create', [PlanController::class, 'store']);
 Route::post('/{user:slug}/plans/favorite/{plan:id}', [PlanController::class, 'favorite']);

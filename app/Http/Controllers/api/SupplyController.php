@@ -8,6 +8,7 @@ use App\Http\Requests\UpdateSupplyRequest;
 use App\Http\Resources\SupplyResource;
 use App\Http\Resources\TypeSupplyResource;
 use App\Models\Supply;
+use App\Models\Thread;
 use App\Models\TypeSupply;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -38,8 +39,12 @@ class SupplyController extends Controller
                 'message' => 'Utilisateur introuvable',
             ], 404);
         }
-
         $validatedData = $request->safe()->all();
+        if ($validatedData['number']) {
+            $thread = Thread::where('number', $validatedData['number'])->get()->first();
+            $validatedData['category'] = $thread->category;
+            $validatedData['tint'] = $thread->tint;
+        }
         $validatedData['user_id'] = $user->id;
         $validatedData['slug'] = Str::slug($validatedData['name'] . $user->slug);
         $supply = Supply::create($validatedData);
