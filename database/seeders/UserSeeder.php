@@ -18,7 +18,6 @@ class UserSeeder extends Seeder
     {
         $json = File::get("database/save/users.json");
         $levels = json_decode($json);
-
         foreach ($levels as $key => $value) {
             User::factory()->create([
                 "name" => $value->name,

@@ -17,11 +17,10 @@ class RegisterSessionController extends Controller
         $validated['avatar'] = "";
         $validated['description'] = "";
         $user = User::create($validated);
-        $token = $user->createToken('API Token')->plainTextToken;
+        $user->api_token = Str::random(60);
         return response()->json([
             'message' => 'Registration successful',
             'data' => $user,
-            'token' => $token,
         ]);
 
     }

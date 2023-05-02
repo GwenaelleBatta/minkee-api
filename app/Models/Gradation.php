@@ -19,6 +19,5 @@ class Gradation extends Model
         'max',
         'image',
         'variation'
-
     ];
 }

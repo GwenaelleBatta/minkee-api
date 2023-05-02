@@ -18,9 +18,11 @@ class UserFactory extends Factory
     public function definition(): array
     {
         $name = fake()->name();
+        $token = Str::random(60);
         return [
             'name' => $name,
             'slug'=> Str::slug($name),
+            'api_token'=>  $token,
             'avatar' => '',
             'email' => fake()->unique()->safeEmail(),
             'connected'=> true,

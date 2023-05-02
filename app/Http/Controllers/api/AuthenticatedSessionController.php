@@ -7,6 +7,7 @@ use App\Http\Requests\LoginRequest;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Str;
 
 class AuthenticatedSessionController extends Controller
 {
@@ -17,9 +18,10 @@ class AuthenticatedSessionController extends Controller
 
         if (Auth::attempt($validated)) {
             $user = Auth::user();
+            $user->api_token = Str::random(60);
             $followed = $user->followed;
             $follower = $user->followers;
-            $token = $user->createToken('API Token')->plainTextToken;
+            $token = $user->api_token;
             return response()->json([
                 'message' => 'Authentication successful',
                 'data'=>$user,
@@ -34,9 +36,11 @@ class AuthenticatedSessionController extends Controller
         }
     }
 
-    public function logout()
+    public function logout(User $user)
     {
-        Auth::logout();
+        $token = $user->api_token;
+        $user->api_token =  Str::random(60);
+        $user->save();
         return response()->json([
             'message' => 'Logout successful',
         ]);
