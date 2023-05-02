@@ -7,6 +7,7 @@ use App\Http\Requests\SupplyRequest;
 use App\Http\Requests\UpdateSupplyRequest;
 use App\Http\Resources\SupplyResource;
 use App\Http\Resources\TypeSupplyResource;
+use App\Http\Uploads\HandlesImagesUploads;
 use App\Models\Supply;
 use App\Models\Thread;
 use App\Models\TypeSupply;
@@ -16,6 +17,7 @@ use Illuminate\Support\Str;
 
 class SupplyController extends Controller
 {
+    use HandlesImagesUploads;
     /**
      * Display a listing of the resource.
      */
@@ -47,6 +49,10 @@ class SupplyController extends Controller
         }
         $validatedData['user_id'] = $user->id;
         $validatedData['slug'] = Str::slug($validatedData['name'] . $user->slug);
+        $uploaded_image = $request->file('pictures');
+        if ($uploaded_image) {
+            $validatedData['pictures'] = 'storage/supplies/pictures/' . $this->resizeAndSaveSupplies($uploaded_image);
+        }
         $supply = Supply::create($validatedData);
 
         return response()->json([
@@ -80,6 +86,10 @@ class SupplyController extends Controller
         $data_supply = $request->safe()->all();;
         $data_supply['slug'] = Str::slug($data_supply['name']);
         $data_supply['typesupply_id'] = $supply->typesupply_id;
+        $uploaded_image = $request->file('pictures');
+        if ($uploaded_image) {
+            $data_supply['pictures'] = 'storage/supplies/pictures/' . $this->resizeAndSaveSupplies($uploaded_image);
+        }
         $supply->update($data_supply);
 
         return response()->json([

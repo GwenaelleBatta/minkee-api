@@ -71,10 +71,10 @@ return [
 
     'links' => [
         public_path('storage') => storage_path('app/public'),
-        public_path('plans/images') => storage_path('app/public/plans/images'),
-        public_path('supplies/pictures') => storage_path('app/public/supplies/pictures'),
-        public_path('profil/avatar') => storage_path('app/public/profil/avatar'),
-        public_path('profil/pictures') => storage_path('app/public/profil/pictures'),
+//        public_path('plans/images') => storage_path('app/public/plans/images'),
+//        public_path('supplies/pictures') => storage_path('app/public/supplies/pictures'),
+//        public_path('profil/avatar') => storage_path('app/public/profil/avatar'),
+//        public_path('profil/pictures') => storage_path('app/public/profil/pictures'),
     ],
 
 ];

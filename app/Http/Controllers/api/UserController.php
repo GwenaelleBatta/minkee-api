@@ -80,15 +80,7 @@ class UserController extends Controller
         }
         $uploaded_image = $request->file('avatar');
         if ($uploaded_image) {
-            $validatedData['avatar'] = 'img-redimensions/avatars/' . $this->resizeAndSave($uploaded_image);
-            $validatedData['avatars']['thumbnail'] = 'img-redimensions/avatars/' . 'thumbnail-' . $this->resizeAndSaveThumb($uploaded_image);
-            $validatedData['avatars']['full'] = 'img-redimensions/avatars/' . 'full-' . $this->resizeAndSaveFull($uploaded_image);
-            $validatedData['avatars']['tiny'] = 'img-redimensions/avatars/' . 'tiny-' . $this->resizeAndSaveTiny($uploaded_image);
-            $validatedData['srcset'] = [
-                'thumbnail' => $this->srcsetThumb($uploaded_image),
-                'full' => $this->srcsetFull($uploaded_image),
-                'tiny' => $this->srcsetTiny($uploaded_image),
-            ];
+            $validatedData['avatar'] = 'storage/profil/avatar/' . $this->resizeAndSaveAvatar($uploaded_image);
         }
 
         $user->update($validatedData);

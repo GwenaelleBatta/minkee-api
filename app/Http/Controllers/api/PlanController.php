@@ -65,8 +65,14 @@ class PlanController extends Controller
         if ($validatedData['keywords'] !== null) {
             $validatedData['keywords'] = json_encode($validatedData['keywords']);
         }
-        if ($validatedData['images'] !== null){
-        $validatedData['images'] = json_encode($validatedData['images']);
+        $uploaded_images = $request->file('images');
+        if ($uploaded_images) {
+            $images = [];
+            foreach ($uploaded_images as $image) {
+                $image_path = 'storage/profil/avatar/' . $this->resizeAndSaveAvatar($image);
+                $images[] = $image_path;
+            }
+            $validatedData['images'] = json_encode($images);
         }
         $validatedData['slug'] = Str::slug($validatedData['name'].$user->slug);
         $plan = Plan::create($validatedData);
@@ -99,7 +105,15 @@ class PlanController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $uploaded_images = $request->file('images');
+        if ($uploaded_images) {
+            $images = [];
+            foreach ($uploaded_images as $image) {
+                $image_path = 'storage/profil/avatar/' . $this->resizeAndSaveAvatar($image);
+                $images[] = $image_path;
+            }
+            $validatedData['images'] = json_encode($images);
+        }
     }
 
     /**

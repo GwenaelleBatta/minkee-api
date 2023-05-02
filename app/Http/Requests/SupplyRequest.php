@@ -31,7 +31,7 @@ class SupplyRequest extends FormRequest
             'tint'=>"nullable",
             'category'=>"nullable",
             'width'=>"nullable",
-            'pictures'=>"nullable",
+            'pictures'=>"nullable|mimes:jpg,png,webp,svg",
             "typesupply_id" => "required",
         ];
     }
