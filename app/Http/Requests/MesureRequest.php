@@ -25,6 +25,7 @@ class MesureRequest extends FormRequest
     {
         return [
             'name' => 'required',
+            'gender' => 'required',
             'outline'=>'nullable',
             'lenght'=>"nullable",
         ];

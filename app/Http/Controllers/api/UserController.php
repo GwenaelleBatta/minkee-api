@@ -106,4 +106,15 @@ class UserController extends Controller
             }
         return PlanResource::collection(Plan::whereIn('id', $ids)->get());
     }
+
+    public function indexFollowers(User $user)
+    {
+        return $user->followers()->get() ;
+//        $ids =[];
+//        foreach ($user->followers() as $f) {
+//            $ids [] = $f->id;
+//        }
+//        return PlanResource::collection(Plan::whereIn('id', $ids)->get());
+    }
+
 }

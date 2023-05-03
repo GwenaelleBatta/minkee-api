@@ -40,6 +40,7 @@ Route::post('/user/password', [ResetPasswordController::class, 'store'])->middle
 Route::post('/user/reset-password', [ResetPasswordController::class, 'update'])->middleware('guest')->name('password.reset');
 Route::post('/user/update/{user:id}', [UserController::class, 'update']);
 Route::get('/user/favorite/{user:id}/', [UserController::class, 'indexFavorite']);
+Route::get('/user/followers/{user:id}/', [UserController::class, 'indexFollowers']);
 
 Route::get('/types', [TypeSupplyController::class, 'index']);
 Route::get('/glossaries', [GlossaryController::class, 'index']);

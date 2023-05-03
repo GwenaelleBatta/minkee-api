@@ -2,316 +2,406 @@
     {
         "id": 1,
         "name": "Moi",
+        "gender": "femme",
         "outline": [
             {
-                "Hanche": 103
+                "endroit": "Hanche",
+                "mesure": "103"
             },
             {
-                "Taille": 81
+                "endroit": "Taille",
+                "mesure": "81"
             },
             {
-                "Poitrine": 96
+                "endroit": "Poitrine",
+                "mesure": "96"
             },
             {
-                "Cou": 36
+                "endroit": "Cou",
+                "mesure": "36"
             },
             {
-                "Tête": 54
+                "endroit": "Tête",
+                "mesure": "54"
             },
             {
-                "Bras": 36
+                "endroit": "Bras",
+                "mesure": "36"
             },
             {
-                "Cuisse": 58
+                "endroit": "Cuisse",
+                "mesure": "58"
             },
             {
-                "Genou": 36
+                "endroit": "Genou",
+                "mesure": "36"
             },
             {
-                "Cheville": 28
+                "endroit": "Cheville",
+                "mesure": "28"
             }
         ],
         "lenght": [
             {
-                "Taille-Hanche": 27
+                "endroit": "Taille-Hanche",
+                "mesure": "27"
             },
             {
-                "Torse": 40
+                "endroit": "Torse",
+                "mesure": "40"
             },
             {
-                "Bras": 54
+                "endroit": "Bras",
+                "mesure": "54"
             },
             {
-                "Avant-Bras": 28
+                "endroit": "Avant-Bras",
+                "mesure": "28"
             },
             {
-                "Épaule": 15
+                "endroit": "Épaule",
+                "mesure": "15"
             },
             {
-                "Jambe ext.": 110
+                "endroit": "Jambe ext.",
+                "mesure": "110"
             },
             {
-                "Jambe int.": 81
+                "endroit": "Jambe int.",
+                "mesure": "81"
             },
             {
-                "Tibia": 39
-            }
-        ],
-        "created_at": null,
-        "updated_at": null,
-        "deleted_at": null,
-        "user_id": 1
-    },
-    {
-        "id": 2,
-        "name": "Robin",
-        "outline": [
-            {
-                "Hanche": 103
-            },
-            {
-                "Taille": 81
-            },
-            {
-                "Poitrine": 96
-            },
-            {
-                "Cou": 36
-            },
-            {
-                "Tête": 54
-            },
-            {
-                "Bras": 36
-            },
-            {
-                "Cuisse": 58
-            },
-            {
-                "Genou": 36
-            },
-            {
-                "Cheville": 28
-            }
-        ],
-        "lenght": [
-            {
-                "Taille-Hanche": 27
-            },
-            {
-                "Torse": 40
-            },
-            {
-                "Bras": 54
-            },
-            {
-                "Avant-Bras": 28
-            },
-            {
-                "Épaule": 15
-            },
-            {
-                "Jambe ext.": 110
-            },
-            {
-                "Jambe int.": 81
-            },
-            {
-                "Tibia": 39
-            }
-        ],
-        "created_at": null,
-        "updated_at": null,
-        "deleted_at": null,
-        "user_id": 1
-    },
-    {
-        "id": 3,
-        "name": "Maman",
-        "outline": [
-            {
-                "Hanche": 103
-            },
-            {
-                "Taille": 81
-            },
-            {
-                "Poitrine": 96
-            },
-            {
-                "Cou": 36
-            },
-            {
-                "Tête": 54
-            },
-            {
-                "Bras": 36
-            },
-            {
-                "Cuisse": 58
-            },
-            {
-                "Genou": 36
-            },
-            {
-                "Cheville": 28
-            }
-        ],
-        "lenght": [
-            {
-                "Taille-Hanche": 27
-            },
-            {
-                "Torse": 40
-            },
-            {
-                "Bras": 54
-            },
-            {
-                "Avant-Bras": 28
-            },
-            {
-                "Épaule": 15
-            },
-            {
-                "Jambe ext.": 110
-            },
-            {
-                "Jambe int.": 81
-            },
-            {
-                "Tibia": 39
-            }
-        ],
-        "created_at": null,
-        "updated_at": null,
-        "deleted_at": null,
-        "user_id": 1
-    },
-    {
-        "id": 4,
-        "name": "Corentin",
-        "outline": [
-            {
-                "Hanche": 103
-            },
-            {
-                "Taille": 81
-            },
-            {
-                "Poitrine": 96
-            },
-            {
-                "Cou": 36
-            },
-            {
-                "Tête": 54
-            },
-            {
-                "Bras": 36
-            },
-            {
-                "Cuisse": 58
-            },
-            {
-                "Genou": 36
-            },
-            {
-                "Cheville": 28
-            }
-        ],
-        "lenght": [
-            {
-                "Taille-Hanche": 27
-            },
-            {
-                "Torse": 40
-            },
-            {
-                "Bras": 54
-            },
-            {
-                "Avant-Bras": 28
-            },
-            {
-                "Épaule": 15
-            },
-            {
-                "Jambe ext.": 110
-            },
-            {
-                "Jambe int.": 81
-            },
-            {
-                "Tibia": 39
-            }
-        ],
-        "created_at": null,
-        "updated_at": null,
-        "deleted_at": null,
-        "user_id": 1
-    },
-    {
-        "id": 5,
-        "name": "Noémie",
-        "outline": [
-            {
-                "Hanche": 103
-            },
-            {
-                "Taille": 81
-            },
-            {
-                "Poitrine": 96
-            },
-            {
-                "Cou": 36
-            },
-            {
-                "Tête": 54
-            },
-            {
-                "Bras": 36
-            },
-            {
-                "Cuisse": 58
-            },
-            {
-                "Genou": 36
-            },
-            {
-                "Cheville": 28
-            }
-        ],
-        "lenght": [
-            {
-                "Taille-Hanche": 27
-            },
-            {
-                "Torse": 40
-            },
-            {
-                "Bras": 54
-            },
-            {
-                "Avant-Bras": 28
-            },
-            {
-                "Épaule": 15
-            },
-            {
-                "Jambe ext.": 110
-            },
-            {
-                "Jambe int.": 81
-            },
-            {
-                "Tibia": 39
+                "endroit": "Tibia",
+                "mesure": "39"
             }
         ],
         "created_at": null,
         "updated_at": null,
         "deleted_at": null,
         "user_id": 2
+    },
+    {
+        "id": 2,
+        "name": "Robin",
+        "gender": "homme",
+        "outline": [
+            {
+                "endroit": "Hanche",
+                "mesure": "103"
+            },
+            {
+                "endroit": "Taille",
+                "mesure": "81"
+            },
+            {
+                "endroit": "Poitrine",
+                "mesure": "96"
+            },
+            {
+                "endroit": "Cou",
+                "mesure": "36"
+            },
+            {
+                "endroit": "Tête",
+                "mesure": "54"
+            },
+            {
+                "endroit": "Bras",
+                "mesure": "36"
+            },
+            {
+                "endroit": "Cuisse",
+                "mesure": "58"
+            },
+            {
+                "endroit": "Genou",
+                "mesure": "36"
+            },
+            {
+                "endroit": "Cheville",
+                "mesure": "28"
+            }
+        ],
+        "lenght": [
+            {
+                "endroit": "Taille-Hanche",
+                "mesure": "27"
+            },
+            {
+                "endroit": "Torse",
+                "mesure": "40"
+            },
+            {
+                "endroit": "Bras",
+                "mesure": "54"
+            },
+            {
+                "endroit": "Avant-Bras",
+                "mesure": "28"
+            },
+            {
+                "endroit": "Épaule",
+                "mesure": "15"
+            },
+            {
+                "endroit": "Jambe ext.",
+                "mesure": "110"
+            },
+            {
+                "endroit": "Jambe int.",
+                "mesure": "81"
+            },
+            {
+                "endroit": "Tibia",
+                "mesure": "39"
+            }
+        ],
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null,
+        "user_id": 2
+    },
+    {
+        "id": 3,
+        "name": "Maman",
+        "gender": "femme",
+        "outline": [
+            {
+                "endroit": "Hanche",
+                "mesure": "103"
+            },
+            {
+                "endroit": "Taille",
+                "mesure": "81"
+            },
+            {
+                "endroit": "Poitrine",
+                "mesure": "96"
+            },
+            {
+                "endroit": "Cou",
+                "mesure": "36"
+            },
+            {
+                "endroit": "Tête",
+                "mesure": "54"
+            },
+            {
+                "endroit": "Bras",
+                "mesure": "36"
+            },
+            {
+                "endroit": "Cuisse",
+                "mesure": "58"
+            },
+            {
+                "endroit": "Genou",
+                "mesure": "36"
+            },
+            {
+                "endroit": "Cheville",
+                "mesure": "28"
+            }
+        ],
+        "lenght": [
+            {
+                "endroit": "Taille-Hanche",
+                "mesure": "27"
+            },
+            {
+                "endroit": "Torse",
+                "mesure": "40"
+            },
+            {
+                "endroit": "Bras",
+                "mesure": "54"
+            },
+            {
+                "endroit": "Avant-Bras",
+                "mesure": "28"
+            },
+            {
+                "endroit": "Épaule",
+                "mesure": "15"
+            },
+            {
+                "endroit": "Jambe ext.",
+                "mesure": "110"
+            },
+            {
+                "endroit": "Jambe int.",
+                "mesure": "81"
+            },
+            {
+                "endroit": "Tibia",
+                "mesure": "39"
+            }
+        ],
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null,
+        "user_id": 2
+    },
+    {
+        "id": 4,
+        "name": "Corentin",
+        "gender": "homme",
+        "outline": [
+            {
+                "endroit": "Hanche",
+                "mesure": "103"
+            },
+            {
+                "endroit": "Taille",
+                "mesure": "81"
+            },
+            {
+                "endroit": "Poitrine",
+                "mesure": "96"
+            },
+            {
+                "endroit": "Cou",
+                "mesure": "36"
+            },
+            {
+                "endroit": "Tête",
+                "mesure": "54"
+            },
+            {
+                "endroit": "Bras",
+                "mesure": "36"
+            },
+            {
+                "endroit": "Cuisse",
+                "mesure": "58"
+            },
+            {
+                "endroit": "Genou",
+                "mesure": "36"
+            },
+            {
+                "endroit": "Cheville",
+                "mesure": "28"
+            }
+        ],
+        "lenght": [
+            {
+                "endroit": "Taille-Hanche",
+                "mesure": "27"
+            },
+            {
+                "endroit": "Torse",
+                "mesure": "40"
+            },
+            {
+                "endroit": "Bras",
+                "mesure": "54"
+            },
+            {
+                "endroit": "Avant-Bras",
+                "mesure": "28"
+            },
+            {
+                "endroit": "Épaule",
+                "mesure": "15"
+            },
+            {
+                "endroit": "Jambe ext.",
+                "mesure": "110"
+            },
+            {
+                "endroit": "Jambe int.",
+                "mesure": "81"
+            },
+            {
+                "endroit": "Tibia",
+                "mesure": "39"
+            }
+        ],
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null,
+        "user_id": 2
+    },
+    {
+        "id": 5,
+        "name": "Noémie",
+        "gender": "femme",
+        "outline": [
+            {
+                "endroit": "Hanche",
+                "mesure": "103"
+            },
+            {
+                "endroit": "Taille",
+                "mesure": "81"
+            },
+            {
+                "endroit": "Poitrine",
+                "mesure": "96"
+            },
+            {
+                "endroit": "Cou",
+                "mesure": "36"
+            },
+            {
+                "endroit": "Tête",
+                "mesure": "54"
+            },
+            {
+                "endroit": "Bras",
+                "mesure": "36"
+            },
+            {
+                "endroit": "Cuisse",
+                "mesure": "58"
+            },
+            {
+                "endroit": "Genou",
+                "mesure": "36"
+            },
+            {
+                "endroit": "Cheville",
+                "mesure": "28"
+            }
+        ],
+        "lenght": [
+            {
+                "endroit": "Taille-Hanche",
+                "mesure": "27"
+            },
+            {
+                "endroit": "Torse",
+                "mesure": "40"
+            },
+            {
+                "endroit": "Bras",
+                "mesure": "54"
+            },
+            {
+                "endroit": "Avant-Bras",
+                "mesure": "28"
+            },
+            {
+                "endroit": "Épaule",
+                "mesure": "15"
+            },
+            {
+                "endroit": "Jambe ext.",
+                "mesure": "110"
+            },
+            {
+                "endroit": "Jambe int.",
+                "mesure": "81"
+            },
+            {
+                "endroit": "Tibia",
+                "mesure": "39"
+            }
+        ],
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null,
+        "user_id": 3
     }
 ]

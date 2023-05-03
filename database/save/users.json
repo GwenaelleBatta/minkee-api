@@ -1,7 +1,7 @@
 [
     {
         "name": "Invité",
-        "avatar": "https://via.placeholder.com/600x400/cccccc/4d4d4d?text=Invité",
+        "avatar": "storage/profil/avatar/9fc763491178fa9f1fd6aa4beba50acffad0e876.jpg",
         "description": "Ceci est un compte invité",
         "email": "invité@mail.com",
         "email_verified_at": null,
@@ -13,7 +13,7 @@
     },
   {
     "name": "SaekoKaneki",
-    "avatar": "https://images.pexels.com/photos/12909419/pexels-photo-12909419.jpeg",
+    "avatar": "storage/profil/avatar/30f3635c2c3c0305ee3cb8d6127dd6b46f903877.jpeg",
     "description": "Je suis une jeune étudiante en Mode et Création. J’adore les vêtements simples mais jolis à la fois.",
     "email": "gwenaellebatta@gmail.com",
     "email_verified_at": null,
@@ -24,7 +24,7 @@
   },
     {
     "name": "Octopussy",
-    "avatar": "https://images.pexels.com/photos/12909419/pexels-photo-12909419.jpeg",
+    "avatar": "storage/profil/avatar/a932b2aa5bcbb8c007ea46350a55675afa4b8754.jpg",
     "description": "🪷🌸🐸",
     "email": "noemiekimi@gmail.com",
     "email_verified_at": null,

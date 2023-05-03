@@ -21,6 +21,7 @@ class MesureSeeder extends Seeder
             Mesure::factory()->create([
                 "name" => $value->name,
                 "slug" => Str::slug($value->name),
+                "gender" => $value->gender,
                 "lenght" => json_encode($value->lenght),
                 "outline" => json_encode($value->outline),
                 "user_id"=>$value->user_id

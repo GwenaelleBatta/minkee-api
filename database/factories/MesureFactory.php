@@ -21,6 +21,7 @@ class MesureFactory extends Factory
         return [
             "name" => $content,
             "slug" => Str::slug($content),
+            "gender"=>'femme',
             "outline"=> [],
             "lenght"=>[],
             "user_id"=>1

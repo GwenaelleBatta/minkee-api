@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->json('outline');
             $table->string('name');
+            $table->string('gender');
             $table->string('slug');
             $table->json('lenght');
             $table->timestamps();
