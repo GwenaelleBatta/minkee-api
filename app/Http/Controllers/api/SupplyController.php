@@ -101,7 +101,7 @@ class SupplyController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(User $user,string $id)
     {
         $supply = Supply::find($id);
         if (!$supply) {

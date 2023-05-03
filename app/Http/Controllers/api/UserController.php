@@ -19,6 +19,7 @@ use Illuminate\Support\Str;
 class UserController extends Controller
 {
     use HandlesImagesUploads;
+
     /**
      * Display a listing of the resource.
      */
@@ -62,7 +63,7 @@ class UserController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(User $user,UpdateUserRequest $request)
+    public function update(User $user, UpdateUserRequest $request)
     {
         $validatedData = $request->safe()->only(
             'name',
@@ -78,10 +79,13 @@ class UserController extends Controller
         if ($request['name'] !== null) {
             $validatedData['slug'] = Str::slug($validatedData['name']);
         }
-        $uploaded_image = $request->file('avatar');
-        if ($uploaded_image) {
-            $validatedData['avatar'] = 'storage/profil/avatar/' . $this->resizeAndSaveAvatar($uploaded_image);
+        if ($request['avatar'] !== null) {
+            $uploaded_image = $request->file('avatar');
+            if ($uploaded_image) {
+                $validatedData['avatar'] = 'storage/profil/avatar/' . $this->resizeAndSaveAvatar($uploaded_image);
+            }
         }
+
 
         $user->update($validatedData);
         return response()->json([
@@ -100,21 +104,20 @@ class UserController extends Controller
 
     public function indexFavorite(User $user)
     {
-        $ids =[];
-            foreach ($user->favorites as $f) {
-                $ids [] = $f->id;
-            }
+        $ids = [];
+        foreach ($user->favorites as $f) {
+            $ids [] = $f->id;
+        }
         return PlanResource::collection(Plan::whereIn('id', $ids)->get());
     }
 
     public function indexFollowers(User $user)
     {
-        return $user->followers()->get() ;
-//        $ids =[];
-//        foreach ($user->followers() as $f) {
-//            $ids [] = $f->id;
-//        }
-//        return PlanResource::collection(Plan::whereIn('id', $ids)->get());
+        $ids = [];
+        foreach ($user->followers as $follower) {
+            $ids[] = $follower->id;
+        }
+        return UserResource::collection(User::whereIn('id', $ids)->get());
     }
 
 }

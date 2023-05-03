@@ -88,7 +88,7 @@ class MesureController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(User $user,string $id)
     {
         $mesure = Mesure::find($id);
         if (!$mesure) {

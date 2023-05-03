@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\QuestionResource;
 use App\Models\Question;
 use Illuminate\Http\Request;
 
@@ -13,7 +14,7 @@ class QuestionController extends Controller
      */
     public function index()
     {
-        return Question::inRandomOrder()->take(4)->get();
+        return QuestionResource::collection(Question::inRandomOrder()->take(4)->get());
     }
 
     /**

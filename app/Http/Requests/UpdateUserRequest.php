@@ -28,8 +28,8 @@ UpdateUserRequest extends FormRequest
     {
         return [
             'name' => 'nullable',
-            'description'=>'min:20|max:300|nullable',
-            'avatar' => 'nullable|mimes:jpg,png,webp,svg',
+            'description'=>'min:1|max:300|nullable',
+            'avatar' => 'nullable|mimes:jpg,jpeg,png,webp,svg',
             'email' => 'nullable|email',
             'password' => 'nullable',
         ];
