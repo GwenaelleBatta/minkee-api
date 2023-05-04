@@ -22,6 +22,9 @@ return new class extends Migration
         Schema::table('plans', function (Blueprint $table) {
             $table->foreignId('user_id')->constrained()->onUpdate('cascade');
         });
+        Schema::table('pictures', function (Blueprint $table) {
+            $table->foreignId('user_id')->constrained()->onUpdate('cascade');
+        });
         Schema::table('supplies', function (Blueprint $table) {
             $table->foreignId('user_id')->constrained()->onUpdate('cascade');
         });
@@ -60,6 +63,9 @@ return new class extends Migration
             $table->dropConstrainedForeignId('user_id');
         });
         Schema::table('plans', function (Blueprint $table) {
+            $table->dropConstrainedForeignId('user_id');
+        });
+        Schema::table('pictures', function (Blueprint $table) {
             $table->dropConstrainedForeignId('user_id');
         });
         Schema::table('supplies', function (Blueprint $table) {

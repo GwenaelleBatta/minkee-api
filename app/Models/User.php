@@ -53,6 +53,10 @@ class User extends Authenticatable
     {
         return $this->hasMany(Mesure::class);
     }
+    public function pictures(): HasMany
+    {
+        return $this->hasMany(Picture::class);
+    }
     public function supplies(): HasMany
     {
         return $this->hasMany(Supply::class);

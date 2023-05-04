@@ -84,11 +84,17 @@ class SupplyController extends Controller
     {
         $supply = Supply::find($id);
         $data_supply = $request->safe()->all();;
-        $data_supply['slug'] = Str::slug($data_supply['name']);
-        $data_supply['typesupply_id'] = $supply->typesupply_id;
-        $uploaded_image = $request->file('pictures');
-        if ($uploaded_image) {
-            $data_supply['pictures'] = 'storage/supplies/pictures/' . $this->resizeAndSaveSupplies($uploaded_image);
+        if ($request['name'] !== null) {
+            $data_supply['slug'] = Str::slug($data_supply['name']);
+        }
+        if($request['typesupply_id'] !== null){
+            $data_supply['typesupply_id'] = intval($request['typesupply_id']);
+        }
+        if ($request['pictures'] !== null) {
+            $uploaded_image = $request->file('pictures');
+            if ($uploaded_image) {
+                $data_supply['pictures'] = 'storage/supplies/pictures/' . $this->resizeAndSaveSupplies($uploaded_image);
+            }
         }
         $supply->update($data_supply);
 

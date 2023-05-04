@@ -140,15 +140,19 @@ class PlanController extends Controller
         $validatedData['user_id'] = $user->id;
         if (DB::table('favorite')->where('plan_id', $id)->where('user_id', $user->id)->count() > 0) {
             DB::table('favorite')->where('plan_id', $id)->where('user_id', $user->id)->delete();
+            return response()->json([
+                'message' => 'Plan mis supprimé des favoris',
+            ]);
         } else {
             DB::table('favorite')->insert([
                 "plan_id" => $validatedData['plan_id'],
                 "user_id" => $validatedData['user_id']
             ]);
+            return response()->json([
+                'message' => 'Plan mis en favoris',
+            ]);
         }
-        return response()->json([
-            'message' => 'Plan mis en favoris',
-        ]);
+
 
     }
 }
