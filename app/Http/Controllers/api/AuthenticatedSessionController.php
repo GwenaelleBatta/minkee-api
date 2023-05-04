@@ -21,6 +21,7 @@ class AuthenticatedSessionController extends Controller
             $user->api_token = Str::random(60);
             $followed = $user->followed;
             $follower = $user->followers;
+            $pictures = $user->pictures;
             $token = $user->api_token;
             return response()->json([
                 'message' => 'Authentication successful',
@@ -29,7 +30,6 @@ class AuthenticatedSessionController extends Controller
                 'token' => $token,
             ]);
         } else {
-            // L'authentification a échoué, retourner une réponse JSON avec une erreur
             return response()->json([
                 'message' => 'Invalid credentials',
             ], 401);

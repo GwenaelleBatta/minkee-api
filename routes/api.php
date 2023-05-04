@@ -5,6 +5,7 @@ use App\Http\Controllers\api\FabricController;
 use App\Http\Controllers\api\GlossaryController;
 use App\Http\Controllers\api\GradationController;
 use App\Http\Controllers\api\MesureController;
+use App\Http\Controllers\api\PictureController;
 use App\Http\Controllers\api\PlanController;
 use App\Http\Controllers\api\QuestionController;
 use App\Http\Controllers\api\RegisterSessionController;
@@ -59,6 +60,8 @@ Route::post('/{user:slug}/supplies/create', [SupplyController::class, 'store']);
 Route::post('/{user:slug}/supplies/update/{supply:id}', [SupplyController::class, 'update']);
 Route::get('/{user:slug}/supplies/type/{typesupply:id}', [SupplyController::class, 'show']);
 Route::delete('/{user:slug}/supplies/destroy/{supply:id}', [SupplyController::class, 'destroy']);
+
+Route::post('/{user:slug}/pictures/create', [PictureController::class, 'store']);
 
 Route::get('/plans', [PlanController::class, 'indexGlobal']);
 Route::get('/{user:slug}/plans', [PlanController::class, 'index']);
