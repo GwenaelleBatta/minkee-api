@@ -488,5 +488,85 @@
         "created_at": null,
         "updated_at": null,
         "deleted_at": null
+    },
+    {
+        "id": 48,
+        "name": "Plier",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 50,
+        "name": "Épingler envers sur endroit",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 51,
+        "name": "Réaliser patte de boutonnage",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 52,
+        "name": "Ajouter boutons pressions",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 53,
+        "name": "Cranter",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 53,
+        "name": "Réaliser",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 54,
+        "name": "Passer",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
+    },
+    {
+        "id": 56,
+        "name": "Épingler",
+        "image": null,
+        "description": null,
+        "check": 0,
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null
     }
 ]

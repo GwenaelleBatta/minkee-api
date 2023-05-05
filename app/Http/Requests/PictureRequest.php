@@ -24,7 +24,7 @@ class PictureRequest extends FormRequest
     public function rules()
     {
         return [
-            'link'=>"nullable|mimes:jpg,png,webp,svg",
+            'link'=>"nullable|mimes:jpg,jpeg,png,webp,svg",
         ];
     }
 }

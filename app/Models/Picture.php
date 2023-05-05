@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Picture extends Model
 {
     use HasFactory, SoftDeletes;
-    protected $fillable = ['link','id'];
+    protected $fillable = ['link','id', 'user_id'];
 
     public function user(): BelongsTo
     {

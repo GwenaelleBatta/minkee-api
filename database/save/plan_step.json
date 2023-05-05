@@ -1,449 +1,2299 @@
 [
-  {
-    "id": 1,
-    "order": 1,
-    "precision": null,
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 1,
-    "step_id": 2
-  },
-  {
-    "id": 2,
-    "order": 2,
-    "precision": null,
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 1,
-    "step_id": 1
-  },{
-    "id": 3,
-    "order": 3,
-    "precision": "incrustée",
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 1,
-    "step_id": 10
-  },
-  {
-    "id": 4,
-    "order": 4,
-    "precision": "milieu dos",
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 1,
-    "step_id": 41
-  },{
-    "id": 5,
-    "order": 5,
-    "precision": "sur couture milieu dos",
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 1,
-    "step_id": 15
-  },
-  {
-    "id": 6,
-    "order": 6,
-    "precision": "vers la gauche",
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 1,
-    "step_id": 6
-  },{
-    "id": 7,
-    "order": 7,
-    "precision": "couture milieu dos",
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 1,
-    "step_id": 14
-  },
-  {
-    "id": 8,
-    "order": 8,
-    "precision": "épaules vêtements et épaules parmentures",
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 1,
-    "step_id": 41
-  },{
-    "id": 9,
-    "order": 9,
-    "precision": "sur couture épaule vêtements",
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 1,
-    "step_id": 15
-  },
-  {
-    "id": 10,
-    "order": 10,
-    "precision": null,
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 1,
-    "step_id": 5
-  },{
-    "id": 11,
-    "order": 11,
-    "precision": "sur bord extérieur de la parmenture devant et dos",
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 1,
-    "step_id": 15
-  },
-  {
-    "id": 12,
-    "order": 12,
-    "precision": "couture épaules vers le dos",
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 1,
-    "step_id": 6
-  },{
-    "id": 13,
-    "order": 13,
-    "precision": "parmenture sur tout le pourtour du vêtement",
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 1,
-    "step_id": 41
-  },
-  {
-    "id": 14,
-    "order": 14,
-    "precision": null,
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 1,
-    "step_id": 4
-  },{
-    "id": 15,
-    "order": 15,
-    "precision": "couture emmanchure de la partie sous-bras et du dessous de manche",
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 1,
-    "step_id": 15
-  },
-  {
-    "id": 16,
-    "order": 16,
-    "precision": "vers sous-bras",
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 1,
-    "step_id": 6
-  },{
-    "id": 17,
-    "order": 17,
-    "precision": "couture coude et couture soignée dessus et dessous de manche",
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 1,
-    "step_id": 41
-  },
-  {
-    "id": 18,
-    "order": 18,
-    "precision": "vers dessus de la manche",
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 1,
-    "step_id": 6
-  },{
-    "id": 19,
-    "order": 19,
-    "precision": "en une seule fois: la couture partie devant et sous-bras devant, l'emmanchure manche et vêtement, couture partie dos et sous-bras dos",
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 1,
-    "step_id": 41
-  },
-  {
-    "id": 20,
-    "order": 20,
-    "precision": null,
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 1,
-    "step_id": 15
-  },{
-    "id": 21,
-    "order": 21,
-    "precision": "vers le milieux devant et dos et la couture manche vêtement vers la manche",
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 1,
-    "step_id": 6
-  },
-  {
-    "id": 22,
-    "order": 22,
-    "precision": "en une seule fois: Côté gauche (piqûre cheveu), Côté droit (piqûre cheveu et deuxième à 5mm)",
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 1,
-    "step_id": 14
-  },{
-    "id": 23,
-    "order": 23,
-    "precision": null,
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 1,
-    "step_id": 13
-  },
-  {
-    "id": 24,
-    "order": 24,
-    "precision": null,
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 1,
-    "step_id": 7
-  },{
-    "id": 25,
-    "order": 1,
-    "precision": "contour",
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 2,
-    "step_id": 9
-  },
-  {
-    "id": 26,
-    "order": 2,
-    "precision": "rempli",
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 2,
-    "step_id": 42
-  },{
-    "id": 27,
-    "order": 3,
-    "precision": null,
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 2,
-    "step_id": 43
-  },
-  {
-    "id": 28,
-    "order": 4,
-    "precision": null,
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 2,
-    "step_id": 6
-  },{
-    "id": 29,
-    "order": 5,
-    "precision": "pour préplier les valeur couture",
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 2,
-    "step_id": 44
-  },
-  {
-    "id": 30,
-    "order": 6,
-    "precision": "poche sur vêtement",
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 2,
-    "step_id": 45
-  },{
-    "id": 31,
-    "order": 7,
-    "precision": "poche",
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 2,
-    "step_id": 14
-  },
-  {
-    "id": 32,
-    "order": 1,
-    "precision": "emplacement",
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 3,
-    "step_id": 46
-  },{
-    "id": 33,
-    "order": 2,
-    "precision": "sac de poche sur patte",
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 3,
-    "step_id": 41
-  },
-  {
-    "id": 34,
-    "order": 3,
-    "precision": "patte",
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 3,
-    "step_id": 46
-  },{
-    "id": 35,
-    "order": 4,
-    "precision": "sur ligne inférieur vêtement",
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 3,
-    "step_id": 41
-  },
-  {
-    "id": 36,
-    "order": 5,
-    "precision": "sac de poche sur vêtement",
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 3,
-    "step_id": 41
-  },{
-    "id": 37,
-    "order": 6,
-    "precision": null,
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 3,
-    "step_id": 46
-  },
-  {
-    "id": 38,
-    "order": 7,
-    "precision": null,
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 3,
-    "step_id": 4
-  },{
-    "id": 39,
-    "order": 8,
-    "precision": "sac de poche sur visage de poche",
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 3,
-    "step_id": 41
-  },
-  {
-    "id": 40,
-    "order": 9,
-    "precision": "les triangles",
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 3,
-    "step_id": 41
-  },{
-    "id": 41,
-    "order": 10,
-    "precision": "le devant",
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 3,
-    "step_id": 49
-  },
-  {
-    "id": 42,
-    "order": 11,
-    "precision": null,
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 3,
-    "step_id": 48
-  },{
-    "id": 43,
-    "order": 12,
-    "precision": null,
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 3,
-    "step_id": 36
-  },
-  {
-    "id": 44,
-    "order": 13,
-    "precision": null,
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 3,
-    "step_id": 7
-  },
-  {
-    "id": 45,
-    "order": 1,
-    "precision": null,
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 4,
-    "step_id": 3
-  },
-  {
-    "id": 46,
-    "order": 2,
-    "precision": null,
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 4,
-    "step_id": 2
-  },
-  {
-    "id": 47,
-    "order": 3,
-    "precision": "ourlet du bas",
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 4,
-    "step_id": 9
-  },
-  {
-    "id": 48,
-    "order": 4,
-    "precision": "du bas",
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 4,
-    "step_id": 13
-  },
-  {
-    "id": 49,
-    "order": 5,
-    "precision": "élastique sur vêtement",
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 4,
-    "step_id": 23
-  },
-  {
-    "id": 50,
-    "order": 6,
-    "precision": "élastique sur vêtement",
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 4,
-    "step_id": 41
-  },
-  {
-    "id": 51,
-    "order": 7,
-    "precision": "couture taille",
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 4,
-    "step_id": 8
-  },
-  {
-    "id": 51,
-    "order": 8,
-    "precision": null,
-    "created_at": null,
-    "updated_at": null,
-    "plan_id": 4,
-    "step_id": 7
-  }
+    {
+        "order": 1,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 1,
+        "step_id": 2
+    },
+    {
+        "order": 2,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 1,
+        "step_id": 1
+    },
+    {
+        "order": 3,
+        "precision": "incrustée",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 1,
+        "step_id": 10
+    },
+    {
+        "order": 4,
+        "precision": "milieu dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 1,
+        "step_id": 41
+    },
+    {
+        "order": 5,
+        "precision": "sur couture milieu dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 1,
+        "step_id": 15
+    },
+    {
+        "order": 6,
+        "precision": "vers la gauche",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 1,
+        "step_id": 6
+    },
+    {
+        "order": 7,
+        "precision": "couture milieu dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 1,
+        "step_id": 14
+    },
+    {
+        "order": 8,
+        "precision": "épaules vêtements et épaules parmentures",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 1,
+        "step_id": 41
+    },
+    {
+        "order": 9,
+        "precision": "sur couture épaule vêtements",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 1,
+        "step_id": 15
+    },
+    {
+        "order": 10,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 1,
+        "step_id": 5
+    },
+    {
+        "order": 11,
+        "precision": "sur bord extérieur de la parmenture devant et dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 1,
+        "step_id": 15
+    },
+    {
+        "order": 12,
+        "precision": "couture épaules vers le dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 1,
+        "step_id": 6
+    },
+    {
+        "order": 13,
+        "precision": "parmenture sur tout le pourtour du vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 1,
+        "step_id": 41
+    },
+    {
+        "order": 14,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 1,
+        "step_id": 4
+    },
+    {
+        "order": 15,
+        "precision": "couture emmanchure de la partie sous-bras et du dessous de manche",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 1,
+        "step_id": 15
+    },
+    {
+        "order": 16,
+        "precision": "vers sous-bras",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 1,
+        "step_id": 6
+    },
+    {
+        "order": 17,
+        "precision": "couture coude et couture soignée dessus et dessous de manche",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 1,
+        "step_id": 41
+    },
+    {
+        "order": 18,
+        "precision": "vers dessus de la manche",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 1,
+        "step_id": 6
+    },
+    {
+        "order": 19,
+        "precision": "en une seule fois: la couture partie devant et sous-bras devant, l'emmanchure manche et vêtement, couture partie dos et sous-bras dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 1,
+        "step_id": 41
+    },
+    {
+        "order": 20,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 1,
+        "step_id": 15
+    },
+    {
+        "order": 21,
+        "precision": "vers le milieux devant et dos et la couture manche vêtement vers la manche",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 1,
+        "step_id": 6
+    },
+    {
+        "order": 22,
+        "precision": "en une seule fois: Côté gauche (piqûre cheveu), Côté droit (piqûre cheveu et deuxième à 5mm)",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 1,
+        "step_id": 14
+    },
+    {
+        "order": 23,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 1,
+        "step_id": 13
+    },
+    {
+        "order": 24,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 1,
+        "step_id": 7
+    },
+    {
+        "order": 1,
+        "precision": "contour",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 2,
+        "step_id": 9
+    },
+    {
+        "order": 2,
+        "precision": "rempli",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 2,
+        "step_id": 42
+    },
+    {
+        "order": 3,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 2,
+        "step_id": 43
+    },
+    {
+        "order": 4,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 2,
+        "step_id": 6
+    },
+    {
+        "order": 5,
+        "precision": "pour préplier les valeur couture",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 2,
+        "step_id": 44
+    },
+    {
+        "order": 6,
+        "precision": "poche sur vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 2,
+        "step_id": 45
+    },
+    {
+        "order": 7,
+        "precision": "poche",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 2,
+        "step_id": 14
+    },
+    {
+        "order": 1,
+        "precision": "emplacement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 3,
+        "step_id": 46
+    },
+    {
+        "order": 2,
+        "precision": "sac de poche sur patte",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 3,
+        "step_id": 41
+    },
+    {
+        "order": 3,
+        "precision": "patte",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 3,
+        "step_id": 46
+    },
+    {
+        "order": 4,
+        "precision": "sur ligne inférieur vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 3,
+        "step_id": 41
+    },
+    {
+        "order": 5,
+        "precision": "sac de poche sur vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 3,
+        "step_id": 41
+    },
+    {
+        "order": 6,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 3,
+        "step_id": 46
+    },
+    {
+        "order": 7,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 3,
+        "step_id": 4
+    },
+    {
+        "order": 8,
+        "precision": "sac de poche sur visage de poche",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 3,
+        "step_id": 41
+    },
+    {
+        "order": 9,
+        "precision": "les triangles",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 3,
+        "step_id": 41
+    },
+    {
+        "order": 10,
+        "precision": "le devant",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 3,
+        "step_id": 49
+    },
+    {
+        "order": 11,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 3,
+        "step_id": 48
+    },
+    {
+        "order": 12,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 3,
+        "step_id": 36
+    },
+    {
+        "order": 13,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 3,
+        "step_id": 7
+    },
+    {
+        "order": 1,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 4,
+        "step_id": 3
+    },
+    {
+        "order": 2,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 4,
+        "step_id": 2
+    },
+    {
+        "order": 3,
+        "precision": "ourlet du bas",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 4,
+        "step_id": 9
+    },
+    {
+        "order": 4,
+        "precision": "du bas",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 4,
+        "step_id": 13
+    },
+    {
+        "order": 5,
+        "precision": "élastique sur vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 4,
+        "step_id": 23
+    },
+    {
+        "order": 6,
+        "precision": "élastique sur vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 4,
+        "step_id": 41
+    },
+    {
+        "order": 7,
+        "precision": "couture taille",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 4,
+        "step_id": 8
+    },
+    {
+        "order": 8,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 4,
+        "step_id": 7
+    },
+    {
+        "order": 1,
+        "precision": "couture épaule",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 27,
+        "step_id": 9
+    },
+    {
+        "order": 2,
+        "precision": "couture épaule",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 27,
+        "step_id": 41
+    },
+    {
+        "order": 3,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 27,
+        "step_id": 5
+    },
+    {
+        "order": 4,
+        "precision": "2 parties du col",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 27,
+        "step_id": 23
+    },
+    {
+        "order": 5,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 27,
+        "step_id": 5
+    },
+    {
+        "order": 6,
+        "precision": "le bord externe d'un des 2 col",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 27,
+        "step_id": 9
+    },
+    {
+        "order": 7,
+        "precision": "de l'encolure et des épaule",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 27,
+        "step_id": 1
+    },
+    {
+        "order": 8,
+        "precision": "le col non surjet avec vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 27,
+        "step_id": 23
+    },
+    {
+        "order": 9,
+        "precision": "le col non surjet avec vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 27,
+        "step_id": 41
+    },
+    {
+        "order": 10,
+        "precision": "manches avec vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 27,
+        "step_id": 23
+    },
+    {
+        "order": 11,
+        "precision": "manches avec vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 27,
+        "step_id": 41
+    },
+    {
+        "order": 12,
+        "precision": "couture manche",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 27,
+        "step_id": 8
+    },
+    {
+        "order": 13,
+        "precision": "couture sous-bras et sous-bras de la manche",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 27,
+        "step_id": 23
+    },
+    {
+        "order": 14,
+        "precision": "couture sous-bras et sous-bras de la manche",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 27,
+        "step_id": 41
+    },
+    {
+        "order": 15,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 27,
+        "step_id": 8
+    },
+    {
+        "order": 16,
+        "precision": "vers le devant",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 27,
+        "step_id": 6
+    },
+    {
+        "order": 17,
+        "precision": "le bord de la manchette",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 27,
+        "step_id": 23
+    },
+    {
+        "order": 18,
+        "precision": "le bord de la manchette",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 27,
+        "step_id": 41
+    },
+    {
+        "order": 19,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 27,
+        "step_id": 5
+    },
+    {
+        "order": 20,
+        "precision": "en deux envers sur envers",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 27,
+        "step_id": 50
+    },
+    {
+        "order": 21,
+        "precision": "poignets sur bas de manches",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 27,
+        "step_id": 23
+    },
+    {
+        "order": 22,
+        "precision": "poignets sur bas de manches",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 27,
+        "step_id": 41
+    },
+    {
+        "order": 23,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 27,
+        "step_id": 8
+    },
+    {
+        "order": 24,
+        "precision": "liseré en deux envers sur envers",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 27,
+        "step_id": 50
+    },
+    {
+        "order": 25,
+        "precision": "bord liseré sur bas de vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 27,
+        "step_id": 23
+    },
+    {
+        "order": 26,
+        "precision": "bord liseré sur bas de vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 27,
+        "step_id": 41
+    },
+    {
+        "order": 27,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 27,
+        "step_id": 8
+    },
+    {
+        "order": 28,
+        "precision": "col sur bas de vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 27,
+        "step_id": 23
+    },
+    {
+        "order": 27,
+        "precision": "col sur bas de vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 27,
+        "step_id": 41
+    },
+    {
+        "order": 29,
+        "precision": "col surjeter sur col",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 27,
+        "step_id": 23
+    },
+    {
+        "order": 30,
+        "precision": "col surjeter sur col",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 27,
+        "step_id": 41
+    },
+    {
+        "order": 31,
+        "precision": "vers vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 27,
+        "step_id": 6
+    },
+    {
+        "order": 32,
+        "precision": "couture cheveux",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 27,
+        "step_id": 14
+    },
+    {
+        "order": 33,
+        "precision": "le col vers intérieur de vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 27,
+        "step_id": 43
+    },
+    {
+        "order": 34,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 27,
+        "step_id": 24
+    },
+    {
+        "order": 35,
+        "precision": "sur endroit du vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 27,
+        "step_id": 14
+    },
+    {
+        "order": 36,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 27,
+        "step_id": 20
+    },
+    {
+        "order": 37,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 27,
+        "step_id": 19
+    },
+    {
+        "order": 38,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 27,
+        "step_id": 7
+    },
+    {
+        "order": 1,
+        "precision": "couture épaule devant et dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 25,
+        "step_id": 9
+    },
+    {
+        "order": 2,
+        "precision": "couture épaule devant et dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 25,
+        "step_id": 23
+    },
+    {
+        "order": 3,
+        "precision": "couture épaule devant et dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 25,
+        "step_id": 41
+    },
+    {
+        "order": 4,
+        "precision": "couture épaule devant et dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 25,
+        "step_id": 5
+    },
+    {
+        "order": 5,
+        "precision": "le haut et le bas du liseré vers le milieu",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 25,
+        "step_id": 50
+    },
+    {
+        "order": 6,
+        "precision": "en deux de liseré",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 25,
+        "step_id": 44
+    },
+    {
+        "order": 7,
+        "precision": "bord liseré",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 25,
+        "step_id": 23
+    },
+    {
+        "order": 8,
+        "precision": "bord liseré",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 25,
+        "step_id": 41
+    },
+    {
+        "order": 9,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 25,
+        "step_id": 5
+    },
+    {
+        "order": 10,
+        "precision": "liseré sur encolure du vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 25,
+        "step_id": 51
+    },
+    {
+        "order": 11,
+        "precision": "sur toute la ligne repassées et positionner par au dessus de la valeur couture",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 25,
+        "step_id": 50
+    },
+    {
+        "order": 12,
+        "precision": "liseré sur encolure",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 25,
+        "step_id": 41
+    },
+    {
+        "order": 13,
+        "precision": "liseré sur emmanchure du vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 25,
+        "step_id": 51
+    },
+    {
+        "order": 14,
+        "precision": "sur toute la ligne repassées et positionner par au dessus de la valeur couture",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 25,
+        "step_id": 50
+    },
+    {
+        "order": 15,
+        "precision": "liseré sur emmanchure",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 25,
+        "step_id": 41
+    },
+    {
+        "order": 16,
+        "precision": "sous-bras devant et dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 25,
+        "step_id": 23
+    },
+    {
+        "order": 17,
+        "precision": "sous-bras devant et dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 25,
+        "step_id": 41
+    },
+    {
+        "order": 18,
+        "precision": "sous-bras devant et dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 25,
+        "step_id": 9
+    },
+    {
+        "order": 19,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 25,
+        "step_id": 13
+    },
+    {
+        "order": 19,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 25,
+        "step_id": 7
+    },
+    {
+        "order": 1,
+        "precision": "couture épaule devant droit et gauche sur dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 26,
+        "step_id": 23
+    },
+    {
+        "order": 2,
+        "precision": "couture épaule devant droit et gauche sur dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 26,
+        "step_id": 41
+    },
+    {
+        "order": 3,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 26,
+        "step_id": 8
+    },
+    {
+        "order": 4,
+        "precision": "vers le devant",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 26,
+        "step_id": 6
+    },
+    {
+        "order": 5,
+        "precision": "col sur encolure vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 26,
+        "step_id": 23
+    },
+    {
+        "order": 6,
+        "precision": "col sur encolure vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 26,
+        "step_id": 41
+    },
+    {
+        "order": 7,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 26,
+        "step_id": 8
+    },
+    {
+        "order": 8,
+        "precision": "doublure col sur col",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 26,
+        "step_id": 23
+    },
+    {
+        "order": 9,
+        "precision": "doublure col sur col",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 26,
+        "step_id": 41
+    },
+    {
+        "order": 10,
+        "precision": "col",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 26,
+        "step_id": 50
+    },
+    {
+        "order": 11,
+        "precision": "col",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 26,
+        "step_id": 50
+    },
+    {
+        "order": 12,
+        "precision": "col sur vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 26,
+        "step_id": 23
+    },
+    {
+        "order": 13,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 26,
+        "step_id": 52
+    },
+    {
+        "order": 14,
+        "precision": "pièce milieu devant avec hau devant",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 26,
+        "step_id": 23
+    },
+    {
+        "order": 15,
+        "precision": "pièce milieu devant avec hau devant",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 26,
+        "step_id": 41
+    },
+    {
+        "order": 16,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 26,
+        "step_id": 8
+    },
+    {
+        "order": 17,
+        "precision": "vers pièce milieu devant",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 26,
+        "step_id": 6
+    },
+    {
+        "order": 18,
+        "precision": "côté pièce milieu devant",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 26,
+        "step_id": 9
+    },
+    {
+        "order": 19,
+        "precision": "côté pièce milieu devant",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 26,
+        "step_id": 9
+    },
+    {
+        "order": 20,
+        "precision": "côté pièce milieu devant",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 26,
+        "step_id": 10
+    },
+    {
+        "order": 21,
+        "precision": "sous-bras vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 26,
+        "step_id": 23
+    },
+    {
+        "order": 22,
+        "precision": "sous-bras vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 26,
+        "step_id": 41
+    },
+    {
+        "order": 23,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 26,
+        "step_id": 8
+    },
+    {
+        "order": 24,
+        "precision": "sous-bras manche",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 26,
+        "step_id": 23
+    },
+    {
+        "order": 25,
+        "precision": "sous-bras manche",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 26,
+        "step_id": 41
+    },
+    {
+        "order": 26,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 26,
+        "step_id": 8
+    },
+    {
+        "order": 27,
+        "precision": "manche sur emmanchure vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 26,
+        "step_id": 23
+    },
+    {
+        "order": 28,
+        "precision": "manche sur emmanchure vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 26,
+        "step_id": 41
+    },
+    {
+        "order": 29,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 26,
+        "step_id": 13
+    },
+    {
+        "order": 30,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 26,
+        "step_id": 53
+    },
+    {
+        "order": 31,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 26,
+        "step_id": 7
+    },
+    {
+        "order": 1,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 28,
+        "step_id": 1
+    },
+    {
+        "order": 1,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 28,
+        "step_id": 1
+    },
+    {
+        "order": 2,
+        "precision": "pièce bas du devant",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 28,
+        "step_id": 54
+    },
+    {
+        "order": 3,
+        "precision": "pièce haut devant sur pièce bas du devant",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 28,
+        "step_id": 23
+    },
+    {
+        "order": 4,
+        "precision": "pièce haut devant sur pièce bas du devant",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 28,
+        "step_id": 41
+    },
+    {
+        "order": 5,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 28,
+        "step_id": 8
+    },
+    {
+        "order": 6,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 28,
+        "step_id": 52
+    },
+    {
+        "order": 7,
+        "precision": "sous-bras devant",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 28,
+        "step_id": 9
+    },
+    {
+        "order": 8,
+        "precision": "devant",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 28,
+        "step_id": 13
+    },
+    {
+        "order": 9,
+        "precision": "empiècement dos sur pièce dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 28,
+        "step_id": 23
+    },
+    {
+        "order": 10,
+        "precision": "empiècement dos sur pièce dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 28,
+        "step_id": 41
+    },
+    {
+        "order": 11,
+        "precision": "vers empiècement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 28,
+        "step_id": 6
+    },
+    {
+        "order": 12,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 28,
+        "step_id": 14
+    },
+    {
+        "order": 13,
+        "precision": "épaule devant et dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 28,
+        "step_id": 23
+    },
+    {
+        "order": 14,
+        "precision": "épaule devant et dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 28,
+        "step_id": 41
+    },
+    {
+        "order": 15,
+        "precision": "vers dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 28,
+        "step_id": 6
+    },
+    {
+        "order": 16,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 28,
+        "step_id": 14
+    },
+    {
+        "order": 17,
+        "precision": "sous-bras devant",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 28,
+        "step_id": 9
+    },
+    {
+        "order": 18,
+        "precision": "devant",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 28,
+        "step_id": 13
+    },
+    {
+        "order": 19,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 28,
+        "step_id": 28
+    },
+    {
+        "order": 20,
+        "precision": "sous-bras manche",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 28,
+        "step_id": 9
+    },
+    {
+        "order": 21,
+        "precision": "manche sur emmanchure",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 28,
+        "step_id": 23
+    },
+    {
+        "order": 22,
+        "precision": "manche sur emmanchure",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 28,
+        "step_id": 41
+    },
+    {
+        "order": 23,
+        "precision": "sous-bras vêtement et sous-bars manche",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 28,
+        "step_id": 23
+    },
+    {
+        "order": 24,
+        "precision": "sous-bras vêtement et sous-bars manche",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 28,
+        "step_id": 41
+    },
+    {
+        "order": 25,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 28,
+        "step_id": 5
+    },
+    {
+        "order": 26,
+        "precision": "bas de manche",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 28,
+        "step_id": 13
+    },
+    {
+        "order": 27,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 28,
+        "step_id": 20
+    },
+    {
+        "order": 28,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 28,
+        "step_id": 19
+    },
+    {
+        "order": 29,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 28,
+        "step_id": 7
+    },
+    {
+        "order": 1,
+        "precision": "couture épaule devant dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 29,
+        "step_id": 23
+    },
+    {
+        "order": 2,
+        "precision": "couture épaule devant dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 29,
+        "step_id": 41
+    },
+    {
+        "order": 3,
+        "precision": "couture sous-bras devant dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 29,
+        "step_id": 23
+    },
+    {
+        "order": 4,
+        "precision": "couture sous-bras devant dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 29,
+        "step_id": 41
+    },
+    {
+        "order": 5,
+        "precision": "parements pour le ruban élastique le long de l'encolure et manche",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 29,
+        "step_id": 55
+    },
+    {
+        "order": 5,
+        "precision": "parements en laisser 1cm pour passer élatique",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 29,
+        "step_id": 41
+    },
+    {
+        "order": 6,
+        "precision": "bord de la ceinture",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 29,
+        "step_id": 23
+    },
+    {
+        "order": 7,
+        "precision": "bord de la ceinture",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 29,
+        "step_id": 41
+    },
+    {
+        "order": 8,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 29,
+        "step_id": 5
+    },
+    {
+        "order": 9,
+        "precision": "en deux la ceinture",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 29,
+        "step_id": 50
+    },
+    {
+        "order": 10,
+        "precision": "ceinture sur vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 29,
+        "step_id": 23
+    },
+    {
+        "order": 11,
+        "precision": "ceinture sur vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 29,
+        "step_id": 41
+    },
+    {
+        "order": 12,
+        "precision": "élastique dans les parements",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 29,
+        "step_id": 56
+    },
+    {
+        "order": 1,
+        "precision": "milieu dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 30,
+        "step_id": 23
+    },
+    {
+        "order": 2,
+        "precision": "milieu dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 30,
+        "step_id": 41
+    },
+    {
+        "order": 3,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 30,
+        "step_id": 8
+    },
+    {
+        "order": 4,
+        "precision": "épaule devant et dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 30,
+        "step_id": 23
+    },
+    {
+        "order": 5,
+        "precision": "épaule devant et dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 30,
+        "step_id": 41
+    },
+    {
+        "order": 6,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 30,
+        "step_id": 13
+    },
+    {
+        "order": 7,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 30,
+        "step_id": 7
+    },
+    {
+        "order": 1,
+        "precision": "haut et bas du sac pour vêtement et doublure",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 31,
+        "step_id": 23
+    },
+    {
+        "order": 2,
+        "precision": "haut et bas du sac pour vêtement et doublure",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 31,
+        "step_id": 41
+    },
+    {
+        "order": 3,
+        "precision": "coté du sac pour vêtement et doublure",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 31,
+        "step_id": 23
+    },
+    {
+        "order": 4,
+        "precision": "coté du sac pour vêtement et doublure",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 31,
+        "step_id": 41
+    },
+    {
+        "order": 5,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 31,
+        "step_id": 5
+    },
+    {
+        "order": 6,
+        "precision": "repère du bas du sac pour vêtement et doublure",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 31,
+        "step_id": 23
+    },
+    {
+        "order": 7,
+        "precision": "repère du bas du sac pour vêtement et doublure",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 31,
+        "step_id": 41
+    },
+    {
+        "order": 8,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 31,
+        "step_id": 40
+    },
+    {
+        "order": 9,
+        "precision": "laisser 10 com d'ouverture pour pouvoir retourner",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 31,
+        "step_id": 21
+    },
+    {
+        "order": 10,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 31,
+        "step_id": 43
+    },
+    {
+        "order": 11,
+        "precision": "le pourtour des poignées",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 31,
+        "step_id": 23
+    },
+    {
+        "order": 12,
+        "precision": "le pourtour des poignées (laisser un ouverture pour retourner)",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 31,
+        "step_id": 41
+    },
+    {
+        "order": 13,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 31,
+        "step_id": 43
+    },
+    {
+        "order": 14,
+        "precision": "poignées sur le sac",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 31,
+        "step_id": 23
+    },
+    {
+        "order": 15,
+        "precision": "poignées sur le sac",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 31,
+        "step_id": 41
+    },
+    {
+        "order": 16,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 31,
+        "step_id": 19
+    },
+    {
+        "order": 1,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 32,
+        "step_id": 10
+    },
+    {
+        "order": 2,
+        "precision": "sur la longueur du dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 32,
+        "step_id": 52
+    },
+    {
+        "order": 3,
+        "precision": "sur la longueur du dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 32,
+        "step_id": 20
+    },
+    {
+        "order": 4,
+        "precision": "épaule dos et devant",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 32,
+        "step_id": 23
+    },
+    {
+        "order": 5,
+        "precision": "épaule dos et devant",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 32,
+        "step_id": 41
+    },
+    {
+        "order": 6,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 32,
+        "step_id": 5
+    },
+    {
+        "order": 7,
+        "precision": "sous-bras dos et devant",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 32,
+        "step_id": 23
+    },
+    {
+        "order": 8,
+        "precision": "sous-bras dos et devant",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 32,
+        "step_id": 41
+    },
+    {
+        "order": 9,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 32,
+        "step_id": 5
+    },
+    {
+        "order": 10,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 32,
+        "step_id": 15
+    },
+    {
+        "order": 11,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 32,
+        "step_id": 19
+    },
+    {
+        "order": 1,
+        "precision": "sous-bras devant et dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 33,
+        "step_id": 23
+    },
+    {
+        "order": 2,
+        "precision": "sous-bras devant et dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 33,
+        "step_id": 41
+    },
+    {
+        "order": 3,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 33,
+        "step_id": 5
+    },
+    {
+        "order": 4,
+        "precision": "intérieur jambes devant et dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 33,
+        "step_id": 23
+    },
+    {
+        "order": 5,
+        "precision": "intérieur jambes devant et dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 33,
+        "step_id": 41
+    },
+    {
+        "order": 6,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 33,
+        "step_id": 5
+    },
+    {
+        "order": 7,
+        "precision": "bord revers",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 33,
+        "step_id": 23
+    },
+    {
+        "order": 8,
+        "precision": "bord revers",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 33,
+        "step_id": 41
+    },
+    {
+        "order": 9,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 33,
+        "step_id": 5
+    },
+    {
+        "order": 10,
+        "precision": "le revers en deux",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 33,
+        "step_id": 50
+    },
+    {
+        "order": 11,
+        "precision": "revers sur vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 33,
+        "step_id": 23
+    },
+    {
+        "order": 12,
+        "precision": "revers sur vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 33,
+        "step_id": 41
+    },
+    {
+        "order": 13,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 33,
+        "step_id": 14
+    },
+    {
+        "order": 14,
+        "precision": "ceinture élastique",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 33,
+        "step_id": 55
+    },
+    {
+        "order": 15,
+        "precision": "élastique dans la ceinture",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 33,
+        "step_id": 56
+    },
+    {
+        "order": 1,
+        "precision": "bride sur le pourtour",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 34,
+        "step_id": 23
+    },
+    {
+        "order": 2,
+        "precision": "laisser une ouverture pour retourner",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 34,
+        "step_id": 41
+    },
+    {
+        "order": 3,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 34,
+        "step_id": 43
+    },
+    {
+        "order": 4,
+        "precision": "pour fermer les bride",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 34,
+        "step_id": 41
+    },
+    {
+        "order": 4,
+        "precision": "les pièce principale en ajoutant les bride à l'intérieur",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 34,
+        "step_id": 23
+    },
+    {
+        "order": 5,
+        "precision": "les pièce principale (laisser une ouverture pour retourner)",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 34,
+        "step_id": 41
+    },
+    {
+        "order": 6,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 34,
+        "step_id": 43
+    },
+    {
+        "order": 7,
+        "precision": "le pourtour de l'écharpe",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 34,
+        "step_id": 14
+    },
+    {
+        "order": 7,
+        "precision": "le pourtour de l'écharpe",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 34,
+        "step_id": 14
+    },
+    {
+        "order": 1,
+        "precision": "sous-bras devant et dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 35,
+        "step_id": 23
+    },
+    {
+        "order": 2,
+        "precision": "sous-bras devant et dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 35,
+        "step_id": 41
+    },
+    {
+        "order": 3,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 35,
+        "step_id": 5
+    },
+    {
+        "order": 4,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 35,
+        "step_id": 18
+    },
+    {
+        "order": 5,
+        "precision": "sous-bras gauche ceinture",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 35,
+        "step_id": 23
+    },
+    {
+        "order": 6,
+        "precision": "sous-bras gauche ceinture",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 35,
+        "step_id": 41
+    },
+    {
+        "order": 7,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 35,
+        "step_id": 5
+    },
+    {
+        "order": 8,
+        "precision": "ceinture sur vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 35,
+        "step_id": 23
+    },
+    {
+        "order": 9,
+        "precision": "ceinture sur vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 35,
+        "step_id": 41
+    },
+    {
+        "order": 10,
+        "precision": "ceinture",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 35,
+        "step_id": 14
+    },
+    {
+        "order": 11,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 35,
+        "step_id": 7
+    },
+    {
+        "order": 1,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 36,
+        "step_id": 2
+    },
+    {
+        "order": 2,
+        "precision": "sur les emmanchures du vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 36,
+        "step_id": 57
+    },
+    {
+        "order": 3,
+        "precision": "sur les emmanchures du vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 36,
+        "step_id": 15
+    },
+    {
+        "order": 4,
+        "precision": "sur le pourtour du vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 36,
+        "step_id": 13
+    },
+    {
+        "order": 1,
+        "precision": "sous-bras devant et dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 37,
+        "step_id": 23
+    },
+    {
+        "order": 2,
+        "precision": "sous-bras devant et dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 37,
+        "step_id": 41
+    },
+    {
+        "order": 3,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 37,
+        "step_id": 5
+    },
+    {
+        "order": 4,
+        "precision": "intérieur jambes devant et dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 37,
+        "step_id": 23
+    },
+    {
+        "order": 5,
+        "precision": "intérieur jambes devant et dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 37,
+        "step_id": 41
+    },
+    {
+        "order": 6,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 37,
+        "step_id": 5
+    },
+    {
+        "order": 7,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 37,
+        "step_id": 13
+    },
+    {
+        "order": 8,
+        "precision": "ceinture sur vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 37,
+        "step_id": 23
+    },
+    {
+        "order": 9,
+        "precision": "ceinture sur vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 37,
+        "step_id": 41
+    },
+    {
+        "order": 10,
+        "precision": "vers vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 37,
+        "step_id": 6
+    },
+    {
+        "order": 1,
+        "precision": "sous-bras devant et dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 38,
+        "step_id": 23
+    },
+    {
+        "order": 2,
+        "precision": "sous-bras devant et dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 38,
+        "step_id": 41
+    },
+    {
+        "order": 3,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 38,
+        "step_id": 5
+    },
+    {
+        "order": 4,
+        "precision": "épaule devant et dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 38,
+        "step_id": 23
+    },
+    {
+        "order": 5,
+        "precision": "épaule devant et dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 38,
+        "step_id": 41
+    },
+    {
+        "order": 6,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 38,
+        "step_id": 5
+    },
+    {
+        "order": 7,
+        "precision": "manche sur vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 38,
+        "step_id": 23
+    },
+    {
+        "order": 8,
+        "precision": "manche sur vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 38,
+        "step_id": 41
+    },
+    {
+        "order": 9,
+        "precision": "vers vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 38,
+        "step_id": 6
+    },
+    {
+        "order": 10,
+        "precision": "aux bas de manche et sur tout le pourtour du vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 38,
+        "step_id": 13
+    },
+    {
+        "order": 11,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 38,
+        "step_id": 7
+    },
+    {
+        "order": 1,
+        "precision": "les plis décoratifs",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 39,
+        "step_id": 55
+    },
+    {
+        "order": 2,
+        "precision": "les plis décoratifs",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 39,
+        "step_id": 44
+    },
+    {
+        "order": 3,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 39,
+        "step_id": 30
+    },
+
+    {
+        "order": 4,
+        "precision": "sous-bras devant et dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 39,
+        "step_id": 23
+    },
+    {
+        "order": 5,
+        "precision": "sous-bras devant et dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 39,
+        "step_id":41
+    },
+    {
+        "order": 6,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 38,
+        "step_id": 13
+    },
+    {
+        "order": 7,
+        "precision": "biais autour des encolure dos et devant",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 38,
+        "step_id": 23
+    },
+    {
+        "order": 8,
+        "precision": "biais autour des encolure dos et devant",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 38,
+        "step_id": 15
+    }
 ]

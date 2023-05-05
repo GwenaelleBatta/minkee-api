@@ -35,11 +35,14 @@ class PictureController extends Controller
      */
     public function store(User $user, PictureRequest $request)
     {
+
         $validatedData['user_id'] = $user->id;
+
         $uploaded_image = $request->file('link');
         if ($uploaded_image) {
-            $validatedData['pictures'] = 'storage/profil/pictures/' . $this->resizeAndSavePictures($uploaded_image);
+            $validatedData['link'] = 'storage/profil/pictures/' . $this->resizeAndSavePictures($uploaded_image);
         }
+
         $picture = Picture::create($validatedData);
 
         return response()->json([
