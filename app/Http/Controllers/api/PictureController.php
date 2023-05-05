@@ -45,9 +45,12 @@ class PictureController extends Controller
 
         $picture = Picture::create($validatedData);
 
+        $newUser = User::where('id', $user->id)->get()->first();
+
         return response()->json([
             'message' => 'Photo ajoutée avec succès',
-            'picture' => $picture
+            'picture' => $picture,
+            'user'=>$newUser,
         ]);
     }
 
