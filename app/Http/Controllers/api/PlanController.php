@@ -249,6 +249,12 @@ class PlanController extends Controller
         }
     }
 
+    public function news(User $user)
+    {
+        return PlanResource::collection(Plan::orderBy('created_at', 'DESC')->take(4)->get());
+
+    }
+
     /**
      * Store a newly created resource in storage.
      */
