@@ -5,6 +5,8 @@ namespace App\Http\Controllers\api;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\GlossaryResource;
 use App\Models\Glossary;
+use App\Models\Tuto;
+use App\Models\TutoTranslation;
 use Illuminate\Http\Request;
 use Orion\Concerns\DisablePagination;
 
@@ -16,6 +18,17 @@ class GlossaryController extends Controller
      */
     public function index()
     {
+        $searchTerm = request()->input('search') ?? '';
+        if ($searchTerm){
+            $references = Glossary::query()
+                ->where(function ($query) use ($searchTerm) {
+                    $query->where('name', 'like', '%' . $searchTerm . '%')
+                        ->orWhere('description', 'like', '%' . $searchTerm . '%');
+                })->get();
+
+            return GlossaryResource::collection($references);
+        }
+
         return GlossaryResource::collection(Glossary::all());
     }
 

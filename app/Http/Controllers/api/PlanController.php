@@ -79,7 +79,7 @@ class PlanController extends Controller
                 ->having('steps_count', '<=', $sortSteps)
                 ->where('type', $sortType);
         }//OK
-        if ($sortSteps !== 'all' && $sortGender!== 'all') {
+        if ($sortSteps !== 'all' && $sortGender !== 'all') {
             $plansQuery = Plan::query()
                 ->withCount('steps')
                 ->having('steps_count', '<=', $sortSteps)
@@ -214,7 +214,23 @@ class PlanController extends Controller
 
     public function indexFavorite(User $user)
     {
-        return PlanResource::collection($user->favorites()->get());
+        $favorites = $user->favorites()->get();
+        $favoritesIds = $user->favorites()->pluck('id')->toArray();
+        $searchTerm = request()->input('search') ?? '';
+        if ($searchTerm) {
+            $references = Plan::query()
+                ->whereIn('id', $favoritesIds)
+                ->where(function ($query) use ($searchTerm) {
+                    $query->where('name', 'like', '%' . $searchTerm . '%')
+                        ->orWhere('gender', 'like', '%' . $searchTerm . '%')
+                        ->orWhere('type', 'like', '%' . $searchTerm . '%')
+                        ->orWhere('base', 'like', '%' . $searchTerm . '%')
+                        ->orWhereJsonContains('keywords', $searchTerm)
+                        ->orWhereJsonContains('supplies', $searchTerm);
+                })->get();
+            return PlanResource::collection($references);
+        }
+        return PlanResource::collection($favorites);
     }
 
     public function suggest(User $user)

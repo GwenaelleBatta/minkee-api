@@ -5,9 +5,11 @@ namespace App\Http\Controllers\api;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\SupplyRequest;
 use App\Http\Requests\UpdateSupplyRequest;
+use App\Http\Resources\GlossaryResource;
 use App\Http\Resources\SupplyResource;
 use App\Http\Resources\TypeSupplyResource;
 use App\Http\Uploads\HandlesImagesUploads;
+use App\Models\Glossary;
 use App\Models\Supply;
 use App\Models\Thread;
 use App\Models\TypeSupply;
@@ -66,6 +68,23 @@ class SupplyController extends Controller
      */
     public function show(User $user, string $id)
     {
+        $searchTerm = request()->input('search') ?? '';
+        if ($searchTerm){
+            $references = Supply::query()
+                ->where('typesupply_id', $id)
+                ->where('user_id', $user->id)
+                ->where(function ($query) use ($searchTerm) {
+                    $query->where('name', 'like', '%' . $searchTerm . '%')
+                        ->orWhere('color', 'like', '%' . $searchTerm . '%')
+                        ->orWhere('category', 'like', '%' . $searchTerm . '%')
+                        ->orWhere('quantity', 'like', '%' . $searchTerm . '%')
+                        ->orWhere('number', 'like', '%' . $searchTerm . '%')
+                        ->orWhere('width', 'like', '%' . $searchTerm . '%');
+                })->get();
+
+            return SupplyResource::collection($references);
+        }
+
         return SupplyResource::collection(Supply::where('typesupply_id', $id)->where('user_id', $user->id)->get());
     }
 
