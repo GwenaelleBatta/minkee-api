@@ -236,18 +236,26 @@ class PlanController extends Controller
     public function suggest(User $user)
     {
         if (count($user->favorites) !== 0) {
-
             $types = [];
             $ids = [];
             foreach ($user->favorites as $favorite) {
                 $types[] = $favorite->type;
                 $ids[] = $favorite->id;
             }
-            return PlanResource::collection(Plan::whereIn('type', $types)->whereNotIn('id', $ids)->take(4)->get());
+            $suggest = PlanResource::collection(Plan::whereIn('type', $types)->whereNotIn('id', $ids)->take(4)->get());
+
+            if (count($suggest) < 4) {
+                $missingCount = 4 - count($suggest);
+                $randomPlans = PlanResource::collection(Plan::inRandomOrder()->whereNotIn('id', $ids)->take($missingCount)->get());
+                $suggest = $suggest->merge($randomPlans);
+            }
+
+            return $suggest;
         } else {
             return PlanResource::collection(Plan::inRandomOrder()->take(4)->get());
         }
     }
+
 
     public function news(User $user)
     {
