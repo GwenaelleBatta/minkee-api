@@ -2,6 +2,7 @@
 
 namespace App\Http\Resources;
 
+use App\Models\Plan;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
@@ -26,6 +27,7 @@ class PlanResource extends JsonResource
             'images' => json_decode($this->images),
             'keywords' => json_decode($this->keywords),
             'supplies' => json_decode($this->supplies),
+            'steps_count' => $this->steps_count,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
         ];

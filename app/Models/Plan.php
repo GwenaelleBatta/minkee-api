@@ -11,21 +11,24 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Plan extends Model
 {
     protected $fillable = ['id', 'name', 'base', 'slug', 'min', 'max', 'cut', 'gender', 'images', 'price', 'type', 'keywords', 'supplies', 'user_id', 'level_id'];
-
+    protected $withCount = ['steps'];
     use HasFactory, SoftDeletes;
 
     public function level(): BelongsTo
     {
         return $this->belongsTo(Level::class);
     }
+
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
     }
+
     public function steps(): BelongsToMany
     {
-        return $this->belongsToMany(Steps::class);
+        return $this->belongsToMany(Steps::class, 'plan_step', 'plan_id', 'step_id');
     }
+
     public function favorites(): BelongsToMany
     {
         return $this->belongsToMany(User::class, 'favorite', 'plan_id', 'user_id');
