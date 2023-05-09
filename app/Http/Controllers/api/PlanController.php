@@ -214,12 +214,15 @@ class PlanController extends Controller
 
     public function indexFavorite(User $user)
     {
-        $favorites = $user->favorites()->get();
+        $sortGender = request()->input('gender') ?? 'femme';
+
+        $favorites = $user->favorites()->where('gender', $sortGender)->get();
         $favoritesIds = $user->favorites()->pluck('id')->toArray();
         $searchTerm = request()->input('search') ?? '';
         if ($searchTerm) {
             $references = Plan::query()
                 ->whereIn('id', $favoritesIds)
+                ->where('gender', $sortGender)
                 ->where(function ($query) use ($searchTerm) {
                     $query->where('name', 'like', '%' . $searchTerm . '%')
                         ->orWhere('gender', 'like', '%' . $searchTerm . '%')

@@ -45,11 +45,11 @@ class SearchController extends Controller
             }
         }
         return response()->json([
-            'glossaire' => $results['glossary'],
-            'tissus' => $results['fabric'],
-            'gradations' => $results['gradations'],
-            'users' => $results['users'],
-            'plans' => $results['plans']
+            'glossaire' => $results['glossary']??[],
+            'tissus' => $results['fabric']??[],
+            'gradations' => $results['gradations']??[],
+            'users' => $results['users']??[],
+            'plans' => $results['plans']??[]
         ]);
     }
 
@@ -99,9 +99,7 @@ class SearchController extends Controller
         if ($searchTerm) {
             $references = User::query()
                 ->where(function ($query) use ($searchTerm) {
-                    $query->where('name', 'like', '%' . $searchTerm . '%')
-                        ->orWhere('description', 'like', '%' . $searchTerm . '%')
-                        ->orWhere('email', 'like', '%' . $searchTerm . '%');
+                    $query->where('name', 'like', '%' . $searchTerm . '%');
                 })->get();
             $this->results['users'] = UserResource::collection($references);
         }

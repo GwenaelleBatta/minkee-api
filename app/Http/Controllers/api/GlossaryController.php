@@ -22,8 +22,7 @@ class GlossaryController extends Controller
         if ($searchTerm){
             $references = Glossary::query()
                 ->where(function ($query) use ($searchTerm) {
-                    $query->where('name', 'like', '%' . $searchTerm . '%')
-                        ->orWhere('description', 'like', '%' . $searchTerm . '%');
+                    $query->where('name', 'like', '%' . $searchTerm . '%');
                 })->get();
 
             return GlossaryResource::collection($references);
