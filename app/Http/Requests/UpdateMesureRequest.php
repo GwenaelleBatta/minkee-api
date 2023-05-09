@@ -25,6 +25,7 @@ class UpdateMesureRequest extends FormRequest
     {
         return [
             'name' => 'nullable',
+            'gender' => 'nullable',
             'outline'=>'nullable',
             'lenght'=>"nullable",
         ];

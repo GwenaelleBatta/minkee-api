@@ -72,10 +72,11 @@ class MesureController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(User $user,UpdateMesureRequest $request, string $id)
+    public function update(User $user,int $id,UpdateMesureRequest $request, )
     {
+
         $mesure = Mesure::find($id);
-        $data_mesure = $request->safe()->all();;
+        $data_mesure = $request->safe()->all();
         $data_mesure['slug'] = Str::slug($data_mesure['name']);
         $mesure->update($data_mesure);
 

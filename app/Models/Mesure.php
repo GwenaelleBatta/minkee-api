@@ -12,7 +12,7 @@ class Mesure extends Model
     use HasFactory, SoftDeletes;
 
     protected $fillable = [
-        'id', 'name', 'slug', 'outline', 'lenght', 'user_id'
+        'id', 'name', 'slug', 'outline', 'lenght', 'user_id', 'gender'
     ];
 
     public function user(): BelongsTo
