@@ -81,8 +81,21 @@ class PictureController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(User $user,string $id)
     {
-        //
+        $picture = Picture::find($id);
+        if (!$picture) {
+            return response()->json([
+                'message' => 'Photo introuvable',
+            ], 404);
+        }
+        $picture->delete();
+
+        $newUser = User::where('id', $user->id)->get()->first();
+
+        return response()->json([
+            'message' => 'Photo effacée avec succès',
+            'user'=>$newUser,
+        ]);
     }
 }

@@ -64,6 +64,7 @@ Route::get('/{user:slug}/supplies/type/{typesupply:id}', [SupplyController::clas
 Route::delete('/{user:slug}/supplies/destroy/{supply:id}', [SupplyController::class, 'destroy']);
 
 Route::post('/{user:slug}/pictures/create', [PictureController::class, 'store']);
+Route::delete('/{user:slug}/pictures/destroy/{picture:id}', [PictureController::class, 'destroy']);
 
 Route::get('/plans', [PlanController::class, 'indexGlobal']);
 Route::get('/{user:slug}/plans', [PlanController::class, 'index']);
