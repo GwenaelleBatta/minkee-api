@@ -2822,5 +2822,469 @@
         "updated_at": null,
         "plan_id": 45,
         "step_id": 41
+    },
+    {
+        "order":1,
+        "precision": "les différentes sangles du sac",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 46,
+        "step_id": 55
+    },
+    {
+        "order":2,
+        "precision": "les différentes sangles du sac",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 46,
+        "step_id": 14
+    },
+    {
+        "order":3,
+        "precision": "les boucles dans les sangles",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 46,
+        "step_id": 56
+    },
+    {
+        "order":4,
+        "precision": "la plus petite sangle sur la partie médiane du sac (se fier au repère)",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 46,
+        "step_id": 41
+    },
+    {
+        "order":5,
+        "precision": "les parties latérales du sac avec la partie médiane",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 46,
+        "step_id": 23
+    },
+    {
+        "order":5,
+        "precision": "les parties latérales du sac avec la partie médiane",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 46,
+        "step_id": 41
+    },
+    {
+        "order":6,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 46,
+        "step_id": 13
+    },
+    {
+        "order":7,
+        "precision": "les grandes sangles au bord du sac",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 46,
+        "step_id": 23
+    },
+    {
+        "order":8,
+        "precision": "le devant et le dos du sac",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 46,
+        "step_id": 23
+    },
+    {
+        "order":9,
+        "precision": "le devant et le dos du sac",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 46,
+        "step_id": 41
+    },
+    {
+        "order":10,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 46,
+        "step_id": 7
+    },
+    {
+        "order":1,
+        "precision": "entoiler une des deux pièce",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 47,
+        "step_id": 12
+    },
+    {
+        "order":2,
+        "precision": "les deux pièce ensemble",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 47,
+        "step_id": 23
+    },
+    {
+        "order":3,
+        "precision": "les deux pièce ensemble (laisser une ouverture pour retourner)",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 47,
+        "step_id": 41
+    },
+    {
+        "order":4,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 47,
+        "step_id": 43
+    },
+    {
+        "order":5,
+        "precision": "le pourtour",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 47,
+        "step_id": 14
+    },
+    {
+        "order":6,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 47,
+        "step_id": 20
+    },
+    {
+        "order":7,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 47,
+        "step_id": 19
+    },
+    {
+        "order":1,
+        "precision": "milieu dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 48,
+        "step_id": 23
+    },
+    {
+        "order":2,
+        "precision": "milieu dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 48,
+        "step_id": 41
+    },
+    {
+        "order":3,
+        "precision": "au niveau de épaule",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 48,
+        "step_id": 34
+    },
+    {
+        "order":4,
+        "precision": "couture épaule",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 48,
+        "step_id": 23
+    },
+    {
+        "order":5,
+        "precision": "couture épaule",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 48,
+        "step_id": 41
+    },
+    {
+        "order":6,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 48,
+        "step_id": 13
+    },
+    {
+        "order":7,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 48,
+        "step_id": 7
+    },
+    {
+        "order":1,
+        "precision": "en deux sur la largeur",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 49,
+        "step_id": 50
+    },
+    {
+        "order":2,
+        "precision": "sur la longueur",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 49,
+        "step_id": 23
+    },
+    {
+        "order":3,
+        "precision": "sur la longueur",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 49,
+        "step_id": 41
+    },
+    {
+        "order":4,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 49,
+        "step_id": 43
+    },
+    {
+        "order":4,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 49,
+        "step_id": 43
+    },
+    {
+        "order":5,
+        "precision": "l'un des bord de l'écharpe en la pliant vers l'intérieur",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 49,
+        "step_id": 34
+    },
+    {
+        "order":6,
+        "precision": "les côté non plier dans celui déjà plier",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 49,
+        "step_id": 56
+    },
+    {
+        "order":6,
+        "precision": "les côté non plier dans celui déjà plier",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 49,
+        "step_id": 23
+    },
+    {
+        "order":6,
+        "precision": "les côté non plier dans celui déjà plier",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 49,
+        "step_id": 14
+    },
+    {
+        "order":7,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 49,
+        "step_id": 7
+    },
+    {
+        "order":1,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 50,
+        "step_id": 10
+    },
+    {
+        "order":2,
+        "precision": "épaule devant et dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 50,
+        "step_id": 23
+    },
+    {
+        "order":3,
+        "precision": "épaule devant et dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 50,
+        "step_id": 41
+    },
+    {
+        "order":3,
+        "precision": "sous-bras devant et dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 50,
+        "step_id": 23
+    },
+    {
+        "order":4,
+        "precision": "sous-bras devant et dos",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 50,
+        "step_id": 41
+    },
+    {
+        "order":5,
+        "precision": "sous-bras et épaule",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 50,
+        "step_id": 5
+    },
+    {
+        "order":6,
+        "precision": "les passants",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 50,
+        "step_id": 55
+    },
+    {
+        "order":7,
+        "precision": "au bas du vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 50,
+        "step_id": 17
+    },
+    {
+        "order":8,
+        "precision": "partie gauche de la capuche avec la droite",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 50,
+        "step_id": 23
+    },
+    {
+        "order":9,
+        "precision": "partie gauche de la capuche avec la droite",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 50,
+        "step_id": 41
+    },
+    {
+        "order":10,
+        "precision": "vers la gauche",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 50,
+        "step_id": 6
+    },
+    {
+        "order":11,
+        "precision": "la couture de la capuche",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 50,
+        "step_id": 14
+    },
+    {
+        "order":12,
+        "precision": "capuche sur vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 50,
+        "step_id": 23
+    },
+    {
+        "order":13,
+        "precision": "capuche sur vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 50,
+        "step_id": 41
+    },
+    {
+        "order":14,
+        "precision": "la bride pour suspendre la robe",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 50,
+        "step_id": 55
+    },
+    {
+        "order":15,
+        "precision": "sur le pourtour du vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 50,
+        "step_id": 17
+    },
+    {
+        "order":16,
+        "precision": "sous-bras manche",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 50,
+        "step_id": 23
+    },
+    {
+        "order":17,
+        "precision": "sous-bras manche",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 50,
+        "step_id": 41
+    },
+    {
+        "order":18,
+        "precision": "manche sur vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 50,
+        "step_id": 23
+    },
+    {
+        "order":19,
+        "precision": "manche sur vêtement",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 50,
+        "step_id": 41
+    },
+    {
+        "order":20,
+        "precision": "sur le bas des manches",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 50,
+        "step_id": 17
+    },
+    {
+        "order":21,
+        "precision": "la ceinture",
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 50,
+        "step_id": 55
+    },
+    {
+        "order":22,
+        "precision": null,
+        "created_at": null,
+        "updated_at": null,
+        "plan_id": 50,
+        "step_id": 7
     }
 ]

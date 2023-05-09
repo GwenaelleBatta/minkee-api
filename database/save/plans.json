@@ -1225,7 +1225,7 @@
         "updated_at": null,
         "deleted_at": null,
         "level_id": 2,
-        "user_id": 3
+        "user_id": 2
     },
     {
         "id": 43,
@@ -1256,7 +1256,7 @@
         "updated_at": null,
         "deleted_at": null,
         "level_id": 3,
-        "user_id": 3
+        "user_id": 2
     },
     {
         "id": 44,
@@ -1284,7 +1284,7 @@
         "updated_at": null,
         "deleted_at": null,
         "level_id": 2,
-        "user_id": 3
+        "user_id": 2
     },
     {
         "id": 45,
@@ -1313,6 +1313,152 @@
         "updated_at": null,
         "deleted_at": null,
         "level_id": 2,
-        "user_id": 3
+        "user_id": 2
+    },
+    {
+        "id": 46,
+        "name": "Sac à dos",
+        "base": "U",
+        "cut": null,
+        "gender": "femme",
+        "images": null,
+        "price": "35",
+        "type": "sac",
+        "keywords": [
+            "sac",
+            "cabas",
+            "dos",
+            "femme",
+            "sangle"
+        ],
+        "supplies": [
+            "Fil de couture",
+            "70cm de tissus imperméable (tissus 1)",
+            "70cm de tissus imperméable (tissus 2)",
+            "4 boucles "
+        ],
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null,
+        "level_id": 2,
+        "user_id": 2
+    },
+    {
+        "id": 47,
+        "name": "Écharpe",
+        "base": "U",
+        "cut": null,
+        "gender": "femme",
+        "images": null,
+        "price": "15",
+        "type": "accessoire",
+        "keywords": [
+            "hiver",
+            "cou",
+            "foulard",
+            "échape",
+            "imprimé",
+            "élatique",
+            "automne",
+            "froid"
+        ],
+        "supplies": [
+            "Fil de couture",
+            "50cm de jersey imprimé",
+            "45cm de thermocollant",
+            "2 boutons de 2cm de diamètre",
+            "Aiguille de machine pour jersey"
+        ],
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null,
+        "level_id": 1,
+        "user_id": 2
+    },
+    {
+        "id": 48,
+        "name": "Cardigan ample",
+        "base": "42",
+        "cut": null,
+        "gender": "femme",
+        "images": null,
+        "price": "40",
+        "type": "gilet",
+        "keywords": [
+            "cardigan",
+            "gilet",
+            "ample",
+            "confortable"
+        ],
+        "supplies": [
+            "Fil de couture",
+            "150cm de jersey",
+            "Aiguille double pour machine"
+        ],
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null,
+        "level_id": 1,
+        "user_id": 2
+    },
+    {
+        "id": 49,
+        "name": "Snood",
+        "base": "U",
+        "cut": null,
+        "gender": "femme",
+        "images": null,
+        "price": "15",
+        "type": "accessoire",
+        "keywords": [
+            "hiver",
+            "cou",
+            "foulard",
+            "échape",
+            "imprimé",
+            "élatique",
+            "automne",
+            "froid"
+        ],
+        "supplies": [
+            "Fil de couture",
+            "65cm de tissus en maille",
+            "Aiguille double pour machine"
+        ],
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null,
+        "level_id": 1,
+        "user_id": 2
+    },
+    {
+        "id": 50,
+        "name": "Robe de chambre",
+        "base": "U",
+        "cut": null,
+        "gender": "femme",
+        "images": null,
+        "price": "60",
+        "type": "robe",
+        "keywords": [
+            "nuit",
+            "dormir",
+            "bain",
+            "éponge",
+            "capuche",
+            "peignoir",
+            "ceinture",
+            "douche"
+        ],
+        "supplies": [
+            "Fil de couture",
+            "250cm de tissus éponge",
+            "500cm de biais"
+        ],
+        "created_at": null,
+        "updated_at": null,
+        "deleted_at": null,
+        "level_id": 3,
+        "user_id": 2
     }
 ]
