@@ -2,17 +2,25 @@
 
 namespace App\Http\Controllers\api;
 
-use App\Models\Steps;
+use App\Http\Controllers\Controller;
+use App\Http\Resources\StepResource;
+use App\Models\Step;
 use Illuminate\Http\Request;
-use Orion\Http\Controllers\Controller;
 
-class StepsController extends Controller
+class StepController extends Controller
 {
-    protected $model = Steps::class;
     /**
      * Display a listing of the resource.
      */
     public function index()
+    {
+        return StepResource::collection(Step::all());
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function create()
     {
         //
     }
@@ -28,7 +36,15 @@ class StepsController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Steps $steps)
+    public function show(string $id)
+    {
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     */
+    public function edit(string $id)
     {
         //
     }
@@ -36,7 +52,7 @@ class StepsController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Steps $steps)
+    public function update(Request $request, string $id)
     {
         //
     }
@@ -44,7 +60,7 @@ class StepsController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Steps $steps)
+    public function destroy(string $id)
     {
         //
     }

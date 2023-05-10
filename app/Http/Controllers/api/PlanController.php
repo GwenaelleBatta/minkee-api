@@ -298,8 +298,9 @@ class PlanController extends Controller
 
         if ($plan) {
             $validatedDataSteps = $stepRequest->safe()->all();
-            foreach ($validatedDataSteps['step'] as $step) {
+            foreach ($validatedDataSteps['step'] as $i => $step) {
                 $step['plan_id'] = $plan->id;
+                $step['order'] = $i+1;
                 $steps [] = $step;
                 DB::table('plan_step')->insert([$step]);
 

@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Mesure;
-use App\Models\Steps;
+use App\Models\Step;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\File;
@@ -20,7 +20,7 @@ class StepsSeeder extends Seeder
         $steps = json_decode($json);
 
         foreach ($steps as $key => $value) {
-            Steps::factory()->create([
+            Step::factory()->create([
                 "name" => $value->name,
                 "image" => $value->image,
                 "check" => $value->check,

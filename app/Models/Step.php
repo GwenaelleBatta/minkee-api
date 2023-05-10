@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Steps extends Model
+class Step extends Model
 {
     protected $fillable = ['id', 'name', 'description', 'slug', 'image', 'check'];
 
