@@ -5,6 +5,7 @@ namespace App\Http\Controllers\api;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\FavoriteRequest;
 use App\Http\Requests\PlanRequest;
+use App\Http\Requests\StepRequest;
 use App\Http\Resources\PlanResource;
 use App\Models\Plan;
 use App\Models\User;
@@ -253,7 +254,7 @@ class PlanController extends Controller
                 $suggest = $suggest->merge($randomPlans);
             }
 
-            return  PlanResource::collection($suggest);
+            return PlanResource::collection($suggest);
         } else {
             return PlanResource::collection(Plan::inRandomOrder()->take(4)->get());
         }
@@ -269,14 +270,14 @@ class PlanController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(User $user, PlanRequest $request)
+    public function store(User $user, PlanRequest $request, StepRequest $stepRequest)
     {
         if (!$user) {
             return response()->json([
                 'message' => 'Utilisateur introuvable',
             ], 404);
         }
-
+        $steps = [];
         $validatedData = $request->safe()->all();
         $validatedData['user_id'] = $user->id;
         $validatedData['supplies'] = json_encode($validatedData['supplies']);
@@ -295,9 +296,20 @@ class PlanController extends Controller
         $validatedData['slug'] = Str::slug($validatedData['name'] . $user->slug);
         $plan = Plan::create($validatedData);
 
+        if ($plan) {
+            $validatedDataSteps = $stepRequest->safe()->all();
+            foreach ($validatedDataSteps['step'] as $step) {
+                $step['plan_id'] = $plan->id;
+                $steps [] = $step;
+                DB::table('plan_step')->insert([$step]);
+
+            }
+        }
+
         return response()->json([
             'message' => 'Plan créé avec succès',
-            'mesure' => $plan
+            'plan' => $plan,
+            'step' => $steps,
         ]);
 
     }

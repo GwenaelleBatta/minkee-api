@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class PlanRequest extends FormRequest
+class StepRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,18 +24,11 @@ class PlanRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required',
-            'base' => 'required',
-            'gender' => 'required',
-            'type' => 'required',
-            'price' => 'required',
-            'supplies' => 'required',
-            'images' => 'nullable|mimes:jpg,png,webp,svg',
-            'cut' => 'nullable',
-            'keywords' => 'nullable',
-            'level_id'=>'required',
-
-
+            'step' => [
+                'step_id'=> 'required',
+                'order'=> 'required',
+                'precision'=> 'nullable',
+            ]
         ];
     }
 }
