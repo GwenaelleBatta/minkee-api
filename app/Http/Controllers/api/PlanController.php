@@ -7,6 +7,7 @@ use App\Http\Requests\FavoriteRequest;
 use App\Http\Requests\PlanRequest;
 use App\Http\Requests\StepRequest;
 use App\Http\Resources\PlanResource;
+use App\Http\Uploads\HandlesImagesUploads;
 use App\Models\Plan;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -15,6 +16,7 @@ use Illuminate\Support\Str;
 
 class PlanController extends Controller
 {
+    use HandlesImagesUploads;
     /**
      * Display a listing of the resource.
      */
@@ -279,16 +281,19 @@ class PlanController extends Controller
         }
         $steps = [];
         $validatedData = $request->safe()->all();
+
         $validatedData['user_id'] = $user->id;
-        $validatedData['supplies'] = json_encode($validatedData['supplies']);
-        if ($validatedData['keywords'] !== null) {
-            $validatedData['keywords'] = json_encode($validatedData['keywords']);
-        }
+//        $validatedData['supplies'] = json_decode($validatedData['supplies']);
+//
+//        foreach ($validatedData['supplies'] as $supply){
+//            $validatedData['supplies'] [] = $supply;
+//        }
+//        $validatedData['supplies'] = json_encode($validatedData['supplies']);
         $uploaded_images = $request->file('images');
         if ($uploaded_images) {
             $images = [];
             foreach ($uploaded_images as $image) {
-                $image_path = 'storage/profil/avatar/' . $this->resizeAndSaveAvatar($image);
+                $image_path = 'storage/plans/images/' . $this->resizeAndSavePlan($image);
                 $images[] = $image_path;
             }
             $validatedData['images'] = json_encode($images);
@@ -298,19 +303,25 @@ class PlanController extends Controller
 
         if ($plan) {
             $validatedDataSteps = $stepRequest->safe()->all();
+            $validatedDataSteps['step'] = json_decode($validatedDataSteps['step']);
             foreach ($validatedDataSteps['step'] as $i => $step) {
-                $step['plan_id'] = $plan->id;
-                $step['order'] = $i+1;
-                $steps [] = $step;
-                DB::table('plan_step')->insert([$step]);
+                $s = [];
+                $s['plan_id'] = $plan->id;
+                $s['order'] = $i+1;
+                $s['step_id'] = $step->step_id;
+                $s['precision'] = $step->precision;
+                $steps [] = $s;
+                DB::table('plan_step')->insert([$s]);
 
             }
         }
+        $newUser = User::where('id', $user->id)->get()->first();
 
         return response()->json([
             'message' => 'Plan créé avec succès',
             'plan' => $plan,
             'step' => $steps,
+            'user' => $newUser,
         ]);
 
     }

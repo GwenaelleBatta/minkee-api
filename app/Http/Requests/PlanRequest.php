@@ -30,9 +30,9 @@ class PlanRequest extends FormRequest
             'type' => 'required',
             'price' => 'required',
             'supplies' => 'required',
-            'images' => 'nullable|mimes:jpg,png,webp,svg',
+            'images' => 'nullable|array',
+            'images.*' => 'mimes:jpg,jpeg,png,webp,svg',
             'cut' => 'nullable',
-            'keywords' => 'nullable',
             'level_id'=>'required',
 
 
