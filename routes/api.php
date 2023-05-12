@@ -73,6 +73,7 @@ Route::get('/plans', [PlanController::class, 'indexGlobal']);
 Route::get('/{user:slug}/plans', [PlanController::class, 'index']);
 Route::get('/{user:slug}/plans/favorite', [PlanController::class, 'indexFavorite']);
 Route::get('/{user:slug}/plans/suggest', [PlanController::class, 'suggest']);
+Route::get('/{user:slug}/plans/similar/{plan:id}', [PlanController::class, 'similar']);
 Route::get('/{user:slug}/plans/news', [PlanController::class, 'news']);
 Route::post('/{user:slug}/plans/create', [PlanController::class, 'store']);
 Route::post('/{user:slug}/plans/favorite/{plan:id}', [PlanController::class, 'favorite']);
