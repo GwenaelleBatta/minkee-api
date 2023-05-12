@@ -12,6 +12,7 @@ class Plan extends Model
 {
     protected $fillable = ['id', 'name', 'base', 'slug', 'min', 'max', 'cut', 'gender', 'images', 'price', 'type', 'keywords', 'supplies', 'user_id', 'level_id'];
     protected $withCount = ['steps'];
+    protected $with = ['steps'];
     use HasFactory, SoftDeletes;
 
     public function level(): BelongsTo
@@ -26,7 +27,7 @@ class Plan extends Model
 
     public function steps(): BelongsToMany
     {
-        return $this->belongsToMany(Step::class, 'plan_step', 'plan_id', 'step_id');
+        return $this->belongsToMany(Step::class, 'plan_step', 'plan_id', 'step_id')->withPivot('order', 'precision');
     }
 
     public function favorites(): BelongsToMany

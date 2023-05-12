@@ -28,6 +28,7 @@ class PlanResource extends JsonResource
             'keywords' => json_decode($this->keywords),
             'supplies' => json_decode($this->supplies),
             'steps_count' => $this->steps_count,
+            'steps' => $this->steps,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
         ];

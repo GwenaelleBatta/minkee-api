@@ -5,10 +5,12 @@ namespace App\Http\Controllers\api;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\FavoriteRequest;
 use App\Http\Requests\PlanRequest;
+use App\Http\Requests\PlanUpdateRequest;
 use App\Http\Requests\StepRequest;
 use App\Http\Resources\PlanResource;
 use App\Http\Uploads\HandlesImagesUploads;
 use App\Models\Plan;
+use App\Models\Supply;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -17,6 +19,7 @@ use Illuminate\Support\Str;
 class PlanController extends Controller
 {
     use HandlesImagesUploads;
+
     /**
      * Display a listing of the resource.
      */
@@ -283,12 +286,6 @@ class PlanController extends Controller
         $validatedData = $request->safe()->all();
 
         $validatedData['user_id'] = $user->id;
-//        $validatedData['supplies'] = json_decode($validatedData['supplies']);
-//
-//        foreach ($validatedData['supplies'] as $supply){
-//            $validatedData['supplies'] [] = $supply;
-//        }
-//        $validatedData['supplies'] = json_encode($validatedData['supplies']);
         $uploaded_images = $request->file('images');
         if ($uploaded_images) {
             $images = [];
@@ -307,7 +304,7 @@ class PlanController extends Controller
             foreach ($validatedDataSteps['step'] as $i => $step) {
                 $s = [];
                 $s['plan_id'] = $plan->id;
-                $s['order'] = $i+1;
+                $s['order'] = $i + 1;
                 $s['step_id'] = $step->step_id;
                 $s['precision'] = $step->precision;
                 $steps [] = $s;
@@ -345,23 +342,61 @@ class PlanController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(User $user, int $id, PlanUpdateRequest $request, StepRequest $stepRequest)
     {
-        $uploaded_images = $request->file('images');
-        if ($uploaded_images) {
-            $images = [];
-            foreach ($uploaded_images as $image) {
-                $image_path = 'storage/profil/avatar/' . $this->resizeAndSaveAvatar($image);
-                $images[] = $image_path;
+        $plan = Plan::find($id);
+        $oldSteps = DB::table('plan_step')->where('plan_id', $plan->id)->get();
+        $steps = [];
+        $validatedData = $request->safe()->all();
+        if ($request['newImages'] !== null) {
+            $uploaded_images = $request->file('newImages');
+            if ($uploaded_images) {
+                $images = [];
+                foreach ($uploaded_images as $image) {
+                    $image_path = 'storage/plans/images/' . $this->resizeAndSavePlan($image);
+                    $images[] = $image_path;
+                }
+                $existing_images = json_decode($validatedData['images'], true);
+
+                $all_images = array_merge($existing_images, $images);
+
+                $validatedData['images'] = json_encode($all_images);
             }
-            $validatedData['images'] = json_encode($images);
         }
+
+        $validatedData['slug'] = Str::slug($validatedData['name'] . $user->slug);
+
+        $plan->update($validatedData);
+
+        foreach ($oldSteps as $os) {
+            DB::table('plan_step')->where('id', $os->id)->delete();
+        }
+
+        $validatedDataSteps = $stepRequest->safe()->all();
+        $validatedDataSteps['step'] = json_decode($validatedDataSteps['step']);
+
+        foreach ($validatedDataSteps['step'] as $i => $step) {
+            $s = [];
+            $s['plan_id'] = $plan->id;
+            $s['order'] = $i + 1;
+            $s['step_id'] = $step->step_id;
+            $s['precision'] = $step->precision;
+            $steps [] = $s;
+            DB::table('plan_step')->insert([$s]);
+        }
+        $newUser = User::where('id', $user->id)->get()->first();
+        return response()->json([
+            'message' => 'Plan mis à jour avec succès',
+            'plan' => $plan,
+            'step' => $steps,
+            'user' => $newUser,
+        ]);
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy($id)
+    public function destroy(User $user, $id)
     {
         $plan = Plan::find($id);
         if (!$plan) {
@@ -370,8 +405,11 @@ class PlanController extends Controller
             ], 404);
         }
         $plan->delete();
+        $newUser = User::where('id', $user->id)->get()->first();
+
         return response()->json([
             'message' => 'Plan effacé avec succès',
+            'user' => $newUser,
         ]);
     }
 
@@ -382,16 +420,21 @@ class PlanController extends Controller
         $validatedData['user_id'] = $user->id;
         if (DB::table('favorite')->where('plan_id', $id)->where('user_id', $user->id)->count() > 0) {
             DB::table('favorite')->where('plan_id', $id)->where('user_id', $user->id)->delete();
+            //$newUser = User::where('id', $user->id)->get()->first();
             return response()->json([
                 'message' => 'Plan mis supprimé des favoris',
+                'user' => $user,
             ]);
         } else {
             DB::table('favorite')->insert([
                 "plan_id" => $validatedData['plan_id'],
                 "user_id" => $validatedData['user_id']
             ]);
+            //$newUser = User::where('id', $user->id)->get()->first();
+
             return response()->json([
                 'message' => 'Plan mis en favoris',
+                'user' => $user,
             ]);
         }
 

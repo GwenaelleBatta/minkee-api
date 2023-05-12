@@ -6,12 +6,7 @@
         "base": "40",
         "cut": null,
         "gender": "femme",
-        "images": [
-            "https://picsum.photos/154/172",
-            "https://picsum.photos/154/172",
-            "https://picsum.photos/154/172",
-            "https://picsum.photos/154/172"
-        ],
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "60",
         "type": "veste",
         "keywords": [
@@ -42,12 +37,7 @@
         "base": "U",
         "cut": null,
         "gender": "",
-        "images": [
-            "https://picsum.photos/154/172",
-            "https://picsum.photos/154/172",
-            "https://picsum.photos/154/172",
-            "https://picsum.photos/154/172"
-        ],
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "5",
         "type": "poche",
         "keywords": [
@@ -73,12 +63,7 @@
         "base": "U",
         "cut": null,
         "gender": "",
-        "images": [
-            "https://picsum.photos/154/172",
-            "https://picsum.photos/154/172",
-            "https://picsum.photos/154/172",
-            "https://picsum.photos/154/172"
-        ],
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "5",
         "type": "poche",
         "keywords": [
@@ -103,12 +88,7 @@
         "base": "40",
         "cut": null,
         "gender": "femme",
-        "images": [
-            "https://picsum.photos/154/172",
-            "https://picsum.photos/154/172",
-            "https://picsum.photos/154/172",
-            "https://picsum.photos/154/172"
-        ],
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "25",
         "type": "jupe",
         "keywords": [
@@ -138,7 +118,7 @@
         "base": "42",
         "cut": null,
         "gender": "femme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "30",
         "type": "jupe",
         "keywords": [
@@ -167,7 +147,7 @@
         "base": "46",
         "cut": null,
         "gender": "homme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "50",
         "type": "chemise",
         "keywords": [
@@ -199,7 +179,7 @@
         "base": "38",
         "cut": null,
         "gender": "femme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "45",
         "type": "chemise",
         "keywords": [
@@ -230,7 +210,7 @@
         "base": "44",
         "cut": null,
         "gender": "homme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "60",
         "type": "veste",
         "keywords": [
@@ -261,7 +241,7 @@
         "base": "50",
         "cut": null,
         "gender": "homme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "50",
         "type": "pantalon",
         "keywords": [
@@ -289,7 +269,7 @@
         "base": "36",
         "cut": null,
         "gender": "femme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "60",
         "type": "robe",
         "keywords": [
@@ -319,7 +299,7 @@
         "base": "40",
         "cut": null,
         "gender": "femme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "40",
         "type": "veste",
         "keywords": [
@@ -349,7 +329,7 @@
         "base": "40",
         "cut": null,
         "gender": "femme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "100",
         "type": "veste",
         "keywords": [
@@ -378,7 +358,7 @@
         "base": "44",
         "cut": null,
         "gender": "homme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "40",
         "type": "costume",
         "keywords": [
@@ -407,7 +387,7 @@
         "base": "46",
         "cut": null,
         "gender": "homme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "80",
         "type": "costume",
         "keywords": [
@@ -440,7 +420,7 @@
         "base": "44",
         "cut": null,
         "gender": "homme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "60",
         "type": "costume",
         "keywords": [
@@ -468,7 +448,7 @@
         "base": "40",
         "cut": null,
         "gender": "femme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "70",
         "type": "combinaison",
         "keywords": [
@@ -497,7 +477,7 @@
         "base": "40",
         "cut": null,
         "gender": "femme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "40",
         "type": "kimono",
         "keywords": [
@@ -525,7 +505,7 @@
         "base": "40",
         "cut": null,
         "gender": "femme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "20",
         "type": "robe",
         "keywords": [
@@ -551,7 +531,7 @@
         "base": "44",
         "cut": null,
         "gender": "homme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "20",
         "type": "tshirt",
         "keywords": [
@@ -578,7 +558,7 @@
         "base": "42",
         "cut": null,
         "gender": "femme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "20",
         "type": "tshirt",
         "keywords": [
@@ -605,7 +585,7 @@
         "base": "40",
         "cut": null,
         "gender": "femme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "30",
         "type": "top",
         "keywords": [
@@ -633,7 +613,7 @@
         "base": "42",
         "cut": null,
         "gender": "femme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "40",
         "type": "short",
         "keywords": null,
@@ -658,7 +638,7 @@
         "base": "U",
         "cut": null,
         "gender": "femme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "15",
         "type": "bonnet",
         "keywords": [
@@ -683,7 +663,7 @@
         "base": "U",
         "cut": null,
         "gender": "homme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "10",
         "type": "foulard",
         "keywords": [
@@ -710,7 +690,7 @@
         "base": "50",
         "cut": null,
         "gender": "homme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "20",
         "type": "haut",
         "keywords": [
@@ -735,7 +715,7 @@
         "base": "50",
         "cut": null,
         "gender": "homme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "50",
         "type": "pull",
         "keywords": [
@@ -763,7 +743,7 @@
         "base": "50",
         "cut": null,
         "gender": "homme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "20",
         "type": "haut",
         "keywords": [
@@ -790,7 +770,7 @@
         "base": "50",
         "cut": null,
         "gender": "homme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "20",
         "type": "haut",
         "keywords": [
@@ -817,7 +797,7 @@
         "base": "40",
         "cut": null,
         "gender": "femme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "20",
         "type": "top",
         "keywords": [
@@ -848,7 +828,7 @@
         "base": "40",
         "cut": null,
         "gender": "femme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "20",
         "type": "haut",
         "keywords": [
@@ -878,7 +858,7 @@
         "base": "U",
         "cut": null,
         "gender": "femme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "20",
         "type": "sac",
         "keywords": [
@@ -910,7 +890,7 @@
         "base": "122",
         "cut": null,
         "gender": "enfant",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "30",
         "type": "haut",
         "keywords": [
@@ -940,7 +920,7 @@
         "base": "122",
         "cut": null,
         "gender": "enfant",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "25",
         "type": "bas",
         "keywords": [
@@ -970,7 +950,7 @@
         "base": "U",
         "cut": null,
         "gender": "femme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "15",
         "type": "accessoire",
         "keywords": [
@@ -1001,7 +981,7 @@
         "base": "42",
         "cut": null,
         "gender": "femme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "15",
         "type": "jupe",
         "keywords": [
@@ -1031,7 +1011,7 @@
         "base": "42",
         "cut": null,
         "gender": "femme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "15",
         "type": "tunique",
         "keywords": [
@@ -1062,7 +1042,7 @@
         "base": "42",
         "cut": null,
         "gender": "femme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "70",
         "type": "bas",
         "keywords": [
@@ -1090,7 +1070,7 @@
         "base": "42",
         "cut": null,
         "gender": "femme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "40",
         "type": "gilet",
         "keywords": [
@@ -1116,7 +1096,7 @@
         "base": "42",
         "cut": null,
         "gender": "femme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "40",
         "type": "top",
         "keywords": [
@@ -1143,7 +1123,7 @@
         "base": "38",
         "cut": null,
         "gender": "femme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "35",
         "type": "haut",
         "keywords": [
@@ -1171,7 +1151,7 @@
         "base": "36",
         "cut": null,
         "gender": "femme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "35",
         "type": "veste",
         "keywords": [
@@ -1200,7 +1180,7 @@
         "base": "U",
         "cut": null,
         "gender": "femme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "40",
         "type": "sac",
         "keywords": [
@@ -1233,7 +1213,7 @@
         "base": "38",
         "cut": null,
         "gender": "femme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "50",
         "type": "robe",
         "keywords": [
@@ -1264,7 +1244,7 @@
         "base": "36",
         "cut": null,
         "gender": "femme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "30",
         "type": "haut",
         "keywords": [
@@ -1292,7 +1272,7 @@
         "base": "U",
         "cut": null,
         "gender": "femme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "30",
         "type": "haut",
         "keywords": [
@@ -1321,7 +1301,7 @@
         "base": "U",
         "cut": null,
         "gender": "femme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "35",
         "type": "sac",
         "keywords": [
@@ -1349,7 +1329,7 @@
         "base": "U",
         "cut": null,
         "gender": "femme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "15",
         "type": "accessoire",
         "keywords": [
@@ -1381,7 +1361,7 @@
         "base": "42",
         "cut": null,
         "gender": "femme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "40",
         "type": "gilet",
         "keywords": [
@@ -1407,7 +1387,7 @@
         "base": "U",
         "cut": null,
         "gender": "femme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "15",
         "type": "accessoire",
         "keywords": [
@@ -1437,7 +1417,7 @@
         "base": "U",
         "cut": null,
         "gender": "femme",
-        "images": null,
+        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "60",
         "type": "robe",
         "keywords": [
