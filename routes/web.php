@@ -1,17 +1,6 @@
 <?php
 
-use App\Http\Resources\FabricResource;
-use App\Http\Resources\GlossaryResource;
-use App\Http\Resources\GradationResource;
-use App\Http\Resources\ThreadResource;
-use App\Http\Resources\TypeSupplyResource;
-use App\Http\Resources\UserResource;
-use App\Models\Fabric;
-use App\Models\Glossary;
-use App\Models\Gradation;
-use App\Models\Thread;
-use App\Models\TypeSupply;
-use App\Models\User;
+use App\Http\Controllers\api\ResetPasswordController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,5 +17,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/user/reset-password/{token}', [ResetPasswordController::class, 'edit'])->middleware('guest')->name('password.reset');
+Route::post('/user/reset', [ResetPasswordController::class, 'update'])->middleware('guest')->name('password.reset');
+
+
 
 

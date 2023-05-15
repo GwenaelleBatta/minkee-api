@@ -41,9 +41,9 @@ Route::post('/register', [RegisterSessionController::class, 'store'])->name('reg
 Route::post('/logout/{user:slug}', [AuthenticatedSessionController::class, 'logout'])->name('logout');
 Route::get('/user/{user:id}', [UserController::class, 'show']);
 Route::post('/user/password', [ResetPasswordController::class, 'store'])->middleware('guest');
-Route::post('/user/reset-password', [ResetPasswordController::class, 'update'])->middleware('guest')->name('password.reset');
 Route::post('/user/update/{user:id}', [UserController::class, 'update']);
 Route::get('/user/followers/{user:id}/', [UserController::class, 'indexFollowers']);
+
 
 Route::get('/search', [SearchController::class, 'index']);
 Route::get('/types', [TypeSupplyController::class, 'index']);
@@ -73,9 +73,9 @@ Route::get('/plans', [PlanController::class, 'indexGlobal']);
 Route::get('/{user:slug}/plans', [PlanController::class, 'index']);
 Route::get('/{user:slug}/plans/favorite', [PlanController::class, 'indexFavorite']);
 Route::get('/{user:slug}/plans/suggest', [PlanController::class, 'suggest']);
-Route::get('/{user:slug}/plans/similar/{plan:id}', [PlanController::class, 'similar']);
 Route::get('/{user:slug}/plans/news', [PlanController::class, 'news']);
 Route::post('/{user:slug}/plans/create', [PlanController::class, 'store']);
+Route::get('/{user:slug}/plans/similar/{plan:id}', [PlanController::class, 'similar']);
 Route::post('/{user:slug}/plans/favorite/{plan:id}', [PlanController::class, 'favorite']);
 Route::post('/{user:slug}/plans/update/{plan:id}', [PlanController::class, 'update']);
 Route::delete('/{user:slug}/plans/destroy/{plan:id}', [PlanController::class, 'destroy']);

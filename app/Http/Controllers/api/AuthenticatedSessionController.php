@@ -16,7 +16,7 @@ class AuthenticatedSessionController extends Controller
     {
         $validated = $request->validated();
 
-        if (Auth::attempt($validated)) {
+        if (Auth::attempt($validated, true)) {
             $user = Auth::user();
             $user->api_token = Str::random(60);
             $followed = $user->followed;

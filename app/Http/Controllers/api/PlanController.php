@@ -15,6 +15,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
+use function PHPUnit\Framework\isEmpty;
 
 class PlanController extends Controller
 {
@@ -27,7 +28,8 @@ class PlanController extends Controller
     {
         $sortBase = request()->input('base') ?? 'all';
         $sortSteps = request()->input('steps') ?? 'all';
-        $sortLevelId = request()->input('level') ?? 'all';
+        $sortLevel = request()->input('level');
+        $sortLevelId = ($sortLevel !== 'all') ? intval($sortLevel) : 'all';
         $sortGender = request()->input('gender') ?? 'femme';
         $sortType = request()->input('type') ?? 'all';
         $plansQuery = Plan::query();
@@ -274,7 +276,9 @@ class PlanController extends Controller
 
     public function similar(User $user, Plan $plan)
     {
-        return PlanResource::collection(Plan::whereIn('type', $plan->type)->where('user_id', '!=', $user->id)->take(4)->get());
+        $similar = PlanResource::collection(Plan::where('type', $plan->type)->where('user_id', '!=', $user->id)->take(4)->get());
+
+        return $similar;
     }
 
     /**
