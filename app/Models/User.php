@@ -69,6 +69,10 @@ class User extends Authenticatable
     {
         return $this->belongsToMany(Plan::class, 'favorite', 'user_id', 'plan_id');
     }
+    public function checks(): BelongsToMany
+    {
+        return $this->belongsToMany(Plan::class, 'checksteps', 'user_id', 'planstep_id');
+    }
     public function followers(): BelongsToMany
     {
         return $this->belongsToMany(User::class, 'followers', 'followed_id', 'follower_id');

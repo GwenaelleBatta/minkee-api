@@ -41,6 +41,10 @@ return new class extends Migration
             $table->foreignId('plan_id')->constrained()->onUpdate('cascade');
             $table->foreignId('user_id')->constrained()->onUpdate('cascade');
         });
+        Schema::table('checksteps', function (Blueprint $table) {
+            $table->foreignId('planstep_id')->references('id')->on('plan_step')->constrained()->onUpdate('cascade');
+            $table->foreignId('user_id')->constrained()->onUpdate('cascade');
+        });
         Schema::table('followers', function (Blueprint $table) {
             $table->foreignId('follower_id')->references('id')->on('users')->constrained()->onUpdate('cascade');
             $table->foreignId('followed_id')->references('id')->on('users')->constrained()->onUpdate('cascade');
