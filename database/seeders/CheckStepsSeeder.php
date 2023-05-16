@@ -19,7 +19,7 @@ class CheckStepsSeeder extends Seeder
 
         foreach ($check as $key => $value) {
             DB::table('checksteps')->insert([
-                "planstep_id" => $value->plan_id,
+                "planstep_id" => $value->planstep_id,
                 "user_id" => $value->user_id
             ]);
         }

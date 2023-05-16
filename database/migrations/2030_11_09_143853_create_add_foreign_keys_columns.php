@@ -88,7 +88,14 @@ return new class extends Migration
             $table->dropConstrainedForeignId('user_id');
             $table->dropConstrainedForeignId('plan_id');
         });
-
+        Schema::table('checksteps', function (Blueprint $table) {
+            $table->dropConstrainedForeignId('planstep_id')->references('id')->on('plan_step')->constrained()->onUpdate('cascade');
+            $table->dropConstrainedForeignId('user_id')->constrained()->onUpdate('cascade');
+        });
+        Schema::table('followers', function (Blueprint $table) {
+            $table->dropConstrainedForeignId('follower_id')->references('id')->on('users')->constrained()->onUpdate('cascade');
+            $table->dropConstrainedForeignId('followed_id')->references('id')->on('users')->constrained()->onUpdate('cascade');
+        });
 
     }
 };

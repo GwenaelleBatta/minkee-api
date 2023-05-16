@@ -29,33 +29,32 @@
         "deleted_at": null,
         "level_id": 2,
         "user_id": 2
-    },
-    {
-        "id": 2,
-        "name": "Poche plaquée",
-        "slug": "poche-plaquee",
-        "base": "U",
-        "cut": null,
-        "gender": "",
-        "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
-        "price": "5",
-        "type": "poche",
-        "keywords": [
-            "poche",
-            "chemise",
-            "plaquée",
-            "poche plaquée"
-        ],
-        "supplies": [
-            "Chute de tissus",
-            "Fil de couture"
-        ],
-        "created_at": "2023-04-15 12:40:18",
-        "updated_at": "2023-04-15 12:40:18",
-        "deleted_at": null,
-        "level_id": 1,
-        "user_id": 2
-    },
+    },{
+    "id": 2,
+    "name": "Poche plaquée",
+    "slug": "poche-plaquee",
+    "base": "U",
+    "cut": null,
+    "gender": "",
+    "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
+    "price": "5",
+    "type": "poche",
+    "keywords": [
+        "poche",
+        "chemise",
+        "plaquée",
+        "poche plaquée"
+    ],
+    "supplies": [
+        "Chute de tissus",
+        "Fil de couture"
+    ],
+    "created_at": "2023-04-15 12:40:18",
+    "updated_at": "2023-04-15 12:40:18",
+    "deleted_at": null,
+    "level_id": 1,
+    "user_id": 2
+},
     {
         "id": 3,
         "name": "Poche plaquée",
@@ -444,7 +443,7 @@
     {
         "id": 16,
         "name": "Combinaison dos nu",
-        "slug": "combinaison-dos-nu",
+        "slug": "combinaison",
         "base": "40",
         "cut": null,
         "gender": "femme",
@@ -640,7 +639,7 @@
         "gender": "femme",
         "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "15",
-        "type": "bonnet",
+        "type": "accessoire",
         "keywords": [
             "bonnet",
             "tête",
@@ -665,7 +664,7 @@
         "gender": "homme",
         "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "10",
-        "type": "foulard",
+        "type": "accessoire",
         "keywords": [
             "jabot",
             "cravate",
@@ -692,7 +691,7 @@
         "gender": "homme",
         "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "20",
-        "type": "haut",
+        "type": "top",
         "keywords": [
             "haut",
             "marcel",
@@ -745,7 +744,7 @@
         "gender": "homme",
         "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "20",
-        "type": "haut",
+        "type": "gilet",
         "keywords": [
             "gilet",
             "chaud",
@@ -772,7 +771,7 @@
         "gender": "homme",
         "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "20",
-        "type": "haut",
+        "type": "chemise",
         "keywords": [
             "haut",
             "marcel",
@@ -830,7 +829,7 @@
         "gender": "femme",
         "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "20",
-        "type": "haut",
+        "type": "top",
         "keywords": [
             "drapé",
             "plissé",
@@ -860,16 +859,12 @@
         "gender": "femme",
         "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "20",
-        "type": "sac",
+        "type": "accessoire",
         "keywords": [
-            "drapé",
-            "plissé",
-            "haut",
-            "femme",
-            "ample",
-            "fluide",
-            "confortable",
-            "léger"
+            "sac",
+            "bicolore",
+            "cabas",
+            "femme"
         ],
         "supplies": [
             "Fil de couture",
@@ -892,7 +887,7 @@
         "gender": "enfants",
         "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "30",
-        "type": "haut",
+        "type": "tunique",
         "keywords": [
             "tunique",
             "carreaux",
@@ -922,7 +917,7 @@
         "gender": "enfants",
         "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "25",
-        "type": "bas",
+        "type": "short",
         "keywords": [
             "pantalon",
             "carreaux",
@@ -1044,7 +1039,7 @@
         "gender": "femme",
         "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "70",
-        "type": "bas",
+        "type": "pantalon",
         "keywords": [
             "legging",
             "bas",
@@ -1125,7 +1120,7 @@
         "gender": "femme",
         "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "35",
-        "type": "haut",
+        "type": "chemise",
         "keywords": [
             "top",
             "haut",
@@ -1182,7 +1177,7 @@
         "gender": "femme",
         "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "40",
-        "type": "sac",
+        "type": "accessoire",
         "keywords": [
             "sac",
             "cabas",
@@ -1246,7 +1241,7 @@
         "gender": "femme",
         "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "30",
-        "type": "haut",
+        "type": "top",
         "keywords": [
             "haut",
             "top",
@@ -1274,7 +1269,7 @@
         "gender": "femme",
         "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "30",
-        "type": "haut",
+        "type": "accessoire",
         "keywords": [
             "sac",
             "cabas",
@@ -1303,7 +1298,7 @@
         "gender": "femme",
         "images": ["storage/plans/images/aea80f7eb3813f6156b9d94d630999e1e7d0b0c9.jpg", "storage/plans/images/84f3a49d2f4a2355bad938e1f3d9b6e3c0ef48e2.jpg", "storage/plans/images/739c0d9ef470b9693f5494d777481b5327ce7a1a.jpg"],
         "price": "35",
-        "type": "sac",
+        "type": "accessoire",
         "keywords": [
             "sac",
             "cabas",

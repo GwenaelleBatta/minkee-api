@@ -26,9 +26,9 @@ class PlanController extends Controller
      */
     public function indexGlobal()
     {
-        $sortBase = request()->input('base') ?? 'all';
+        $sortBase = request()->input('base') == 'Toutes' ? 'all' : request()->input('base');
         $sortSteps = request()->input('steps') ?? 'all';
-        $sortLevel = request()->input('level');
+        $sortLevel = request()->input('level') == 4 ? 'all' : request()->input('level');
         $sortLevelId = ($sortLevel !== 'all') ? intval($sortLevel) : 'all';
         $sortGender = request()->input('gender') ?? 'femme';
         $sortType = request()->input('type') ?? 'all';
@@ -266,7 +266,6 @@ class PlanController extends Controller
             return PlanResource::collection(Plan::inRandomOrder()->where('user_id', '!=', $user->id)->take(4)->get());
         }
     }
-
 
     public function news(User $user)
     {
