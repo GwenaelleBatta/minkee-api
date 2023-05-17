@@ -14,14 +14,21 @@ class RegisterSessionController extends Controller
         $validated = $request->validated();
         $validated['password'] = password_hash($validated['password'], PASSWORD_DEFAULT);
         $validated['slug'] = Str::slug($validated['name']);
-        $validated['avatar'] = "";
-        $validated['description'] = "";
+        $validated['avatar'] = "storage/profil/avatar/2f57747a7dde66288f69e8b8ffedfcc1f1de9ae5.png";
+        $validated['description'] = "Description";
+        $validated['connected'] = 1;
+
         $user = User::create($validated);
+
         $user->api_token = Str::random(60);
+        $user->remember_token = Str::random(10);
+        $user->save();
+
         return response()->json([
             'message' => 'Registration successful',
             'data' => $user,
+            'token' => $user->api_token,
         ]);
-
     }
+
 }

@@ -303,6 +303,10 @@ class PlanController extends Controller
             }
             $validatedData['images'] = json_encode($images);
         }
+            $uploaded_cut = $request->file('cut');
+            if ($uploaded_cut) {
+                $validatedData['cut'] = 'storage/plans/images/' . $this->resizeAndSavePlan($uploaded_cut);
+            }
         $validatedData['slug'] = Str::slug($validatedData['name'] . $user->slug);
         $plan = Plan::create($validatedData);
 
@@ -371,7 +375,10 @@ class PlanController extends Controller
                 $validatedData['images'] = json_encode($all_images);
             }
         }
-
+        $uploaded_cut = $request->file('cut');
+        if ($uploaded_cut) {
+            $validatedData['cut'] = 'storage/plans/images/' . $this->resizeAndSavePlan($uploaded_cut);
+        }
         $validatedData['slug'] = Str::slug($validatedData['name'] . $user->slug);
 
         $plan->update($validatedData);
