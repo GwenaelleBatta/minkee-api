@@ -170,4 +170,13 @@ class UserController extends Controller
         }
     }
 
+    public function indexChecks(User $user){
+
+        $ids = [];
+        foreach ($user->checks as $c) {
+            $ids [] = $c->id;
+        }
+        return $ids;
+    }
+
 }

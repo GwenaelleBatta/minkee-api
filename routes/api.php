@@ -44,6 +44,7 @@ Route::post('/user/password', [ResetPasswordController::class, 'store'])->middle
 Route::post('/user/update/{user:id}', [UserController::class, 'update']);
 Route::get('/user/followers/{user:id}', [UserController::class, 'indexFollowers']);
 Route::post('/user/{user:slug}/followers/{followed:id}', [UserController::class, 'follower']);
+Route::get('/{user:slug}/check', [UserController::class, 'indexChecks']);
 Route::post('/{user:slug}/check/{planstep:id}', [UserController::class, 'checks']);
 
 
