@@ -324,13 +324,12 @@ class PlanController extends Controller
 
             }
         }
-        $newUser = User::where('id', $user->id)->get()->first();
 
         return response()->json([
             'message' => 'Plan créé avec succès',
             'plan' => $plan,
             'step' => $steps,
-            'user' => $newUser,
+            'user' => $user->refresh(),
         ]);
 
     }
@@ -399,12 +398,11 @@ class PlanController extends Controller
             $steps [] = $s;
             DB::table('plan_step')->insert([$s]);
         }
-        $newUser = User::where('id', $user->id)->get()->first();
         return response()->json([
             'message' => 'Plan mis à jour avec succès',
             'plan' => $plan,
             'step' => $steps,
-            'user' => $newUser,
+            'user' => $user->refresh(),
         ]);
     }
 
@@ -420,11 +418,10 @@ class PlanController extends Controller
             ], 404);
         }
         $plan->delete();
-        $newUser = User::where('id', $user->id)->get()->first();
 
         return response()->json([
             'message' => 'Plan effacé avec succès',
-            'user' => $newUser,
+            'user' => $user->refresh(),
         ]);
     }
 
@@ -435,21 +432,19 @@ class PlanController extends Controller
         $validatedData['user_id'] = $user->id;
         if (DB::table('favorite')->where('plan_id', $id)->where('user_id', $user->id)->count() > 0) {
             DB::table('favorite')->where('plan_id', $id)->where('user_id', $user->id)->delete();
-            //$newUser = User::where('id', $user->id)->get()->first();
             return response()->json([
                 'message' => 'Plan mis supprimé des favoris',
-                'user' => $user,
+                'user' => $user->refresh(),
             ]);
         } else {
             DB::table('favorite')->insert([
                 "plan_id" => $validatedData['plan_id'],
                 "user_id" => $validatedData['user_id']
             ]);
-            //$newUser = User::where('id', $user->id)->get()->first();
 
             return response()->json([
                 'message' => 'Plan mis en favoris',
-                'user' => $user,
+                'user' => $user->refresh(),
             ]);
         }
 

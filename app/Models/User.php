@@ -8,13 +8,14 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Facades\DB;
 use Laravel\Sanctum\HasApiTokens;
 
 class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable, SoftDeletes                                                                    ;
 
-    protected $with = ['supplies', 'mesures', 'plans', 'favorites', 'pictures'];
+    protected $with = ['supplies', 'mesures', 'plans', 'favorites', 'pictures', 'checks'];
     /**
      * The attributes that are mass assignable.
      *
@@ -71,7 +72,7 @@ class User extends Authenticatable
     }
     public function checks(): BelongsToMany
     {
-        return $this->belongsToMany(Plan::class, 'checksteps', 'user_id', 'planstep_id');
+        return $this->belongsToMany(PlanStep::class, 'checksteps', 'user_id', 'planstep_id');
     }
     public function followers(): BelongsToMany
     {

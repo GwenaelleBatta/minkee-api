@@ -2,18 +2,17 @@
 <html lang="fr" class="h-full">
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Gwenaëlle Batta">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    @vite('resources/css/app.css')
-    @vite('resources/js/app.js')
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <title>Minkee — Réinitialisation</title>
 </head>
 <body class="font-raleway flex flex-grow flex-col justify-center align-cente h-full justify-center gap-16  ">
 <h1 class="flex flex-col justify-center align-center text-center font-bodoni">
     <span class="text-orange-default text-9xl font-bold">MK</span>
     <span class="text-lg">Minkee, au fil de vos idées</span>
-
 </h1>
 <main id="content" class="">
     <img class="absolute top-0 left-0 right-0 bottom-0 -z-50 opacity-20 h-full object-cover lg:w-full" src="/bg/pexels-ksenia-chernaya-3965543.jpg" alt="image de fond">

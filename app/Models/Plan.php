@@ -27,7 +27,7 @@ class Plan extends Model
 
     public function steps(): BelongsToMany
     {
-        return $this->belongsToMany(Step::class, 'plan_step', 'plan_id', 'step_id')->withPivot('order', 'precision')->orderByPivot('order');
+        return $this->belongsToMany(Step::class, 'plan_step', 'plan_id', 'step_id')->withPivot('order', 'precision', 'id')->orderByPivot('order');
     }
 
     public function favorites(): BelongsToMany

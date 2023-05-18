@@ -42,7 +42,9 @@ Route::post('/logout/{user:slug}', [AuthenticatedSessionController::class, 'logo
 Route::get('/user/{user:id}', [UserController::class, 'show']);
 Route::post('/user/password', [ResetPasswordController::class, 'store'])->middleware('guest');
 Route::post('/user/update/{user:id}', [UserController::class, 'update']);
-Route::get('/user/followers/{user:id}/', [UserController::class, 'indexFollowers']);
+Route::get('/user/followers/{user:id}', [UserController::class, 'indexFollowers']);
+Route::post('/user/{user:slug}/followers/{followed:id}', [UserController::class, 'follower']);
+Route::post('/{user:slug}/check/{planstep:id}', [UserController::class, 'checks']);
 
 
 Route::get('/search', [SearchController::class, 'index']);
