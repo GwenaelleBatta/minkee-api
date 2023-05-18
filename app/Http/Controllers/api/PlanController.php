@@ -220,30 +220,6 @@ class PlanController extends Controller
         return PlanResource::collection(Plan::where('user_id', $user->id)->get());
     }
 
-    public function indexFavorite(User $user)
-    {
-        $sortGender = request()->input('gender') ?? 'femme';
-
-        $favorites = $user->favorites()->where('gender', $sortGender)->get();
-        $favoritesIds = $user->favorites()->pluck('id')->toArray();
-        $searchTerm = request()->input('search') ?? '';
-        if ($searchTerm) {
-            $references = Plan::query()
-                ->whereIn('id', $favoritesIds)
-                ->where('gender', $sortGender)
-                ->where(function ($query) use ($searchTerm) {
-                    $query->where('name', 'like', '%' . $searchTerm . '%')
-                        ->orWhere('gender', 'like', '%' . $searchTerm . '%')
-                        ->orWhere('type', 'like', '%' . $searchTerm . '%')
-                        ->orWhere('base', 'like', '%' . $searchTerm . '%')
-                        ->orWhereJsonContains('keywords', $searchTerm)
-                        ->orWhereJsonContains('supplies', $searchTerm);
-                })->get();
-            return PlanResource::collection($references);
-        }
-        return PlanResource::collection($favorites);
-    }
-
     public function suggest(User $user)
     {
         if (count($user->favorites) !== 0) {
@@ -271,13 +247,6 @@ class PlanController extends Controller
     {
         return PlanResource::collection(Plan::orderBy('created_at', 'DESC')->where('user_id', '!=', $user->id)->take(4)->get());
 
-    }
-
-    public function similar(User $user, Plan $plan)
-    {
-        $similar = PlanResource::collection(Plan::where('type', $plan->type)->where('user_id', '!=', $user->id)->take(4)->get());
-
-        return $similar;
     }
 
     /**
@@ -425,29 +394,4 @@ class PlanController extends Controller
         ]);
     }
 
-    public function favorite(User $user, $id, FavoriteRequest $request)
-    {
-        $validatedData = $request->safe()->all();
-        $validatedData['plan_id'] = $id;
-        $validatedData['user_id'] = $user->id;
-        if (DB::table('favorite')->where('plan_id', $id)->where('user_id', $user->id)->count() > 0) {
-            DB::table('favorite')->where('plan_id', $id)->where('user_id', $user->id)->delete();
-            return response()->json([
-                'message' => 'Plan mis supprimé des favoris',
-                'user' => $user->refresh(),
-            ]);
-        } else {
-            DB::table('favorite')->insert([
-                "plan_id" => $validatedData['plan_id'],
-                "user_id" => $validatedData['user_id']
-            ]);
-
-            return response()->json([
-                'message' => 'Plan mis en favoris',
-                'user' => $user->refresh(),
-            ]);
-        }
-
-
-    }
 }

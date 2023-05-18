@@ -3,25 +3,24 @@
 namespace App\Http\Controllers\api;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\FollowerRequest;
-use App\Http\Resources\UserResource;
+use App\Http\Requests\CheckRequest;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
-class FollowersController extends Controller
+class CheckController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index(User $user)
+
+    public function index(User $user, $id)
     {
         $ids = [];
-        foreach ($user->followed as $followed) {
-            $ids[] = $followed->id;
+        foreach ($user->checks->where("plan_id", $id) as $c) {
+            $ids [] = $c->id;
         }
-
-        return UserResource::collection(User::whereIn('id', $ids)->withCount('followed')->get());
+        return $ids;
     }
 
     /**
@@ -35,26 +34,22 @@ class FollowersController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(User $user, $id, FollowerRequest $request)
-    {
+    public function store(User $user, $id, CheckRequest $request){
         $validatedData = $request->safe()->all();
-        $validatedData['followed_id'] = $id;
-        $validatedData['follower_id'] = $user->id;
-        if (DB::table('followers')->where('followed_id', $id)->where('follower_id', $user->id)->count() > 0) {
-            DB::table('followers')->where('followed_id', $id)->where('follower_id', $user->id)->delete();
+        $validatedData['planstep_id'] = $id;
+        $validatedData['user_id'] = $user->id;
+
+        if(DB::table('checksteps')->where('user_id', $user->id)->where('planstep_id', $id)->count() > 0){
+            DB::table('checksteps')->where('user_id', $user->id)->where('planstep_id', $id)->delete();
             return response()->json([
-                'message' => 'Désabonné',
-                'user' => $user,
+                'message' => 'Étape non checkée',
+                'user' => $user->refresh(),
             ]);
         } else {
-            DB::table('followers')->insert([
-                "followed_id" => $validatedData['followed_id'],
-                "follower_id" => $validatedData['follower_id']
-            ]);
-
+            DB::table('checksteps')->insert($validatedData);
             return response()->json([
-                'message' => 'Abonné',
-                'user' => $user,
+                'message' => 'Étape checkée',
+                'user' => $user->refresh(),
             ]);
         }
     }

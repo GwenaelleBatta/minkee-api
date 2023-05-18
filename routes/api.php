@@ -1,7 +1,10 @@
 <?php
 
 use App\Http\Controllers\api\AuthenticatedSessionController;
+use App\Http\Controllers\api\CheckController;
 use App\Http\Controllers\api\FabricController;
+use App\Http\Controllers\api\FavoriteController;
+use App\Http\Controllers\api\FollowersController;
 use App\Http\Controllers\api\GlossaryController;
 use App\Http\Controllers\api\GradationController;
 use App\Http\Controllers\api\LevelController;
@@ -12,6 +15,7 @@ use App\Http\Controllers\api\QuestionController;
 use App\Http\Controllers\api\RegisterSessionController;
 use App\Http\Controllers\api\ResetPasswordController;
 use App\Http\Controllers\api\SearchController;
+use App\Http\Controllers\api\SimilarController;
 use App\Http\Controllers\api\StepController;
 use App\Http\Controllers\api\SupplyController;
 use App\Http\Controllers\api\ThreadController;
@@ -42,10 +46,10 @@ Route::post('/logout/{user:slug}', [AuthenticatedSessionController::class, 'logo
 Route::get('/user/{user:id}', [UserController::class, 'show']);
 Route::post('/user/password', [ResetPasswordController::class, 'store'])->middleware('guest');
 Route::post('/user/update/{user:id}', [UserController::class, 'update']);
-Route::get('/user/followers/{user:id}', [UserController::class, 'indexFollowers']);
-Route::post('/user/{user:slug}/followers/{followed:id}', [UserController::class, 'follower']);
-Route::post('/{user:slug}/check/{planstep:id}', [UserController::class, 'checks']);
-Route::get('/{user:slug}/check/plans/{plan:id}', [UserController::class, 'indexChecks']);
+Route::get('/user/followers/{user:id}', [FollowersController::class, 'index']);
+Route::post('/user/{user:slug}/followers/{followed:id}', [FollowersController::class, 'store']);
+Route::post('/{user:slug}/check/{planstep:id}', [CheckController::class, 'store']);
+Route::get('/{user:slug}/check/plans/{plan:id}', [CheckController::class, 'index']);
 
 
 Route::get('/search', [SearchController::class, 'index']);
@@ -74,18 +78,14 @@ Route::delete('/{user:slug}/pictures/destroy/{picture:id}', [PictureController::
 
 Route::get('/plans', [PlanController::class, 'indexGlobal']);
 Route::get('/{user:slug}/plans', [PlanController::class, 'index']);
-Route::get('/{user:slug}/plans/favorite', [PlanController::class, 'indexFavorite']);
+Route::get('/{user:slug}/plans/favorite', [FavoriteController::class, 'index']);
 Route::get('/{user:slug}/plans/suggest', [PlanController::class, 'suggest']);
 Route::get('/{user:slug}/plans/news', [PlanController::class, 'news']);
 Route::post('/{user:slug}/plans/create', [PlanController::class, 'store']);
-Route::get('/{user:slug}/plans/similar/{plan:id}', [PlanController::class, 'similar']);
-Route::post('/{user:slug}/plans/favorite/{plan:id}', [PlanController::class, 'favorite']);
+Route::get('/{user:slug}/plans/similar/{plan:id}', [SimilarController::class, 'index']);
+Route::post('/{user:slug}/plans/favorite/{plan:id}', [FavoriteController::class, 'store']);
 Route::post('/{user:slug}/plans/update/{plan:id}', [PlanController::class, 'update']);
 Route::delete('/{user:slug}/plans/destroy/{plan:id}', [PlanController::class, 'destroy']);
-
-Route::get('/users', function () {
-    return UserResource::collection(User::all());
-});
 
 
 
