@@ -170,10 +170,10 @@ class UserController extends Controller
         }
     }
 
-    public function indexChecks(User $user){
+    public function indexChecks(User $user, $id){
 
         $ids = [];
-        foreach ($user->checks as $c) {
+        foreach ($user->checks->where("plan_id", $id) as $c) {
             $ids [] = $c->id;
         }
         return $ids;
