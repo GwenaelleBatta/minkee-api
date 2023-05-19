@@ -3,12 +3,16 @@
 namespace App\Http\Controllers\api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\FabricRequest;
 use App\Http\Resources\FabricResource;
+use App\Http\Uploads\HandlesImagesUploads;
 use App\Models\Fabric;
+use App\Models\Plan;
 use Illuminate\Http\Request;
 
 class FabricController extends Controller
 {
+    use HandlesImagesUploads;
     /**
      * Display a listing of the resource.
      */
@@ -52,9 +56,15 @@ class FabricController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(FabricRequest $request, string $id)
     {
-        //
+        $fabric = Fabric::find($id);
+        $validatedData = $request->safe()->all();
+        $uploaded_image = $request->file('image');
+        if ($uploaded_image) {
+            $validatedData['image'] = 'storage/technical/fabric/' . $this->resizeAndSaveFabric($uploaded_image);
+        }
+        $fabric->update($validatedData);
     }
 
     /**

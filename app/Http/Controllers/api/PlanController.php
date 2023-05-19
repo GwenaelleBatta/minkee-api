@@ -28,11 +28,12 @@ class PlanController extends Controller
     {
         $sortBase = request()->input('base') == 'Toutes' ? 'all' : request()->input('base');
         $sortSteps = request()->input('steps') ?? 'all';
-        $sortLevel = request()->input('level') == 4 ? 'all' : request()->input('level');
+        $sortLevel = request()->input('level') == 1 ? 'all' : request()->input('level');
         $sortLevelId = ($sortLevel !== 'all') ? intval($sortLevel) : 'all';
         $sortGender = request()->input('gender') ?? 'femme';
         $sortType = request()->input('type') ?? 'all';
         $plansQuery = Plan::query();
+
 
         if ($sortBase !== 'all') {
             $plansQuery->where('base', $sortBase);

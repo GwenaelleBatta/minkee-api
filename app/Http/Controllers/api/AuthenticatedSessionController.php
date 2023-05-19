@@ -27,6 +27,7 @@ class AuthenticatedSessionController extends Controller
             $user->save();
             return response()->json([
                 'message' => 'Authentication successful',
+                'favorite' => count($user->favorites),
                 'data' => $user,
                 'email' => $user->email,
                 'token' => $token,

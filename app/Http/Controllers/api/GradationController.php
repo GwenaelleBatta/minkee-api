@@ -4,11 +4,14 @@ namespace App\Http\Controllers\api;
 
 use App\Http\Controllers\Controller;
 use App\Http\Resources\GradationResource;
+use App\Http\Uploads\HandlesImagesUploads;
+use App\Models\Fabric;
 use App\Models\Gradation;
 use Illuminate\Http\Request;
 
 class GradationController extends Controller
 {
+    use HandlesImagesUploads;
     /**
      * Display a listing of the resource.
      */
@@ -54,7 +57,13 @@ class GradationController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $gradation = Fabric::find($id);
+        $validatedData = $request->safe()->all();
+        $uploaded_image = $request->file('image');
+        if ($uploaded_image) {
+            $validatedData['image'] = 'storage/technical/gradation/' . $this->resizeAndSaveGradation($uploaded_image);
+        }
+        $gradation->update($validatedData);
     }
 
     /**

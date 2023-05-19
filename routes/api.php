@@ -61,6 +61,9 @@ Route::get('/levels', [LevelController::class, 'index']);
 Route::get('/fabrics', [FabricController::class, 'index']);
 Route::get('/gradations', [GradationController::class, 'index']);
 Route::get('/steps', [StepController::class, 'index']);
+Route::get('/gradations/{gradation:id}', [GradationController::class, 'index']);
+Route::get('/steps/{step:id}', [StepController::class, 'index']);
+Route::post('/fabrics/{fabric:id}', [FabricController::class, 'update']);
 
 Route::get('/{user:slug}/mesures', [MesureController::class, 'index']);
 Route::post('/{user:slug}/mesures/create', [MesureController::class, 'store']);
