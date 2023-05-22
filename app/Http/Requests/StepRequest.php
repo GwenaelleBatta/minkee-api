@@ -28,6 +28,9 @@ class StepRequest extends FormRequest
                 'step_id'=> 'required',
                 'order'=> 'required',
                 'precision'=> 'nullable',
+            ],
+        'stepDeleted' => [
+                'id'=> 'nullable',
             ]
         ];
     }

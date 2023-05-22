@@ -29,7 +29,7 @@ class PlanUpdateRequest extends FormRequest
             'gender' => 'required',
             'type' => 'required',
             'price' => 'required',
-            'supplies' => 'required',
+            //'supplies' => 'required',
             'images' => 'nullable',
             'newImages' => 'nullable|array',
             'newImages.*' => 'mimes:jpg,jpeg,png,webp,svg',

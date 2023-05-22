@@ -11,6 +11,7 @@ return new class extends Migration
      *
      * @return void
      */
+
     public function up()
     {
         Schema::table('plans', function (Blueprint $table) {
@@ -42,7 +43,7 @@ return new class extends Migration
             $table->foreignId('user_id')->constrained()->onUpdate('cascade');
         });
         Schema::table('checksteps', function (Blueprint $table) {
-            $table->foreignId('planstep_id')->references('id')->on('plan_step')->constrained()->onUpdate('cascade');
+            $table->foreignId('planstep_id')->references('id')->on('plan_step')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->foreignId('user_id')->constrained()->onUpdate('cascade');
         });
         Schema::table('followers', function (Blueprint $table) {

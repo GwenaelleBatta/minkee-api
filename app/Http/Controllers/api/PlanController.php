@@ -326,7 +326,7 @@ class PlanController extends Controller
     public function update(User $user, int $id, PlanUpdateRequest $request, StepRequest $stepRequest)
     {
         $plan = Plan::find($id);
-        $oldSteps = DB::table('plan_step')->where('plan_id', $plan->id)->get();
+
         $steps = [];
         $validatedData = $request->safe()->all();
         if ($request['newImages'] !== null) {
@@ -344,29 +344,37 @@ class PlanController extends Controller
                 $validatedData['images'] = json_encode($all_images);
             }
         }
+
         $uploaded_cut = $request->file('cut');
         if ($uploaded_cut) {
             $validatedData['cut'] = 'storage/plans/images/' . $this->resizeAndSavePlan($uploaded_cut);
         }
+
         $validatedData['slug'] = Str::slug($validatedData['name'] . $user->slug);
 
         $plan->update($validatedData);
 
-        foreach ($oldSteps as $os) {
-            DB::table('plan_step')->where('id', $os->id)->delete();
-        }
-
         $validatedDataSteps = $stepRequest->safe()->all();
         $validatedDataSteps['step'] = json_decode($validatedDataSteps['step']);
-
+        $validatedDataSteps['stepDeleted'] = json_decode($validatedDataSteps['stepDeleted']);
+        foreach($validatedDataSteps['stepDeleted'] as $delete){
+            DB::table('checksteps')->where('planstep_id', $delete)->delete();
+            DB::table('plan_step')->where('id', $delete)->delete();
+        }
+        //$oldSteps = DB::table('plan_step')->where('plan_id', $plan->id)->get();
         foreach ($validatedDataSteps['step'] as $i => $step) {
-            $s = [];
-            $s['plan_id'] = $plan->id;
-            $s['order'] = $i + 1;
-            $s['step_id'] = $step->step_id;
-            $s['precision'] = $step->precision;
-            $steps [] = $s;
-            DB::table('plan_step')->insert([$s]);
+            if (!property_exists($step, 'id')){
+                    $s = [];
+                    $s['plan_id'] = $plan->id;
+                    $s['order'] = $i + 1;
+                    $s['step_id'] = $step->step_id;
+                    $s['precision'] = $step->precision;
+                    $steps [] = $s;
+                    DB::table('plan_step')->insert([$s]);
+            }else{
+                DB::table('plan_step')->where('id', $step->id)->update(['order' => $i + 1]);
+
+            }
         }
         return response()->json([
             'message' => 'Plan mis à jour avec succès',
