@@ -221,34 +221,9 @@ class PlanController extends Controller
         return PlanResource::collection(Plan::where('user_id', $user->id)->get());
     }
 
-    public function suggest(User $user)
-    {
-        if (count($user->favorites) !== 0) {
-            $types = [];
-            $ids = [];
-            foreach ($user->favorites as $favorite) {
-                $types[] = $favorite->type;
-                $ids[] = $favorite->id;
-            }
-            $suggest = Plan::whereIn('type', $types)->whereNotIn('id', $ids)->where('user_id', '!=', $user->id)->take(4)->get();
 
-            if (count($suggest) < 5) {
-                $missingCount = 5 - count($suggest);
-                $randomPlans = Plan::inRandomOrder()->whereNotIn('id', $ids)->where('user_id', '!=', $user->id)->take($missingCount)->get();
-                $suggest = $suggest->merge($randomPlans);
-            }
 
-            return PlanResource::collection($suggest);
-        } else {
-            return PlanResource::collection(Plan::inRandomOrder()->where('user_id', '!=', $user->id)->take(4)->get());
-        }
-    }
 
-    public function news(User $user)
-    {
-        return PlanResource::collection(Plan::orderBy('created_at', 'DESC')->where('user_id', '!=', $user->id)->take(4)->get());
-
-    }
 
     /**
      * Store a newly created resource in storage.
