@@ -27,6 +27,7 @@ class UserResource extends JsonResource
             'remember_token' => $this->remember_token,
             'pictures' => $this->pictures,
             'password' => $this->password,
+            'connected' => $this->connected,
             'followed_count' => count($this->followed),
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
