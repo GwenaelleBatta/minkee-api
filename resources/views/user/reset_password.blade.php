@@ -3,11 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Gwenaëlle Batta">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Site de mon API pour mon application Minkee, qui vous assiste das la création de vos vêtements ">
+    <meta name="keywords" content="application, Minky, Minkee, API, couture, tissus, plan, fabrication, diy, fil à coudre, coudre, fait main, gradation, glossaire">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <title>Minkee — Réinitialisation</title>
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Minkee — Réinitialisation">
+    <meta name="description" content="Site de mon API pour mon application Minkee, qui vous assiste das la création de vos vêtements">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://minkee.test.lws-servers.be">
+    <meta property="og:title" content="Minkee — Réinitialisation">
+    <meta property="og:description" content="Site de mon API pour mon application Minkee, qui vous assiste das la création de vos vêtements">
+    <meta property="og:image" content="https://minkee.test.lws-servers.be/bg/minkee-logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://minkee.test.lws-servers.be">
+    <meta property="twitter:title" content="Minkee — Réinitialisation">
+    <meta property="twitter:description" content="Site de mon API pour mon application Minkee, qui vous assiste das la création de vos vêtements">
+    <meta property="twitter:image" content="https://minkee.test.lws-servers.be/bg/minkee-logo.png">
 </head>
 <body class="font-raleway flex flex-grow flex-col justify-center align-cente h-full justify-center gap-16  ">
 <h1 class="flex flex-col justify-center align-center text-center font-bodoni">
