@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\FabricRequest;
 use App\Http\Resources\GradationResource;
 use App\Http\Uploads\HandlesImagesUploads;
 use App\Models\Fabric;
@@ -55,7 +56,7 @@ class GradationController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(FabricRequest $request, string $id)
     {
         $gradation = Gradation::find($id);
         $validatedData = $request->safe()->all();
