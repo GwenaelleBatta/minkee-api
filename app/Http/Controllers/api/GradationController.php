@@ -57,7 +57,7 @@ class GradationController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        $gradation = Fabric::find($id);
+        $gradation = Gradation::find($id);
         $validatedData = $request->safe()->all();
         $uploaded_image = $request->file('image');
         if ($uploaded_image) {

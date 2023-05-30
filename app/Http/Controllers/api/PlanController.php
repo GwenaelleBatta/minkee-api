@@ -336,7 +336,6 @@ class PlanController extends Controller
             DB::table('checksteps')->where('planstep_id', $delete)->delete();
             DB::table('plan_step')->where('id', $delete)->delete();
         }
-        //$oldSteps = DB::table('plan_step')->where('plan_id', $plan->id)->get();
         foreach ($validatedDataSteps['step'] as $i => $step) {
             if (!property_exists($step, 'id')){
                     $s = [];

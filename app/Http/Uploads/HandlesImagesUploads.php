@@ -51,6 +51,15 @@ trait HandlesImagesUploads
         $img->save('storage/technical/fabric/' . $name . '.' . $ext);
         return $name . '.' . $ext;
     }
+    public function resizeAndSaveStep($uploaded_image)
+    {
+        $ext = $uploaded_image->getClientOriginalExtension();
+        $name = sha1_file($uploaded_image);
+        $img = Image::make($uploaded_image);
+
+        $img->save('storage/plans/steps/' . $name . '.' . $ext);
+        return $name . '.' . $ext;
+    }
     public function resizeAndSaveGradation($uploaded_image)
     {
         $ext = $uploaded_image->getClientOriginalExtension();

@@ -3,12 +3,16 @@
 namespace App\Http\Controllers\api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\FabricRequest;
 use App\Http\Resources\StepResource;
+use App\Http\Uploads\HandlesImagesUploads;
+use App\Models\Fabric;
 use App\Models\Step;
 use Illuminate\Http\Request;
 
 class StepController extends Controller
 {
+    use HandlesImagesUploads;
     /**
      * Display a listing of the resource.
      */
@@ -52,9 +56,20 @@ class StepController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(FabricRequest $request, string $id)
     {
-        //
+        $step = Step::find($id);
+        $validatedData = $request->safe()->all();
+        $uploaded_image = $request->file('image');
+        if ($uploaded_image) {
+            $validatedData['image'] = 'storage/plans/steps/' . $this->resizeAndSaveStep($uploaded_image);
+        }
+        $step->update($validatedData);
+        return response()->json([
+            'message' => 'Étape mise à jour',
+            'step' => $step,
+            'user' => $validatedData,
+        ]);
     }
 
     /**
