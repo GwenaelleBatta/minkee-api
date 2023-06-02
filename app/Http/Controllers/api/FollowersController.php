@@ -29,7 +29,9 @@ class FollowersController extends Controller
      */
     public function countFollowers(User $user)
     {
-        return UserResource::collection(User::where('id', $user->id)->frist()->get());
+        $followerCount = $user->followers()->count();
+
+        return $followerCount;
     }
 
     public function create()

@@ -28,7 +28,7 @@ class UserResource extends JsonResource
             'pictures' => $this->pictures,
             'password' => $this->password,
             'connected' => $this->connected,
-            'followed_count' => count($this->followed),
+            'followed_count' => count($this->followers),
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
         ];
