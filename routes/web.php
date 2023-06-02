@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\api\PrivacyController;
 use App\Http\Controllers\api\ResetPasswordController;
 use Illuminate\Support\Facades\Route;
 
@@ -18,6 +19,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/user/privacy', [PrivacyController::class, 'index'])->middleware('guest');
 Route::get('/user/reset-password/{token}', [ResetPasswordController::class, 'edit'])->middleware('guest')->name('password.reset');
 Route::post('/user/reset', [ResetPasswordController::class, 'update'])->middleware('guest')->name('password.reset');
 

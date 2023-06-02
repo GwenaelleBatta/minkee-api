@@ -7,6 +7,9 @@
     <meta name="keywords" content="application, Minky, Minkee, API, couture, tissus, plan, fabrication, diy, fil à coudre, coudre, fait main, gradation, glossaire">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://minkee.test.lws-servers.be/bg/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://minkee.test.lws-servers.be/bg/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://minkee.test.lws-servers.be/bg/favicon-16x16.png">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <title>Minkee — Réinitialisation</title>
 
