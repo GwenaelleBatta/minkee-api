@@ -49,10 +49,11 @@ Route::get('/user/{user:id}', [UserController::class, 'show']);
 Route::post('/user/password', [ResetPasswordController::class, 'store'])->middleware('guest');
 Route::post('/user/update/{user:id}', [UserController::class, 'update']);
 Route::get('/user/followers/{user:id}', [FollowersController::class, 'index']);
+Route::get('/user/followeds/{user:id}', [FollowersController::class, 'countFollowers']);
+Route::delete('/user/destroy/{user:id}', [AuthenticatedSessionController::class, 'destroy']);
 Route::post('/user/{user:slug}/followers/{followed:id}', [FollowersController::class, 'store']);
 Route::post('/{user:slug}/check/{planstep:id}', [CheckController::class, 'store']);
 Route::get('/{user:slug}/check/plans/{plan:id}', [CheckController::class, 'index']);
-
 
 Route::get('/search', [SearchController::class, 'index']);
 Route::get('/types', [TypeSupplyController::class, 'index']);

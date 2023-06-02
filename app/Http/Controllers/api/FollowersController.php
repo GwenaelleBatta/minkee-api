@@ -27,6 +27,11 @@ class FollowersController extends Controller
     /**
      * Show the form for creating a new resource.
      */
+    public function countFollowers(User $user)
+    {
+        return UserResource::collection(User::where('id', $user->id)->frist()->get());
+    }
+
     public function create()
     {
         //
