@@ -1,7 +1,11 @@
 <?php
 
+use Illuminate\Auth\Notifications\ResetPassword;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use App\Models\User;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Notification;
+use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Str;
 
 uses(RefreshDatabase::class);
@@ -124,4 +128,30 @@ it(' is possible for a user to delete his account ?', function () {
     actingAs($user)
         ->delete('/api/user/destroy/'.$user->id)
         ->assertStatus(200);
+});
+
+it('is possible for an user to reset his password ?', function () {
+
+    $name = 'Titi';
+    $email = 'titi@gmail.com';
+    $name = 'TitiTristan';
+    $description = 'Je fais des tests';
+    $password = 'azerty123';
+
+    $user = User::create([
+        'name' => $name,
+        'email' => $email,
+        'description' => $description,
+        'email_verified_at' => now(),
+        'password' => password_hash($password, PASSWORD_DEFAULT),
+        'remember_token' => Str::random(10),
+        'api_token' => Str::random(52),
+        "slug" => Str::slug($name),
+        "avatar" => 'https://placehold.jp/276x276.png',
+        "connected" => 1,
+    ]);
+
+    $response = $this->post('/api/user/password', ['email' => $email]);
+    $response->assertStatus(200);
+
 });
