@@ -74,12 +74,9 @@ return new class extends Migration
             $table->dropConstrainedForeignId('user_id');
         });
         Schema::table('supplies', function (Blueprint $table) {
+            $table->dropConstrainedForeignId('typesupply_id');
             $table->dropConstrainedForeignId('user_id');
         });
-        Schema::table('supplies', function (Blueprint $table) {
-            $table->dropConstrainedForeignId('typesupply_id');
-        });
-
 
         Schema::table('plan_step', function (Blueprint $table) {
             $table->dropConstrainedForeignId('plan_id');

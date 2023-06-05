@@ -22,7 +22,8 @@
         "pestphp/pest": "^2.6",
         "pestphp/pest-plugin-laravel": "^2.0",
         "phpunit/phpunit": "^10.0",
-        "spatie/laravel-ignition": "^2.0"
+        "spatie/laravel-ignition": "^2.0",
+      "ext-fileinfo": "*"
     },
     "autoload": {
         "psr-4": {
