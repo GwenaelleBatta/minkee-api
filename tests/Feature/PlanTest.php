@@ -77,7 +77,6 @@ it('is possible for a user to modify a plan ?', function () {
         "avatar" => 'https://placehold.jp/276x276.png',
         "connected" => 1,
     ]);
-
     $namePlans = 'Test';
     $base = 40;
     $cut = null;
@@ -89,7 +88,6 @@ it('is possible for a user to modify a plan ?', function () {
     $supplies = json_encode('coucou');
     $steps = json_encode([['plan_id' => 1, 'order' => 1, 'precision' => 'coucou', 'step_id' => 1]]);
     $level_id = 1;
-
     $plan = Plan::create([
         'name' => $namePlans,
         'level_id' => $level_id,
