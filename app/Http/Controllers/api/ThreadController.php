@@ -14,8 +14,16 @@ class ThreadController extends Controller
      */
     public function index()
     {
-        return ThreadResource::collection(Thread::all());
+        $searchTerm = request()->input('search') ?? '';
+
+        $threads = ($searchTerm)
+            ? Thread::query()->where('number', 'like', '%' . $searchTerm . '%')->orderBy('number')->get()
+            : Thread::orderBy('number')->get();
+
+
+        return ThreadResource::collection($threads);
     }
+
 
     /**
      * Show the form for creating a new resource.

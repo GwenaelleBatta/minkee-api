@@ -12,15 +12,18 @@ trait HandlesImagesUploads
         $name = sha1_file($uploaded_image);
         $img = Image::make($uploaded_image);
 
+        $img->fit(50, 50);
+
         $img->save('storage/supplies/pictures/' . $name . '.' . $ext);
         return $name . '.' . $ext;
+
     }
     public function resizeAndSaveAvatar($uploaded_image)
     {
         $ext = $uploaded_image->getClientOriginalExtension();
         $name = sha1_file($uploaded_image);
         $img = Image::make($uploaded_image);
-
+        $img->fit(200, 200);
         $img->save('storage/profil/avatar/' . $name . '.' . $ext);
         return $name . '.' . $ext;
     }
@@ -29,7 +32,7 @@ trait HandlesImagesUploads
         $ext = $uploaded_image->getClientOriginalExtension();
         $name = sha1_file($uploaded_image);
         $img = Image::make($uploaded_image);
-
+        $img->fit(100, 100);
         $img->save('storage/profil/pictures/' . $name . '.' . $ext);
         return $name . '.' . $ext;
     }
@@ -47,7 +50,7 @@ trait HandlesImagesUploads
         $ext = $uploaded_image->getClientOriginalExtension();
         $name = sha1_file($uploaded_image);
         $img = Image::make($uploaded_image);
-
+        $img->fit(80, 80);
         $img->save('storage/technical/fabric/' . $name . '.' . $ext);
         return $name . '.' . $ext;
     }

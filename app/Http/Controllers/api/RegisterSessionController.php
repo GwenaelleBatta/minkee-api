@@ -5,6 +5,7 @@ namespace App\Http\Controllers\api;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\RegisterRequest;
 use App\Models\User;
+use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
 
 class RegisterSessionController extends Controller
@@ -23,6 +24,20 @@ class RegisterSessionController extends Controller
         $user->api_token = Str::random(60);
         $user->remember_token = Str::random(10);
         $user->save();
+
+        $user->sendEmailVerificationNotification();
+
+//        Route::get('verify/{id}/{hash}', function ($id, $hash) {
+//            $user = User::findOrFail($id);
+//
+//            if (hash_equals($hash, sha1($user->getEmailForVerification()))) {
+//                $user->markEmailAsVerified();
+//
+//                return "Votre compte a été validé avec succès.";
+//            } else {
+//                return "Lien de validation invalide.";
+//            }
+//        });
 
         return response()->json([
             'message' => 'Registration successful',

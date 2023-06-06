@@ -18,7 +18,14 @@ class StepController extends Controller
      */
     public function index()
     {
-        return StepResource::collection(Step::all());
+        $searchTerm = request()->input('search') ?? '';
+
+        $steps = ($searchTerm)
+            ? Step::query()->where('name', 'like', '%' . $searchTerm . '%')->get()
+            : Step::all();
+
+
+        return StepResource::collection($steps);
     }
 
     /**
