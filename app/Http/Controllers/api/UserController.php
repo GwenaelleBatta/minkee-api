@@ -3,22 +3,14 @@
 namespace App\Http\Controllers\api;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\CheckRequest;
-use App\Http\Requests\FavoriteRequest;
-use App\Http\Requests\FollowerRequest;
 use App\Http\Requests\UpdateUserRequest;
 use App\Http\Resources\PlanResource;
-use App\Http\Resources\SupplyResource;
-use App\Http\Resources\TypeSupplyResource;
 use App\Http\Resources\UserResource;
 use App\Http\Uploads\HandlesImagesUploads;
 use App\Models\Plan;
-use App\Models\PlanStep;
-use App\Models\Supply;
-use App\Models\TypeSupply;
 use App\Models\User;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 
 class UserController extends Controller
@@ -54,7 +46,19 @@ class UserController extends Controller
      */
     public function show(string $id)
     {
-        return UserResource::collection(User::where('id', $id)->get());
+        $user= User::find($id);
+        $create = $user->created_at;
+        $email_verify = $user->email_verified_at;
+        $deadline = null;
+        if (!$email_verify){
+            $deadline = $create->addDays(10);
+            if (Carbon::now() > $deadline){
+                $user->connected = 0;
+                $user->save();
+            }
+        }
+
+        return UserResource::collection(User::where('id',$id)->get());
     }
 
     /**

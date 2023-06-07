@@ -44,6 +44,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 Route::post('/login', [AuthenticatedSessionController::class, 'store'])->name('login')->middleware(['guest', 'api']);
 Route::post('/register', [RegisterSessionController::class, 'store'])->name('register')->middleware('guest');
+Route::post('/resend/{user:id}', [RegisterSessionController::class, 'resend']);
 Route::post('/logout/{user:slug}', [AuthenticatedSessionController::class, 'logout'])->name('logout');
 Route::get('/user/{user:id}', [UserController::class, 'show']);
 Route::post('/user/password', [ResetPasswordController::class, 'store'])->middleware('guest');

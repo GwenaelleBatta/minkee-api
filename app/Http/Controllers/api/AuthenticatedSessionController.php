@@ -10,6 +10,7 @@ use App\Models\Plan;
 use App\Models\PlanStep;
 use App\Models\Supply;
 use App\Models\User;
+use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Redirect;
@@ -30,6 +31,16 @@ class AuthenticatedSessionController extends Controller
             $follower = $user->followers;
             $pictures = $user->pictures;
             $token = $user->remember_token;
+            $create = $user->created_at;
+            $email_verify = $user->email_verified_at;
+            $deadline = null;
+            if (!$email_verify){
+                $deadline = $create->addDays(10);
+                if (Carbon::now() > $deadline){
+                    $user->connected = 0;
+                    $user->save();
+                }
+            }
             $user->save();
             return response()->json([
                 'message' => 'Authentication successful',

@@ -32,6 +32,11 @@
     <meta property="twitter:image" content="https://minkee.test.lws-servers.be/bg/og-bg.png">
 </head>
 <body class="font-raleway flex-1 flex flex-grow flex-col justify-center align-center h-full w-full justify-center gap-16  ">
+@if(isset($message))
+    <div class="alert alert-success">
+        {{ $message }}
+    </div>
+@endif
 <h1 class="flex flex-col justify-center align-center text-center font-bodoni h-full w-full">
     <span class="text-orange-default text-[10rem] font-bold">MK</span>
     <span class="text-6xl">Minkee, au fil de vos idées</span>

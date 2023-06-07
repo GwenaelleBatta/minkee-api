@@ -30,6 +30,7 @@ class UserResource extends JsonResource
             'connected' => $this->connected,
             'followed_count' => count($this->followers),
             'created_at' => $this->created_at,
+            'email_verified_at' => $this->email_verified_at,
             'updated_at' => $this->updated_at,
         ];
     }
