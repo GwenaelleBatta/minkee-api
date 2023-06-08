@@ -100,6 +100,7 @@ class MesureController extends Controller
         $mesure->delete();
         return response()->json([
             'message' => 'Mesure effacée avec succès',
+            'user' => $user->refresh()
         ]);
     }
 }
