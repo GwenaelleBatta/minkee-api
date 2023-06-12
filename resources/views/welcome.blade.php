@@ -33,8 +33,8 @@
 </head>
 <body class="font-raleway flex-1 flex flex-grow flex-col justify-center align-center h-full w-full justify-center gap-16  ">
 @if(isset($message))
-    <div class="alert alert-success">
-        {{ $message }}
+    <div class="alert alert-success bg-orange-default/70 text-white text-center p-3">
+        <p class="text-lg font-medium">{{ $message }}</p>
     </div>
 @endif
 <h1 class="flex flex-col justify-center align-center text-center font-bodoni h-full w-full">
